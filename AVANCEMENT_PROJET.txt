@@ -1,6 +1,17 @@
 GARE DEBRAYABLE JC - SUIVI REPRIS PAR CODEX
 Mise a jour : 22/10/2026
 
+ACCORD : PAS DE MODELE 3D (STL, Fusion) sans demande de l utilisateur.
+
+PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
+Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,
+embouts metal compris. Photo de face mise a l echelle :
+galets de roulement diametre 7,1 environ, entraxe 24,6 ; galet du levier
+diametre 5,9, centre 17,2 au-dessus de l axe des galets ; suspente 4,0.
+Estimations photo, a confirmer : mesures_photo_2026-10-22/.
+Les anciennes estimations de pince_jc_galets.py (diametre 3,2, entraxe 12)
+sont contredites.
+
 REGROUPEMENT POUR SAUVEGARDE ET GITHUB
 Le projet est regroupe dans ce dossier. L ancien script JC_Gabarit_Gare,
 le script pince_jc_galets.py et une copie du suivi du Bureau ont ete ajoutes.

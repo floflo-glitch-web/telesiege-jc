@@ -16,7 +16,9 @@ n'est actuellement disponible dans le projet.
    110 entrées, dont 28 mesures ou observations inconnues explicitement signalées.
 3. [Sources et pistes](recherche_mesures_2026-10-22/SOURCES_ET_PISTES.txt).
 4. [Fiche des mesures à prendre](FICHE%20MESURES%20-%20pince%20et%20siege%20JC.txt).
-5. [Avancement courant](AVANCEMENT_PROJET.txt).
+5. [Cotes de la pince estimées sur photo](mesures_photo_2026-10-22/MESURES%20PHOTO%20-%20pince%20JC.txt) :
+   échelle donnée par l'axe des galets mesuré à 28 mm.
+6. [Avancement courant](AVANCEMENT_PROJET.txt).
 
 Le [dossier historique](DOSSIER_GARE_DEBRAYABLE_JC.md) conserve les recherches et
 choix antérieurs. Les précisions du rapport du 22 octobre priment sur les
@@ -27,6 +29,7 @@ anciennes mentions de validation ou de recherche terminée.
 | Dossier | Contenu |
 | --- | --- |
 | `recherche_mesures_2026-10-22/` | Recherche, cotes, sources, relevés de fichiers 3D |
+| `mesures_photo_2026-10-22/` | Photo de la pince, mesure de 28 mm et cotes estimées à l'échelle |
 | `STL/` | Dix prototypes historiques de la gare et leurs documents |
 | `apercus/` | Vues des prototypes |
 | `reprise_codex/rapports/` | Audit des STL et du balayage des sièges |

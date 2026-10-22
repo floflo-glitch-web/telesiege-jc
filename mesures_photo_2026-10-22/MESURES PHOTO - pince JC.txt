@@ -1,0 +1,82 @@
+PINCE JC D-LINE - COTES ESTIMÉES SUR PHOTO
+22 octobre 2026
+
+ACCORD DE TRAVAIL
+Pas de modèle 3D, de STL ni de script Fusion tant que l'utilisateur ne
+l'a pas demandé. Ce dossier ne contient que des photos et des cotes.
+
+MÉTHODE
+Photo de face de la pince, vue dans l'axe du câble : l'axe des galets de
+roulement est en travers, la suspente descend au milieu, le levier à
+ressort monte vers la droite avec son galet blanc, la mâchoire est à gauche.
+Seule mesure physique fournie par l'utilisateur :
+  28 mm du bout métallique de l'axe à gauche (embout qui retient le galet)
+  au bout métallique de l'axe à droite, galets compris.
+Sur la photo originale (1500 x 2000 px) : 940 px, soit 33,6 px/mm.
+Les autres cotes sont des distances en pixels converties à cette échelle.
+Repères en pixels et calcul : cotes_photo.json.
+
+COTES ESTIMÉES (mm)
+Galets de roulement (rubrique C de la fiche)
+  C1  Nombre .................................... 2, un à chaque bout de l'axe
+  C2  Diamètre .................................. 7,1   (± 0,3)
+  C3  Largeur ................................... 1,5 à 2,1 (incertaine, voir limites)
+  C4  Entraxe centre à centre ................... 24,6  (± 0,4)
+      Faces extérieures des deux galets ........ 26,3  (± 0,3)
+      Espace libre entre les faces intérieures . 23,2  (± 0,5)
+      Embout métallique dépassant de chaque côté 0,8 à 0,9
+  Tube de l'axe (bras droit) ................... 4,0   (± 0,3)
+
+Galet du levier (rubrique B)
+  B1  Diamètre .................................. 5,9   (± 0,5)
+  B2  Largeur visible ........................... 2,7   (vu de biais : à confirmer)
+  Centre du galet au-dessus de l'axe des galets  17,2  (± 1)
+  Haut du galet au-dessus de l'axe des galets .. 20,2  (± 1)
+  Centre du galet décalé de l'axe de suspente .. 2,7 vers la droite (côté opposé à la mâchoire)
+  Levier au repos : position pince fermée, sans appui.
+
+Suspente (rubrique F)
+  F3  Largeur vue de face ....................... 4,0   (± 0,3)
+  Axe de la suspente décalé de 1,6 (± 0,6) vers la mâchoire par rapport
+  au milieu des deux galets.
+
+Encombrement vu de face (rubrique E)
+  E2  Largeur hors tout (crochet de la mâchoire -> bout d'axe droit) 35,1 (± 0,6)
+      La mâchoire dépasse de 7,1 au-delà du bout d'axe gauche.
+      Haut du crochet de la mâchoire : 6,1 au-dessus de l'axe des galets.
+      Haut du bloc strié : 8,9 au-dessus de l'axe des galets.
+
+CE QUI CHANGE PAR RAPPORT AUX ANCIENNES HYPOTHÈSES
+- L'ancien script pince_jc_galets.py supposait des galets de 3,2 mm de
+  diamètre avec un entraxe de 12 mm (estimations du script). La photo donne
+  environ 7,1 mm et 24,6 mm : ces anciennes valeurs sont à abandonner.
+- Si chacun des deux galets roule sur son propre rail, les deux rails
+  seraient à environ 24,6 mm d'entraxe, avec environ 23 mm libres entre
+  les galets. Le banc de Codex montrait ses lamelles à environ 34 mm
+  d'entraxe dans sa vue de montage. Le principe de roulement (un rail sous
+  chaque galet ou autre appui) reste à confirmer.
+
+LIMITES
+- Une seule vue : aucune cote le long du câble (longueur du bloc strié,
+  position des galets le long du câble, pas des stries) n'est mesurable ici.
+- Le câble n'est pas dans la mâchoire : toutes les hauteurs sont données
+  par rapport à l'AXE DES GALETS, pas par rapport à l'axe du câble.
+- Perspective : le galet droit est vu légèrement de biais (on voit une
+  partie de sa face), le gauche presque de chant. D'où la plage 1,5-2,1 mm
+  pour la largeur. Le galet du levier est peut-être plus près ou plus loin
+  de l'objectif que l'axe : ± 1 mm sur ses positions.
+- L'axe paraît incliné d'environ 1° sur la photo ; négligeable ici.
+- La mesure de 28 mm elle-même : une erreur de 0,5 mm décale toutes les
+  cotes d'environ 2 %.
+
+POUR COMPLÉTER SANS DÉMONTER
+1. Même photo de face avec le câble serré dans la mâchoire : donne la
+   position du câble par rapport aux galets et au galet du levier.
+2. Photo de dessus : l'axe de 28 mm sert de nouveau d'échelle et donne la
+   longueur du bloc strié, le pas des stries et la position du galet du
+   levier le long du câble.
+3. Photo de côté (perpendiculaire au câble) avec une règle contre la pince.
+4. Pied à coulisse si possible : largeur d'un galet et diamètre du galet
+   du levier, les deux cotes les moins sûres ici.
+5. Même photo de face, levier appuyé juste assez pour lâcher le câble :
+   donne la course du galet du levier.

@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-22",
+  "photo": "pince_face_originale.jpg (1500 x 2000 px)",
+  "vue": "De face, dans l'axe du cable ; axe des galets en travers",
+  "reference": {
+    "cote": "bout d'axe metallique gauche -> bout d'axe metallique droit, galets compris",
+    "mm": 28.0,
+    "pixels": 940,
+    "mm_par_pixel": 0.02979
+  },
+  "statut": "ESTIMATIONS PHOTO a confirmer au pied a coulisse ; aucune cote le long du cable",
+  "cotes_mm": {
+    "reference_bout_axe_a_bout_axe": {
+      "valeur": 28.0,
+      "statut": "MESURE UTILISATEUR"
+    },
+    "galet_roulement_diametre": {
+      "valeur": 7.1,
+      "incertitude": 0.3
+    },
+    "galet_roulement_largeur": {
+      "valeur": [
+        1.5,
+        2.1
+      ],
+      "statut": "Plage : galet gauche vu de chant / galet droit vu legerement de biais"
+    },
+    "galets_entraxe_centre_a_centre": {
+      "valeur": 24.6,
+      "incertitude": 0.4
+    },
+    "galets_faces_exterieures": {
+      "valeur": 26.3,
+      "incertitude": 0.3
+    },
+    "galets_espace_libre_entre_faces_interieures": {
+      "valeur": 23.2,
+      "incertitude": 0.5
+    },
+    "embout_metal_depassant_gauche": {
+      "valeur": 0.8
+    },
+    "embout_metal_depassant_droit": {
+      "valeur": 0.9
+    },
+    "tube_axe_diametre": {
+      "valeur": 4.0,
+      "incertitude": 0.3
+    },
+    "suspente_largeur_vue_de_face": {
+      "valeur": 4.0,
+      "incertitude": 0.3
+    },
+    "suspente_decalage_vers_machoire_depuis_milieu_galets": {
+      "valeur": 1.6,
+      "incertitude": 0.6
+    },
+    "galet_levier_diametre": {
+      "valeur": 5.9,
+      "incertitude": 0.5
+    },
+    "galet_levier_largeur_visible": {
+      "valeur": 2.7,
+      "statut": "Vu de biais : a confirmer"
+    },
+    "galet_levier_centre_au_dessus_axe_galets": {
+      "valeur": 17.2,
+      "incertitude": 1.0
+    },
+    "galet_levier_haut_au_dessus_axe_galets": {
+      "valeur": 20.2,
+      "incertitude": 1.0
+    },
+    "galet_levier_centre_depuis_axe_suspente_en_travers": {
+      "valeur": 2.7,
+      "incertitude": 0.6
+    },
+    "bloc_strie_haut_au_dessus_axe_galets": {
+      "valeur": 8.9,
+      "incertitude": 0.5
+    },
+    "machoire_debord_au_dela_bout_axe_gauche": {
+      "valeur": 7.1,
+      "incertitude": 0.5
+    },
+    "largeur_hors_tout_vue_de_face": {
+      "valeur": 35.1,
+      "incertitude": 0.6
+    },
+    "crochet_machoire_haut_au_dessus_axe_galets": {
+      "valeur": 6.1,
+      "incertitude": 0.5
+    }
+  },
+  "reperes_pixels": {
+    "galet_D_haut_bas": [
+      1137,
+      1376
+    ],
+    "galet_G_faces": [
+      425,
+      477
+    ],
+    "galet_D_faces_visibles": [
+      1239.5,
+      1308.5
+    ],
+    "centre_galet_G": 451,
+    "centre_galet_D": 1278,
+    "tube_axe_x1100_haut_bas": [
+      1182,
+      1317
+    ],
+    "suspente_y1500": [
+      768,
+      898
+    ],
+    "suspente_y1700": [
+      787,
+      921
+    ],
+    "axe_suspente_niveau_axe": 810,
+    "galet_levier_haut_bas_x900": [
+      575,
+      773
+    ],
+    "galet_levier_gauche_droite_y680": [
+      855,
+      946
+    ],
+    "centre_galet_levier": [
+      900.5,
+      674
+    ],
+    "bloc_strie_haut_x470": 946,
+    "bloc_strie_gauche": 422,
+    "crochet_machoire_gauche": 160,
+    "crochet_machoire_haut_x200": 1035
+  }
+}

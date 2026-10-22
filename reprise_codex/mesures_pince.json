@@ -1,7 +1,24 @@
 {
   "unite_longueur": "mm",
   "reference": "Pince JC D-Line du siege de l'utilisateur, sans modification",
-  "statut": "AUCUNE mesure physique recue ; null signifie INCONNU",
+  "statut": "Une seule mesure physique recue (28 mm, ci-dessous) ; null signifie INCONNU ou pas encore confirme au pied a coulisse",
+  "mesure_physique_utilisateur": {
+    "axe_galets_bout_a_bout_avec_embouts_metal": 28.0,
+    "date": "2026-10-22"
+  },
+  "estimations_photo_2026_10_22": {
+    "source": "mesures_photo_2026-10-22/ (vue de face, echelle 28 mm = 940 px)",
+    "statut": "ESTIMATIONS PHOTO, hauteurs depuis l'axe des galets et non depuis l'axe du cable",
+    "galets_roulement_diametre": 7.1,
+    "galets_roulement_largeur_plage": [1.5, 2.1],
+    "galets_roulement_entraxe": 24.6,
+    "galets_espace_libre_interieur": 23.2,
+    "tube_axe_diametre": 4.0,
+    "galet_levier_diametre": 5.9,
+    "galet_levier_centre_au_dessus_axe_galets_ferme": 17.2,
+    "suspente_largeur_vue_de_face": 4.0,
+    "largeur_hors_tout_vue_de_face": 35.1
+  },
   "cable_diametre": null,
   "galets_roulement_diametre": null,
   "galets_roulement_largeur": null,
