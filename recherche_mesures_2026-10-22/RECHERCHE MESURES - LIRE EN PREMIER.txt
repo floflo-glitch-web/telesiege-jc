@@ -1,0 +1,191 @@
+GARE DEBRAYABLE JAEGERNDORFER 1:32 AVEC GARAGE
+Recherche dimensionnelle - 22 octobre 2026
+
+OBJECTIF ACTUEL
+Réunir les mesures et les documents nécessaires à une future modélisation
+Fusion 360. Conserver les sièges et les pinces JC d'origine, ressorts compris.
+Aucune nouvelle CAO de gare n'a été réalisée pendant cette recherche.
+
+Le dossier de Claude et les prototypes sont conservés. Les données du
+présent dossier priment sur ses anciennes affirmations de compatibilité.
+
+RESULTATS QUI CHANGENT OU PRECISENT LE DOSSIER
+
+1. Des plans cotés de VRAIES gares 6 places ont été retrouvés.
+   Dossier public DA 10115, Mt Perisher, plans DJRD de 2019 : gare aval,
+   garage latéral en boucle, plans des niveaux, façades et coupes ; gare
+   amont dans un second PDF. Ils sont archivés dans documents/.
+   Ce sont des plans d'architecture d'un autre télésiège, pas les plans
+   mécaniques de Waidoffen ni ceux d'une gare miniature JC. Ils permettent
+   d'étudier l'organisation à l'échelle, pas de fabriquer la pince.
+
+2. Les garages compatibles JC de Doppelwihr ont des cotes publiées :
+   - 5010, support droit : 280 x 90 x 147 mm.
+   - 5009, boucle : 408 x 128 x 149 mm.
+   - 5016 et 5017, boucle avec sortie : 408 x 244 x 183 mm.
+   - 5018, plusieurs boucles : 501 x 367 x 149 mm.
+   - 5015, deux voies avec aiguillages : 340 x 260 x 185 mm.
+   Ce sont les dimensions du produit, pas l'enveloppe balayée par un
+   siège D-Line. La hauteur totale n'est pas une hauteur de roulement.
+   Les notices 5016/5017 montrent l'assemblage et la visserie. Elles ne
+   donnent ni le rayon coté du rail ni sa section fonctionnelle cotée.
+   Source : catalogue décembre 2024, pages imprimées 258-263
+   (= pages PDF 259-264), et notices originales téléchargées aujourd'hui.
+
+3. Nouvelle référence 3D pour le garage : « JC cableway garage rail »,
+   gabrielturba, Cults, design 4430015, publié le 13/05/2026.
+   Rail droit, rail courbe, raccords et supports, 10 STL dans un ZIP.
+   Compatibilité JC annoncée par l'auteur ; aucune cote du profil publiée
+   sur la fiche consultée. Les illustrations ont été examinées dans le
+   navigateur. Ce modèle payant n'a pas été acheté ni téléchargé.
+   Il reste à vérifier avec la pince D-Line précise du siège JC86541.
+
+4. « Detechable cableway (works with JC) », du même auteur, design
+   4429920, est une CABINE avec sa propre pince imprimée et un élastique.
+   Ce n'est pas la CAO de la pince JC, ni une gare complète fournie.
+   La fiche indique qu'une gare est prévue séparément. Une réponse de
+   l'auteur datée du 15/09/2026 la dit créée mais pas encore testée.
+   Pas de preuve qu'elle accepte les sièges JC sans modification.
+
+5. La piste Steinachkogel, déjà dans le dossier, a été relue à la source.
+   Le message du 21/03/2025 mentionne un rail de « 0,6 mm de profondeur ».
+   Le terme ne définit pas sans ambiguïté une épaisseur de lame. La même
+   publication indique le remplacement des ressorts d'origine par un seul
+   ressort faible. Elle ne valide donc pas notre condition de pince intacte.
+   Les premiers essais de la nouvelle structure étaient encore annoncés.
+   Son pas de pneus est de 3 plots LEGO, soit environ 24 mm par conversion
+   du pas usuel de 8 mm. Ce n'est pas la longueur du patin JC mesurée.
+
+COTES LES PLUS UTILES DEJA DISPONIBLES
+
+Toutes les valeurs sont en millimètres sauf mention contraire.
+Une cote d'un fichier compatible n'est pas une mesure de pièce JC.
+
+A - Compatibilité de la ligne miniature
+    Entraxe nominal JC : 155, publié par Doppelwihr pour ses pièces JC.
+    Câble JC : diamètre nominal 2 selon retours de modélistes ; le diamètre
+    réel de ton câble et son ovalisation restent à mesurer. La fiche
+    officielle du câble ne fournit pas ici de diamètre constructeur.
+    Ne pas confondre diamètre extérieur de la grande poulie et diamètre
+    décrit par le CENTRE du câble : ce dernier vaut théoriquement 155
+    pour un demi-tour entre deux brins parallèles espacés de 155.
+    Le diamètre extérieur réel de la poulie JC n'est pas confirmé.
+
+B - Petit galet de gare compatible, Thingiverse 7292017
+    Le STEP rolna4.stp définit : extérieur 16 ; épaisseur 7,3 ; trou 3,2 ;
+    chanfrein d'entrée 4,5 ; gorge torique rayon majeur 5,9, mineur 1,4.
+    Fond de gorge calculé : diamètre 9.
+    Pour un câble idéal de diamètre 2 posé au fond, rayon de son centre
+    calculé : 5,5. Ce n'est pas un rayon de courbure minimum de câble.
+    Le STL donne environ 15,995 x 15,990 x 7,300 : sa facettisation
+    explique l'écart avec le cercle analytique du STEP.
+    Il s'agit d'un PETIT galet de déviation, pas de la grande poulie.
+
+C - Pylône compatible, Thingiverse 5229610
+    Le galet STL mesuré aujourd'hui : diamètre 16,312, largeur 7,123.
+    Le dossier précédent relève un pas de 13,5 entre galets, un balancier
+    de 41,5, une traverse de 164,8, et une base de 124 x 124.
+    Ces dernières cotes restent des relevés du modèle communautaire.
+    Le pylône JC50100 d'origine est un autre produit : hauteur publiée
+    450, réglable sur trois hauteurs non détaillées dans le catalogue.
+
+D - Siège imprimé compatible avec une vraie pince JC, MakerWorld 2883608
+    Fichiers déjà présents ; enveloppes STL recontrôlées aujourd'hui :
+    - suspente/cadre Gehaenge_k : 115 x 23,022 x 109,866 ;
+    - assise Sitze : 97 x 30 x 17 ;
+    - garde-corps Buegel : 107 x 23,5 x 37,806.
+    La pièce supplémentaire « 6er Sessel.stl » est inclinée sur son
+    plateau : son enveloppe XYZ 96,4 x 25,923 x 35,806 n'est pas celle
+    d'un siège JC complet assemblé. Ne pas additionner ces enveloppes.
+    Interface relevée antérieurement dans Gehaenge_k : logement extérieur
+    diamètre 6 sur 12,2 de long, perçages 4,2 aux extrémités et 2,4 dans
+    la partie centrale. Vis recommandée par l'auteur : M2 x 12 à 14.
+    Le logement suggère un téton de pince d'environ 4 ; il ne constitue
+    pas une mesure au pied à coulisse du téton JC. Aucune pince JC
+    complète n'est présente dans ces fichiers.
+
+E - Vraie échelle : source constructeur Doppelmayr
+    Brochure D-Line, page PDF 53 : voie 6-CLD 6,4 m, soit 200 au 1:32.
+    Largeur d'une place DCD : 520 réels, soit 16,25 au 1:32.
+    Six places donnent 97,5 de largeur nominale d'assises cumulées,
+    sans cadre, accoudoirs, séparateurs ni bulle : pas une largeur hors tout.
+    La voie JC de 155 est 22,5 % plus étroite que 200.
+    Une reproduction exacte de la voie réelle et une ligne JC conservée
+    ne sont donc pas la même géométrie. Pour la future gare, garder les
+    entrées compatibles JC et étudier un élargissement hors câble reste
+    une possibilité à valider après mesure de la pince.
+
+F - Modèle amateur de gare 6-CLD déjà téléchargé (Thomas Stendys, 2015)
+    Valeurs ramenées au 1:32, à utiliser comme proportions uniquement :
+    pneus environ diamètre 12,8, pas 14,1 ; contour rayon 95 ; voie 174 ;
+    câble 105 au-dessus du quai ; toit environ 612 x 251 ; rail de pince
+    environ 13-17 à l'extérieur du câble ; déviation câble 15 vers
+    l'intérieur et 8 vers le bas ; garage droit 530, entraxe 137.
+    Ni ce modèle ni sa mention « real dimensions » ne sont un plan usine.
+    Ses profils et positions ne prouvent aucun ajustement à une pince JC.
+
+G - Dimensions de gare JC publiées
+    Catalogue JC 2026, pages 18-21 : gamme PLATIN 390 x 240 x 210.
+    Ces dimensions ne sont pas automatiquement celles du set UNI-G
+    JC83393. La fiche de ce set annonce 8 m de câble et « 4 m », sans
+    préciser les dimensions de sa base. 4 m est une indication commerciale
+    de ligne, pas un entraxe exact entre poulies (la boucle consomme du câble).
+    Notice D-Line : entretoise environ 40, vis diamètre 3 x 12 et 3 x 25.
+    La traduction anglaise contient quelques diamètres 2 contradictoires ;
+    les illustrations indiquent 3. Vérifier les vis réelles avant réemploi.
+
+CE QUI RESTE INCONNU POUR UNE GARE QUI FONCTIONNE
+
+La recherche n'a pas fourni de plan coté public et vérifié de la pince
+JC D-Line d'origine. Les valeurs suivantes restent inconnues, sans
+remplacement par des dimensions inventées :
+- diamètre, largeur et positions des galets de roulement ;
+- section disponible pour le rail et position du bord de guidage ;
+- longueur UTILE, largeur et hauteur du patin de friction ;
+- position et course du galet de commande entre fermé et ouvert ;
+- ouverture effective des mâchoires et trajet possible de sortie du câble ;
+- effort d'ouverture avec les deux ressorts d'origine ;
+- hauteur câble -> bas du siège, décalage latéral et encombrement bulle
+  ouverte/fermée et garde-corps relevé/abaissé ;
+- position réelle de la poulie et des galets dans la gare de l'utilisateur.
+
+La fiche détaillée « FICHE MESURES - pince et siege JC.txt » existe à la
+racine. Les six groupes prioritaires sont :
+1) câble + mâchoires ; 2) galets + passage du rail ; 3) patin de friction ;
+4) galet de commande fermé/ouvert ; 5) gabarit du siège ; 6) gare et poulie.
+Mesurer sur la pièce montée, sans limer, ouvrir le boîtier ou changer les
+ressorts. Photographier de face, côté et dessus avec une règle au même plan
+que la pièce. Une photo oblique seule ne donne pas une cote fiable.
+La force est aussi nécessaire : un rail aux bonnes cotes peut malgré tout
+se déformer ou faire basculer la pince si l'effort n'est pas repris.
+
+CORRECTIONS IMPORTANTES POUR LA FUTURE CAO
+
+- Les 812 x 309 de l'ancienne gare et le garage de huit places restent des
+  choix provisoires. Ce ne sont pas les dimensions mesurées de Waidoffen.
+- L'ingénieur de Waidoffen décrit un garage en boucle placé SUR LE COTE.
+  Le garage arrière du projet est notre implantation, pas une copie exacte.
+  Source : SALZMANN Ingenieure, page projet 6SB Waidoffen.
+- Une largeur de rail 4, épaisseur 2, galets diamètre 3,2 et entraxe 12
+  figurent dans l'ancien script pince_jc_galets.py : ce sont explicitement
+  des ESTIMATIONS du script, pas des cotes trouvées sur Internet.
+- Le retour automatique ou le point mort de la pince JC doit être testé.
+  Le comportement de la vraie D5000 ne prouve pas celui de sa miniature.
+  Même une pince qui se referme hors câble ne nécessite pas forcément un
+  rail qui la maintienne ouverte pendant toute la boucle.
+- Un pas de pneus de 24 n'impose pas deux pneus en contact permanent.
+  Sur une ligne droite idéale, il faut une longueur utile de patin au moins
+  égale à deux pas, plus les marges, pour garantir deux contacts à toute phase.
+  Le pas définitif dépendra donc du patin mesuré et du guidage retenu.
+- Aucun fichier actuel ne prouve le fonctionnement automatique sans
+  modification des pinces d'origine. Cela reste à mettre au point.
+
+CONTENU DE CE DOSSIER
+REGISTRE_COTES.csv : valeurs classées par origine et usage possible.
+SOURCES_ET_PISTES.txt : liens, documents, pages et limites.
+releves_fichiers_3d.json : enveloppes des six STL relus aujourd'hui.
+documents/ : 7 nouveaux PDF publics et aperçus pour les examiner.
+
+La suite immédiate reste la recherche dimensionnelle, puis les relevés
+physiques manquants. Ne figer les rails, la came, le pas des pneus et les
+aiguillages qu'après ces relevés et un essai avec un siège intact.

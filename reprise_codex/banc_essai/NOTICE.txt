@@ -1,0 +1,50 @@
+BANC MANUEL REGLABLE JC - PROTOTYPE DE MISE AU POINT
+21/10/2026
+
+But : essayer la prise en charge et le guidage d'une pince JC intacte,
+sur une courte portion droite, avant de fabriquer les rails de la gare.
+Il ne reproduit pas encore la came d'ouverture, les pneus ou un aiguillage.
+Les lamelles metalliques sont des consommables a ajuster a la vraie pince.
+
+Pieces imprimees : Socle x1, Montant x4, Porte_lamelle x4.
+Encombrement du montage : 180 x 140 x 166 mm environ.
+Les STL sont en mm, dans le repere propre de chaque piece.
+Ils n'ont pas ete imprimes ni essayes physiquement.
+PETG, 4 parois, couche 0,2 mm : point de depart, orientation a verifier
+dans le trancheur. Montants : dos plat sur le plateau possible.
+Porte-lamelles : soutenir les parties en porte-a-faux si necessaire.
+
+Visserie indicative :
+- 4 boulons M3x16 + rondelles + ecrous : pieds / socle.
+- 4 boulons M3x16 + larges rondelles + ecrous : curseurs verticaux.
+- 8 vis M2 + rondelles et ecrous : fixation des lames sur les porte-lamelles
+  (verifier la longueur apres choix de la lame ; trous de passage 2,4 mm).
+- 4 vis pour fixer le socle a une planche (facultatif).
+
+Montage :
+1. Placer les montants aux deux extremites de chacune des deux voies
+   de reglage. Leurs pieds coulissent dans les lumieres du socle.
+2. Visser les porte-lamelles sur les lumieres verticales. Regler les
+   quatre dessus dans le meme plan. Plage theorique : environ 116 a 161 mm
+   au-dessus du dessous du socle, suivant le centre de la vis M3.
+3. Fixer deux bandes metalliques rigides, lisses et ebavurees sur les
+   porte-lamelles. Exemple pour la vue : 156 x 8 x 0,5 mm. Ajuster le
+   bord actif et la profondeur d'engagement a la vraie pince JC.
+   Les 8 mm de largeur de bande ne sont PAS 8 mm d'engagement dans la pince.
+4. Avec un seul siege, sans motorisation, regler largeur puis hauteur
+   jusqu'a ce que ses galets portent sans forcer et sans toucher la suspente.
+   Garder aussi le repose-pieds au-dessus du socle. La vue utilise des
+   lamelles a 140 mm ; le reglage exact depend de la hauteur du vrai siege.
+5. Faire avancer la pince a la main, pince fermee puis ouverte brievement
+   par son levier. Noter les surfaces qui portent, les accroches et le jeu.
+   Ne pas maintenir le levier en butee et ne pas utiliser de lest.
+
+Mesures prioritaires a reporter dans mesures_pince.json ou la fiche TXT :
+- position et taille des galets qui portent sur le rail ;
+- profondeur disponible pour le bord du rail ;
+- hauteur et longueur utile de la plaque de friction ;
+- course du galet de levier jusqu'a liberation du cable ;
+- direction de sortie du cable et decalage cable -> axe de suspente.
+
+L'assemblage GLB et l'apercu sont des vues de montage. Le modele n'a pas
+ete teste avec une pince physique : ce n'est pas un rail definitif.

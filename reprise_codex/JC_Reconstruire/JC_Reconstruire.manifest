@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Projet JC",
+  "description": {"": "Reconstruit les etapes Claude depuis le dossier du projet et exporte une archive F3D locale"},
+  "supportedOS": "windows",
+  "editEnabled": true
+}

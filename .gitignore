@@ -1,0 +1,34 @@
+# References telechargees : conserver les liens dans references/README.md.
+/references/**
+!/references/README.md
+/recherche_mesures_2026-10-22/documents/**
+!/recherche_mesures_2026-10-22/documents/inventaire_pdf.json
+/reprise_codex/documents/**
+!/reprise_codex/documents/README.md
+
+# Copies locales du Bureau et sauvegardes historiques du suivi.
+/archives_locales/
+/reprise_codex/sources_claude/Avancement_bureau_avant_reprise.txt
+
+# Inventaire de sauvegarde complete : la version GitHub a son propre inventaire.
+/INVENTAIRE_COMPLET.json
+
+# Sorties de nouvelles executions et fichiers locaux.
+/reprise_codex/constructions/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.zip
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Parametres locaux des editeurs.
+.vscode/
+.idea/

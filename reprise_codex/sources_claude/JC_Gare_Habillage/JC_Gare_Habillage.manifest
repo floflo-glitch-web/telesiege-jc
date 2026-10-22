@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion360",
+	"type": "script",
+	"author": "",
+	"description": {
+		"": "Gare debrayable JC 1:32 - nervures du toit R1, pieds et tetes de poteaux"
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}

@@ -1,0 +1,155 @@
+SOURCES CONSULTEES ET REFERENCES - 22/10/2026
+
+S01 - Produit original UNI-G JC83393
+https://www.jaegern-dorfer.com/products/product/jc83393/
+8 m de câble, station UNI-G et retour. Aucun plan coté de base ou de pince.
+
+S02 - Pince D-Line JC51001, constructeur
+https://www.jaegerndorfer.at/winterwelt/zubehoer-und-ersatzteile/146-d-line-klemme-schwarz-2-stk-im-beutel
+Identification officielle ; pas de dimensions fonctionnelles sur la fiche.
+
+S03 - Notice JC D-Line, constructeur, 4 pages
+https://www.jaegerndorfer.at/images/products/479/Usermanual.pdf?v=66321bf86498c
+Local : documents/JC_notice_D_Line.pdf
+Page PDF 1 : entretoise approximative 40 mm ; pages 2 et 4 : vis 3x12/3x25.
+Images examinées. Notice D-Line distincte du set UNI-G JC83393.
+Traduction anglaise incohérente sur certaines vis : ne pas déduire un filetage
+M3 du seul diamètre nominal 3 d'une vis possiblement autotaraudeuse.
+
+S04 - Catalogue JC 2026, constructeur
+https://www.jaegerndorfer.at/katalog/e726e5dd9c~Winterkatalog%20_2026.pdf
+Déjà local : references/catalogue_Jaegerndorfer_hiver_2026/Winterkatalog_2026.pdf
+Pages PDF 18-21 : gamme Platin 390x240x210 ; JC50100, hauteur 450 mm.
+Page 61 : références de pinces et pylônes réglables sur trois hauteurs.
+Ces pages ne sont pas une fiche dimensionnelle des sièges JC86541.
+
+S05 - Catalogue Doppelwihr, fabricant de pièces compatibles JC
+https://www.modellseilbahndw.com/produkte/
+Lien du catalogue sur cette page ; fichier déjà local dans references/.
+Pages imprimées 125 et 203 (PDF 126 et 204) : voie JC 155 mm.
+Pages imprimées 258 à 263 (PDF 259 à 264) : garages JC 5010/5009/5018/
+5016/5017/5015. Ces références désignent le garage complet, pas le rail JC.
+Les capacités commerciales ne constituent pas un essai de notre flotte
+JC86541. L'enveloppe des véhicules peut dépasser les dimensions du produit.
+Boutique : https://www.modellseilbahndw.com/shop/jc-applikationen/
+
+S06 - Notice Doppelwihr 5016, sortie à droite, 5 pages
+https://www.modellseilbahndw.com/app/download/7240158918/MA%2B5016.pdf?t=1734556963
+Local : documents/Doppelwihr_MA_5016.pdf
+24 vis au total : 4 M2x16, 14 M2x10, 6 M2x6. Schémas d'assemblage,
+pas de plan coté du profil. Pages examinées visuellement.
+
+S07 - Notice Doppelwihr 5017, sortie à gauche, 5 pages
+https://www.modellseilbahndw.com/app/download/7240159018/MA%2B5017.pdf?t=1734556963
+Local : documents/Doppelwihr_MA_5017.pdf
+4 M2x16, 14 M2x10, 6 M2x8 dans le cartouche et les étapes détaillées.
+Le texte PDF extrait contient aussi une mention parasite 9 M2x12, absente
+du cartouche visible : ne pas en faire une cote ni une liste d'achat.
+
+S08 - Projet Steinachkogel, source primaire du modéliste
+https://www.alpinforum.com/threads/kuppelbare-modellseilbahn.70794/
+Message du 21/03/2025. Rail de 0,6 mm, interprétation de la dimension
+incertaine ; ressorts remplacés ; pas de pneus 3 plots. Pas de document
+Onshape public identifié dans ce message. Pas de validation d'origine.
+
+S09 - Nouveau rail de garage imprimable, gabrielturba
+https://cults3d.com/en/3d-model/game/jc-cableway-garage-rail
+Fiche et galerie consultées dans le navigateur. Design 4430015 ; 10 STL
+dans un ZIP ; rail droit/courbe et supports. Payant, non acheté.
+Compatibilité annoncée générale JC ; pas de cote du contact D-Line relevée.
+
+S10 - Cabine débrayable du même auteur, pince personnelle
+https://cults3d.com/en/3d-model/game/detechable-cableway-works-with-jc
+Fiche consultée directement : cabine, mécanisme imprimé à élastique ; gare
+annoncée séparément. Ce n'est pas la pince JC d'origine.
+Commentaires de l'auteur (gare pas encore testée au 15/09/2026) :
+https://cults3d.com/ru/polzovateli/gabrielturba/kommentarii
+Le catalogue du profil consulté ne présente que trois modèles (pylône,
+cabine, rail de garage) : aucune gare complète vérifiée ici.
+
+S11 - Siège imprimé acceptant une vraie pince JC, domi_56 / Spittal
+https://makerworld.com/en/models/2883608
+Déjà local : references/makerworld_2883608_siege_Spittal/.
+Enveloppes STL recalculées ; données dans releves_fichiers_3d.json.
+Les perçages de logement proviennent du relevé antérieur de cette pièce.
+La pince complète d'origine n'est pas fournie. Licence propre au modèle.
+
+S12 - Petit galet compatible de markosaurus
+https://www.thingiverse.com/thing:7292017
+Local : references/thingiverse_7292017_poulie_JC/files/rolna4.stp et .stl.
+Cercles analytiques dans le STEP en mm ; enveloppe STL recontrôlée.
+
+S13 - Pylône compatible JC
+https://www.thingiverse.com/thing:5229610
+Local : references/thingiverse_5229610_pylone_JC/files/.
+Galet Roll.stl recontrôlé. Autres cotes : relevés antérieurs du dossier.
+
+S14 - Gare 6-CLD amateur de Thomas Stendys, 2015
+https://3dwarehouse.sketchup.com/model/u2df71782-85e9-4cdb-a813-5f6ebd9af8b7
+Local : references/3dwarehouse_6CLD_gare_aval/.
+Le LISEZMOI existant détaille les relevés. Proportions pour comparaison,
+aucune tolérance constructeur et aucune compatibilité JC vérifiée.
+
+S15 - Brochure technique D-Line, Doppelmayr, 54 pages
+https://www.doppelmayr.com/wp-content/uploads/2022/11/D-Line_EN.pdf
+Local : documents/Doppelmayr_D_Line_EN.pdf
+Page PDF 53 : voie 6,4 m pour 6-CLD et largeur d'assise DCD 520 mm.
+Page PDF 40 : vraie pince D3000/D5000 à point mort ; ne pas transposer
+ce comportement à la miniature sans essai.
+
+S16 - Waidoffen : ingénieur du véritable ouvrage
+https://www.salzmann-ing.at/projekte/6sb-waidoffen
+Garage en boucle latéral à l'aval ; moteur à l'amont et tension à l'aval.
+Le garage arrière et le moteur à l'aval sont des choix de notre maquette.
+Page publique sans plans mécaniques cotés de la pince.
+
+S17 - Plans publics de Perisher, gare aval, DJRD Architects, 2019
+https://www.planningportal.nsw.gov.au/sites/default/files/documents/2022/Ref%2014%20-20%20Plans%20-%20Bottom%20Station.PDF
+Local : documents/Perisher_gare_aval_2019.pdf, 7 pages.
+Page PDF 3, A1.0 : garage latéral, bâtiment, implantation des véhicules.
+Pages PDF 4-7 : niveau supérieur, toit, façades et coupes.
+Plan architectural ; aucune cote de galet ou mâchoire miniature.
+Les altitudes sont en mètres, les dimensions linéaires en millimètres.
+
+S18 - Plans publics de Perisher, gare amont, DJRD Architects, 2019
+https://www.planningportal.nsw.gov.au/sites/default/files/documents/2022/Ref%2021%20-%2026%20Plans%20-%20Top%20Station.PDF
+Local : documents/Perisher_gare_amont_2019.pdf, 6 pages.
+Page PDF 3, A1.0 : cote 6400 entre les deux axes du câble, soit 200 au 1:32.
+Les valeurs de structure et les niveaux ne sont pas une hauteur de câble JC.
+Plan de projet de 2019 ; ne pas le présenter comme relevé actuel ou Waidoffen.
+
+S19 - Autre lot Perisher : génie civil, non mécanique
+https://www.planningportal.nsw.gov.au/sites/default/files/documents/2022/Ref%2039%20to%2049%20Mt.P%20dwgs%20%28070921%29.PDF
+Local : documents/Perisher_plans_techniques_39_49.pdf, 11 pages.
+Examiné : implantation, ponts et terrassements. PAS de pince ni d'ensemble
+convoyeur coté. Conservé pour la traçabilité, pas comme source mécanique.
+Page mère :
+https://www.planningportal.nsw.gov.au/development-assessment/state-significant-applications/projects/state-development-applications/da-10115-mount-perisher-perisher-valley
+
+AUTRES PISTES CONTROLEES OU ECARTEES
+- Trainli, notice JC compact :
+  https://www.trainli.com/media/jc-compact-ski-lifts.pdf
+  Montre seulement le passage correct du câble sur les galets, sans cotes.
+- Fiche JC50093 constructeur :
+  https://www.jaegerndorfer.at/winterwelt/zubehoer-und-ersatzteile/155-umlenkrad-einzeln-rot-gelb-orange
+  Pas de diamètre publié sur la fiche consultée.
+- Forums sur les AK de 2017 : ne pas transférer directement leurs cotes
+  aux D-Line de 2019 et suivantes. Les séries peuvent différer.
+- Dimensions de boîtes chez les revendeurs : exclues des ajustements.
+  Exemple Digitec « 6 Klemmen » : 145x99x21 est explicitement l'emballage
+  d'un paquet de six anciennes pinces, pas une pince D-Line.
+- Ancienne valeur 120x60x110 du siège : axes et mesure article/emballage
+  insuffisamment établis ; gabarit d'étude seulement.
+
+RECHERCHES EFFECTUEES
+Variantes JC chairlift, JD chairlift, Jaegerndorfer, JägernDorfer ; D-Line
+Klemme, Laufrollen, Reibbelag, Abmessungen, Schiene, Garagierung, garage rail,
+clamp/grip dimensions, STEP/STL/Onshape. Sources : constructeur JC,
+Doppelmayr, Doppelwihr, forums de modélistes, MakerWorld, Thingiverse,
+Printables, Cults et dossiers de plans publics.
+
+Pas de plan coté vérifié de la pince JC D-Line trouvé à ce stade.
+La recherche n'est pas déclarée « épuisée » : les pistes précises restantes
+sont le rail Cults (section inconnue), les publications CAO des modélistes,
+et une éventuelle fiche de cotes fournie par JC ou par un propriétaire.
+Aucun message envoyé à un auteur ou fabricant ; aucun achat effectué.

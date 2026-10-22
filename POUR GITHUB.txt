@@ -1,0 +1,30 @@
+LE PROJET EST REGROUPE DANS LE DOSSIER « Gare debrayable JC ».
+
+Deux fichiers ZIP sont disponibles dans Telechargements :
+
+1. Gare-JC-COMPLET-2026-10-22.zip
+   Sauvegarde de tout le dossier : recherches, scripts, STL, PDF, modeles
+   et images telecharges, historique. A garder pour conserver tout le projet.
+
+2. Gare-JC-GITHUB-2026-10-22.zip
+   Version a utiliser pour creer le depot GitHub : recherches, sources,
+   prototypes, apercus et liens vers les references externes.
+   Les fichiers de tiers restent dans la sauvegarde COMPLETE.
+
+POUR LE METTRE SUR GITHUB
+- Decompresser le fichier GITHUB.
+- Ajouter le contenu decompresse dans ton depot : README.md et les dossiers.
+- Sur le site GitHub : « Add file » puis « Upload files ».
+  Le paquet est prepare pour moins de 100 fichiers et moins de 25 MiB
+  par fichier. GitHub Desktop convient aussi.
+
+Garder seulement le ZIP dans le depot empecherait de parcourir directement
+les recherches et les sources sur GitHub.
+
+Les deux archives ont un inventaire et leurs fichiers sont controles
+un par un. Le fichier Gare-JC-VERIFICATION-2026-10-22.json, a cote des ZIP,
+contient leurs tailles, nombres de fichiers et empreintes de verification.
+
+Le projet reste au stade recherche et prototypes. Le mecanisme debrayable
+avec les vraies pinces JC n a pas encore ete valide. Aucun modele Fusion
+final valide n est ajoute par l archivage. Rien n a ete publie sur GitHub.

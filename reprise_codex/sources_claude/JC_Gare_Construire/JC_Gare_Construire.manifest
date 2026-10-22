@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion360",
+	"type": "script",
+	"author": "",
+	"description": {
+		"": "Gare debrayable JC 1:32 - reconstruction complete (squelette + mecanique + charpente)"
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}

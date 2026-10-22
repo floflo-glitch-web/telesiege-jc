@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "objectif": "Gare aval debrayable 1:32, garage 8 places, sieges JC sans modification",
+  "cotes": {
+    "voie_ligne_mm": 155.0,
+    "voie_gare_mm": 155.0,
+    "longueur_gare_mm": 812.0,
+    "largeur_gare_mm": 309.0,
+    "largeur_siege_mm": 120.0,
+    "profondeur_siege_mm": 60.0,
+    "hauteur_cable_mm": 125.0,
+    "hauteur_siege_mm": 110.0,
+    "jeu_mur_souhaite_mm": 15.0,
+    "rayon_garage_mm": 90.0,
+    "pas_garage_mm": 75.0,
+    "places_garage": 8,
+    "marge_garage_mm": 40.0,
+    "longueur_quai_mm": 150.0,
+    "longueur_ralentisseur_mm": 375.0,
+    "longueur_lanceur_mm": 375.0,
+    "longueur_embrayage_mm": 94.0,
+    "diametre_pneu_mm": 12.5,
+    "pas_pneu_mm": 13.0,
+    "vitesse_ligne_mm_s": 150.0,
+    "vitesse_gare_mm_s": 35.0
+  },
+  "statut": {
+    "voie_ligne_mm": "Standard JC documente ; verifier sur la maquette",
+    "largeur_siege_mm": "HYPOTHESE d'enveloppe, siege original non mesure",
+    "profondeur_siege_mm": "HYPOTHESE d'enveloppe, siege original non mesure",
+    "hauteur_cable_mm": "PROVISOIRE, depend du vrai siege et du vrai rail",
+    "hauteur_siege_mm": "PROVISOIRE",
+    "longueur_gare_mm": "Implantation choisie, pas un plan certifie de Waidoffen",
+    "vitesse_gare_mm_s": "Consigne de conception a essayer",
+    "pas_pneu_mm": "A valider selon longueur utile du patin JC et essais de contact",
+    "entrainement": "Couple moteur, charge radiale et glissement des courroies non valides"
+  }
+}

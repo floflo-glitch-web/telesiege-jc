@@ -1,0 +1,459 @@
+{
+  "schema": 1,
+  "unites": "mm",
+  "titre": "Banc MANUEL reglable JC - PROTOTYPE",
+  "statut": "Pince non mesuree : lamelles et position a regler sur la vraie pince",
+  "parts": {
+    "Socle": [
+      {
+        "type": "box",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          180,
+          140,
+          6
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          26.25,
+          25,
+          -1
+        ],
+        "size": [
+          3.5,
+          90,
+          8
+        ],
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          28,
+          25,
+          -1
+        ],
+        "radius": 1.75,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          28,
+          115,
+          -1
+        ],
+        "radius": 1.75,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "box",
+        "origin": [
+          150.25,
+          25,
+          -1
+        ],
+        "size": [
+          3.5,
+          90,
+          8
+        ],
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          152,
+          25,
+          -1
+        ],
+        "radius": 1.75,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          152,
+          115,
+          -1
+        ],
+        "radius": 1.75,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          8,
+          8,
+          -1
+        ],
+        "radius": 2.2,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          8,
+          132,
+          -1
+        ],
+        "radius": 2.2,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          172,
+          8,
+          -1
+        ],
+        "radius": 2.2,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          172,
+          132,
+          -1
+        ],
+        "radius": 2.2,
+        "height": 8,
+        "axis": "Z",
+        "operation": "cut"
+      }
+    ],
+    "Montant": [
+      {
+        "type": "box",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          20,
+          32,
+          5
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          0,
+          0,
+          5
+        ],
+        "size": [
+          20,
+          5,
+          155
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          0,
+          5,
+          5
+        ],
+        "size": [
+          3,
+          18,
+          22
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          17,
+          5,
+          5
+        ],
+        "size": [
+          3,
+          18,
+          22
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          10,
+          22,
+          -1
+        ],
+        "radius": 1.75,
+        "height": 7,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "box",
+        "origin": [
+          8.25,
+          -1,
+          100
+        ],
+        "size": [
+          3.5,
+          7,
+          45
+        ],
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          10,
+          -1,
+          100
+        ],
+        "radius": 1.75,
+        "height": 7,
+        "axis": "Y",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          10,
+          -1,
+          145
+        ],
+        "radius": 1.75,
+        "height": 7,
+        "axis": "Y",
+        "operation": "cut"
+      }
+    ],
+    "Porte_lamelle": [
+      {
+        "type": "box",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          20,
+          4,
+          20
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          0,
+          4,
+          16
+        ],
+        "size": [
+          20,
+          16,
+          4
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          0,
+          4,
+          9
+        ],
+        "size": [
+          3,
+          8,
+          7
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "box",
+        "origin": [
+          17,
+          4,
+          9
+        ],
+        "size": [
+          3,
+          8,
+          7
+        ],
+        "operation": "add"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          10,
+          -1,
+          10
+        ],
+        "radius": 1.75,
+        "height": 6,
+        "axis": "Y",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          4,
+          13,
+          15
+        ],
+        "radius": 1.2,
+        "height": 6,
+        "axis": "Z",
+        "operation": "cut"
+      },
+      {
+        "type": "cylinder",
+        "origin": [
+          16,
+          13,
+          15
+        ],
+        "radius": 1.2,
+        "height": 6,
+        "axis": "Z",
+        "operation": "cut"
+      }
+    ]
+  },
+  "instances": [
+    {
+      "part": "Socle",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z": 0
+    },
+    {
+      "part": "Montant",
+      "translation": [
+        18,
+        35,
+        6
+      ],
+      "rotation_z": 0
+    },
+    {
+      "part": "Montant",
+      "translation": [
+        38,
+        105,
+        6
+      ],
+      "rotation_z": 180
+    },
+    {
+      "part": "Porte_lamelle",
+      "translation": [
+        18,
+        40,
+        120
+      ],
+      "rotation_z": 0
+    },
+    {
+      "part": "Porte_lamelle",
+      "translation": [
+        38,
+        100,
+        120
+      ],
+      "rotation_z": 180
+    },
+    {
+      "part": "Montant",
+      "translation": [
+        142,
+        35,
+        6
+      ],
+      "rotation_z": 0
+    },
+    {
+      "part": "Montant",
+      "translation": [
+        162,
+        105,
+        6
+      ],
+      "rotation_z": 180
+    },
+    {
+      "part": "Porte_lamelle",
+      "translation": [
+        142,
+        40,
+        120
+      ],
+      "rotation_z": 0
+    },
+    {
+      "part": "Porte_lamelle",
+      "translation": [
+        162,
+        100,
+        120
+      ],
+      "rotation_z": 180
+    }
+  ],
+  "quantites": {
+    "Socle": 1,
+    "Montant": 4,
+    "Porte_lamelle": 4
+  },
+  "capacites": {
+    "encombrement_mm": [
+      180,
+      140,
+      166
+    ],
+    "axe_rail_hauteur_mm": [
+      116,
+      161
+    ],
+    "note": "Hauteur du dessus des porte-lamelles ; +/- epaisseur de la lamelle et des cales. Ajuster pour garder le repose-pieds au-dessus du socle."
+  },
+  "lamelles": {
+    "matiere": "acier ou laiton, bords polis",
+    "exemple_mm": [
+      156,
+      8,
+      0.5
+    ],
+    "statut": "Exemple d'approvisionnement, largeur/profondeur de contact non determinees"
+  }
+}

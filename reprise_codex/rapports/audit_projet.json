@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-21",
+  "statut": "Audit hors Fusion ; enveloppes supposees 120x60 ; aucune validation du debrayage",
+  "jeux_mm": {
+    "arriere_gare_balayage": 11.765320549624306,
+    "lateral_gare_balayage": 13.765320549624306,
+    "arriere_garage_balayage": 7.029414592216426,
+    "plancher_sous_siege": 15.0,
+    "poteau_D16_en_ligne_droite": 9.5
+  },
+  "recommandations_implantation_mm": {
+    "mur_arriere_gare_x_max_pour_15mm": -155.7346794503757,
+    "largeur_gare_min_pour_15mm_des_deux_cotes": 311.4693589007514,
+    "fond_garage_x_max_pour_15mm": -660.4705854077836
+  },
+  "cinematique": {
+    "poulie_tr_min_pour_150mm_s": 18.482509520349137,
+    "intervalle_si_pas_ligne_1300mm_s": 8.666666666666666,
+    "pas_a_vitesse_gare_35mm_s": 303.3333333333333,
+    "patin_longueur_min_pour_2_pneus_pas13_sans_marge": 26.0
+  },
+  "limites": [
+    "Les valeurs utilisent une enveloppe centree sur le trajet de la pince : le vrai decalage suspente/pince manque.",
+    "Assise, bulle et repose-pieds ne sont pas un solide rectangulaire reel. Resultats conservatifs pour le gabarit choisi.",
+    "Aucun tangage, roulis ou oscillation du siege pris en compte.",
+    "Aucun essai avec pince, pneus ou cable : absence de collision statique ne prouve pas le fonctionnement.",
+    "Le maillage Spittal constitue une reference de fixation, pas les cotes du siege JC original.",
+    "La force de tension est a mesurer ; le portage direct de la poulie sur le moteur attend une charge radiale admissible."
+  ],
+  "stl_claude": [
+    {
+      "nom": "Bride_arriere.stl",
+      "sha256": "fc334f867dd0ceebe1447e001aca1fc3322bc211b83e2fb5b6a2d47ea79b730e",
+      "ferme": true,
+      "volume_mm3": 19058.345,
+      "dimensions_mm": [
+        6.0,
+        62.0,
+        52.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Bride_avant.stl",
+      "sha256": "db24b2b4a944124f85e794dcf3f9a10a8d312c532fc8cb5a770d3b480be7172e",
+      "ferme": true,
+      "volume_mm3": 19058.345,
+      "dimensions_mm": [
+        6.0,
+        62.0,
+        52.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Chariot_de_tension.stl",
+      "sha256": "30aba31a6e606ecc3f7dcf44ebaf0d831b58e7108197c9ecc098a48aed2d22d0",
+      "ferme": true,
+      "volume_mm3": 18798.337,
+      "dimensions_mm": [
+        70.0,
+        62.0,
+        10.986
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Demi-nervure_garage.stl",
+      "sha256": "5014070998accaf737cafe1bd3932975e14198d5e63a57f463ee680cdf1fb18a",
+      "ferme": true,
+      "volume_mm3": 2975.118,
+      "dimensions_mm": [
+        3.0,
+        174.5,
+        49.5
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Demi-nervure_gare.stl",
+      "sha256": "62eb1d64e4a3aa27d6bfe9b515f0e73d19ba068a442838a44a95b9066e6b3947",
+      "ferme": true,
+      "volume_mm3": 2742.618,
+      "dimensions_mm": [
+        3.0,
+        159.0,
+        49.5
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Moyeu.stl",
+      "sha256": "0f205482aebeecfde0732ccfddd1b0fdfff5a4161254bf9523e405167e987b44",
+      "ferme": true,
+      "volume_mm3": 4063.021,
+      "dimensions_mm": [
+        26.0,
+        26.0,
+        18.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Pied_de_poteau.stl",
+      "sha256": "358ab8d2f1aa918ad037ee635250bc4b23507d6055d7b8333f28caae3e1f049b",
+      "ferme": true,
+      "volume_mm3": 5531.721,
+      "dimensions_mm": [
+        35.98,
+        35.99,
+        18.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Poulie_demi-coque_inferieure.stl",
+      "sha256": "f338ec2aa89c27c5ac83ec72a0beafb67bdadb0c819e53cd236d85dd7f0adbf1",
+      "ferme": true,
+      "volume_mm3": 24288.833,
+      "dimensions_mm": [
+        161.976,
+        161.988,
+        4.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Poulie_demi-coque_superieure.stl",
+      "sha256": "687360ccfd0f2f19da677580a8bbc89d73e0fb19fb021e18ce778506ae82ce37",
+      "ferme": true,
+      "volume_mm3": 24288.833,
+      "dimensions_mm": [
+        161.976,
+        161.988,
+        4.0
+      ],
+      "corps_connexes": 1
+    },
+    {
+      "nom": "Tete_de_poteau.stl",
+      "sha256": "680283ca93ca96ec4938798750e4fdd94a2b3480a0a1a9e75b47e4fafcf38aea",
+      "ferme": true,
+      "volume_mm3": 5259.134,
+      "dimensions_mm": [
+        24.0,
+        22.0,
+        26.0
+      ],
+      "corps_connexes": 1
+    }
+  ],
+  "sources_archivees": [
+    {
+      "chemin": "sources_claude\\Avancement_bureau_avant_reprise.txt",
+      "sha256": "b8e2ccacf118da0368772773a983fbce0b36307bff33a225ed3c5266a2e1fe16"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Construire\\JC_Gare_Construire.manifest",
+      "sha256": "303b8a19a6fc7d73351b732398d719446a38cabfe56fe351901a5840fee3a216"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Construire\\JC_Gare_Construire.py",
+      "sha256": "c2814c760baf321a2b39b9d1fb35484759adbce8ad59918f32379a18dff740ab"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Debrayable\\JC_Gare_Debrayable.manifest",
+      "sha256": "fba0f4d1c2913c0a6687664d0f7e64860c9a8a60c5167ea33a0add9873c7977a"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Debrayable\\JC_Gare_Debrayable.py",
+      "sha256": "8badf79a70b80168c8a683e3388f35bcc08a60fb2f5eea42449cda8c251b7680"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Habillage\\JC_Gare_Habillage.manifest",
+      "sha256": "aa0cf95e4e8c247b9d4ed9db5a0e85317a0018eb8532bb0484a3395c9975f351"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Habillage\\JC_Gare_Habillage.py",
+      "sha256": "ad45425338d75445939d241b28fa07c3ba1d0ffb730f961b352b6a453a6e8beb"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Mecanique\\JC_Gare_Mecanique.manifest",
+      "sha256": "e9edc39d3787932f8c6ae7182b58d2dfa3df548aba179bb5b73f128bc3ab33b0"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Mecanique\\JC_Gare_Mecanique.py",
+      "sha256": "d6d372429d0cf4c7348eb8293ad53a19ba1150bde5160bcdeb89ffcb5f90ff33"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Structure\\JC_Gare_Structure.manifest",
+      "sha256": "c9e8b39c19eea307fd9b4983ec3a2d932404ae94528b892c34069cb2eb2ad942"
+    },
+    {
+      "chemin": "sources_claude\\JC_Gare_Structure\\JC_Gare_Structure.py",
+      "sha256": "86346e79a8f821fc76629c6f4d23472f9a36c35136144d84c3bfac432835e5c4"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion360",
+	"type": "script",
+	"author": "",
+	"description": {
+		"": "Gare debrayable JC 1:32 - poulie motrice, moyeu, moteur, chariot de tension"
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}

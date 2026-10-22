@@ -1,0 +1,88 @@
+REPRISE DU PROJET CLAUDE PAR CODEX - 21/10/2026
+
+Objectif conserve : convertir la gare aval de la maquette JC 1:32 en
+gare debrayable avec garage, en gardant les sieges et leurs vraies pinces.
+Implantation Claude : 155 mm de voie JC ; batiment inspire du 1:32.
+Le 155 mm est un compromis de compatibilite : le vrai 6,4 m au 1:32
+ferait 200 mm. Le projet n'est donc pas une reduction stricte sur toutes
+les dimensions.
+
+OU EN EST-ON REELLEMENT ?
+- Bati, poulie, chariot et habillage : prototypes CAO et 10 STL de Claude.
+- Sieges Spittal et gare 6-CLD : fichiers de reference deja telecharges.
+- Rails de gare, came d'ouverture, pneus, transmission et aiguillages :
+  pas de solution fonctionnelle validee a ce stade.
+- Aucune cote physique de la pince de l'utilisateur n'a encore ete recue.
+- Le message ancien "modele complet, aucune collision" portait sur des
+  corps statiques partiels. Ce n'est pas une validation du debrayage.
+
+FICHIERS AJOUTES
+- sources_claude/ : copie intacte des 5 dossiers de scripts Fusion.
+- rapports/audit_projet.txt et .json : mesures des STL, empreintes SHA256,
+  jeux calcules au contour et limites des hypotheses.
+- rapports/controle_contours.png : coin des sieges pendant un virage.
+- banc_essai/ : 3 STL et une notice pour un banc manuel reglable,
+  vues GLB/PNG et recette de solides. 9 pieces imprimees au montage.
+- mesures_pince.json : cotes inconnues laissees a null, jamais inventees.
+- parametres_projet.json : hypotheses d'implantation utilisees pour l'audit.
+
+UTILISATION DANS FUSION
+Fusion ne dispose pas dans cette session de l'ancien connecteur Claude.
+Les deux scripts ci-dessous sont PREPARES mais n'ont PAS ete executes
+dans Fusion par Codex. Les nouveaux STL du banc viennent d'un calcul
+de solides hors Fusion avec controles de volume et d'intersection.
+
+1. Maj+S > Scripts et complements > ajouter un script depuis l'ordinateur.
+2. Selectionner le dossier JC_Banc_Essai (a cote de ce fichier), puis lancer.
+   Il cree un NOUVEAU document avec les pieces natives et les positions de
+   montage. Il compare leurs volumes aux STL et exporte une archive F3D
+   locale et un rapport dans banc_essai/. Les lames metalliques de contact
+   restent a choisir et ajuster sur la vraie pince.
+3. JC_Reconstruire reconstruit les 4 etapes de la gare dans un document neuf
+   depuis les copies locales, sans dependance a AppData. Il met les sorties
+   dans constructions/DATE_HEURE/, puis exporte un F3D local et ses parametres.
+   Il augmente la marge arriere du gabarit pour tenir compte du coin du siege.
+   Il conserve les 24 mm de reducteur en signalant que le moteur est provisoire.
+   Il ne remplace aucun STL Claude et n'enregistre pas dans le cloud.
+
+REGLAGE DES COTES
+La majorite des esquisses Claude utilise des nombres lus a la construction.
+Changer un parametre Fusion ne met donc PAS a jour toute la geometrie.
+Pour une reconstruction coherente, modifier parametres_projet.json puis
+relancer JC_Reconstruire dans un document neuf. Les cotes hors de ce fichier
+restent celles des copies des scripts Claude. Un modele entierement
+contraint et pilotable dans Fusion reste a faire.
+
+PROCHAINE ETAPE
+Essayer un seul siege sur le banc MANUEL. Mesurer les galets, le bord de
+rail disponible, le patin et la course du levier jusqu'au largage du cable.
+Ces valeurs permettent ensuite de fabriquer le vrai module court : rail,
+contre-rail, came et premiers pneus, avant de multiplier les pieces en gare.
+Si la pince se referme apres relachement, on peut aussi tester fermeture
+hors cable et reouverture a la sortie : un rail d'ouverture continu tout
+autour de la gare n'est pas une obligation deja demontree.
+
+VERIFICATION
+Pour relancer les calculs hors Fusion (Python avec numpy, shapely,
+matplotlib, trimesh et manifold3d) :
+  python audit_projet.py
+  python generer_banc.py
+Les controles des STL et du banc ne comprennent pas la vraie pince JC.
+
+Source moteur utilisee pour VERIFIER, pas pour figer un achat :
+ASLONG / Shenzhen Jinshunlaite Motor, catalogue JGB37.
+PDF dans documents/Aslong_37mm_motor.pdf, page 1 imprimee (index 0).
+Source :
+https://www.aslongdcmotor.com/photo/aslongdcmotor/document/26547/37mm%20Round%20Spur%20Gear%20Motor_PDF00.pdf
+Le bossage est coaxial a l'arbre, malgre le corps excentre : l'ancien
+trou a X=0 n'est donc pas une erreur et n'a pas ete deplace.
+Le fabricant indique des longueurs de reducteur variables selon rapport,
+notamment 26,5 mm dans son tableau pour la version 12 V / 22 tr/min.
+
+Points mecaniques encore ouverts :
+- la poulie et la tension chargent lateralement l'arbre moteur : verifier
+  sa charge admissible, ou prevoir un axe porte par des roulements ;
+- une transmission commune n'elimine pas le glissement des petites
+  courroies et la deformation des pneus ; des essais de vitesse sont requis ;
+- le toit du garage a encore besoin d'un support porteur defini ;
+- la capacite 8 places et les deux aiguillages ne sont pas verifies en mouvement.

@@ -1,0 +1,6 @@
+# Outils de calcul hors Fusion uniquement.
+numpy
+shapely
+matplotlib
+trimesh
+manifold3d

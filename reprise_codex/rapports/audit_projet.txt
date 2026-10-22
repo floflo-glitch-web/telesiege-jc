@@ -1,0 +1,33 @@
+﻿AUDIT DE REPRISE - 21/10/2026
+Calculs sur enveloppes provisoires : ne vaut pas validation mecanique.
+Les 10 STL Claude sont conserves sans modification.
+arriere_gare_balayage : 11.77 mm
+lateral_gare_balayage : 13.77 mm
+arriere_garage_balayage : 7.03 mm
+plancher_sous_siege : 15.00 mm
+poteau_D16_en_ligne_droite : 9.50 mm
+
+Corrections conseillees pour le gabarit suppose :
+mur_arriere_gare_x_max_pour_15mm : -155.73 mm
+largeur_gare_min_pour_15mm_des_deux_cotes : 311.47 mm
+fond_garage_x_max_pour_15mm : -660.47 mm
+
+STL : 10 fichiers verifies.
+Bride_arriere.stl : ferme=True, 1 solide(s)
+Bride_avant.stl : ferme=True, 1 solide(s)
+Chariot_de_tension.stl : ferme=True, 1 solide(s)
+Demi-nervure_garage.stl : ferme=True, 1 solide(s)
+Demi-nervure_gare.stl : ferme=True, 1 solide(s)
+Moyeu.stl : ferme=True, 1 solide(s)
+Pied_de_poteau.stl : ferme=True, 1 solide(s)
+Poulie_demi-coque_inferieure.stl : ferme=True, 1 solide(s)
+Poulie_demi-coque_superieure.stl : ferme=True, 1 solide(s)
+Tete_de_poteau.stl : ferme=True, 1 solide(s)
+
+Limites :
+Les valeurs utilisent une enveloppe centree sur le trajet de la pince : le vrai decalage suspente/pince manque.
+Assise, bulle et repose-pieds ne sont pas un solide rectangulaire reel. Resultats conservatifs pour le gabarit choisi.
+Aucun tangage, roulis ou oscillation du siege pris en compte.
+Aucun essai avec pince, pneus ou cable : absence de collision statique ne prouve pas le fonctionnement.
+Le maillage Spittal constitue une reference de fixation, pas les cotes du siege JC original.
+La force de tension est a mesurer ; le portage direct de la poulie sur le moteur attend une charge radiale admissible.

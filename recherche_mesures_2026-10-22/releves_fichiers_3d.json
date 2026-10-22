@@ -1,0 +1,134 @@
+[
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\thingiverse_7292017_poulie_JC\\files\\rolna4.stl",
+    "enveloppe_xyz_mm": [
+      15.995,
+      15.99,
+      7.3
+    ],
+    "bornes_xyz_mm": [
+      [
+        0.252,
+        0.25,
+        0.25
+      ],
+      [
+        16.248,
+        16.24,
+        7.55
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  },
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\thingiverse_5229610_pylone_JC\\files\\Roll.stl",
+    "enveloppe_xyz_mm": [
+      7.123,
+      16.312,
+      16.312
+    ],
+    "bornes_xyz_mm": [
+      [
+        106.906,
+        5.365,
+        172.394
+      ],
+      [
+        114.029,
+        21.677,
+        188.706
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  },
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\makerworld_2883608_siege_Spittal\\extrait_debrayable\\6er Sessel.stl",
+    "enveloppe_xyz_mm": [
+      96.4,
+      25.923,
+      35.806
+    ],
+    "bornes_xyz_mm": [
+      [
+        383.981,
+        -276.672,
+        -0.0
+      ],
+      [
+        480.381,
+        -250.749,
+        35.806
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  },
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\makerworld_2883608_siege_Spittal\\extrait_debrayable\\D_Line_6er_Sessel_Buegel.stl",
+    "enveloppe_xyz_mm": [
+      107.0,
+      23.5,
+      37.806
+    ],
+    "bornes_xyz_mm": [
+      [
+        370.57,
+        39.464,
+        0.0
+      ],
+      [
+        477.57,
+        62.964,
+        37.806
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  },
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\makerworld_2883608_siege_Spittal\\extrait_debrayable\\D_Line_6er_Sessel_Gehaenge_k.stl",
+    "enveloppe_xyz_mm": [
+      115.0,
+      23.022,
+      109.866
+    ],
+    "bornes_xyz_mm": [
+      [
+        68.693,
+        -285.415,
+        0.0
+      ],
+      [
+        183.693,
+        -262.393,
+        109.866
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  },
+  {
+    "fichier": "C:\\Users\\blang\\Downloads\\Gare debrayable JC\\references\\makerworld_2883608_siege_Spittal\\extrait_debrayable\\D_Line_6er_Sessel_Sitze.stl",
+    "enveloppe_xyz_mm": [
+      97.0,
+      30.0,
+      17.0
+    ],
+    "bornes_xyz_mm": [
+      [
+        69.022,
+        41.793,
+        -0.0
+      ],
+      [
+        166.022,
+        71.793,
+        17.0
+      ]
+    ],
+    "unite": "mm interpretes selon fichiers et contexte 1:32",
+    "statut": "modele communautaire, pas piece JC mesuree"
+  }
+]

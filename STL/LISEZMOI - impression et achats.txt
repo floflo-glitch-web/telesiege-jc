@@ -1,0 +1,62 @@
+GARE DÉBRAYABLE JC 1:32 - pièces imprimables et achats
+Générées par le script Fusion JC_Gare_Construire (squelette + mécanique +
+charpente), mise à jour du 20/10/2026.
+
+PIÈCES (STL dans ce dossier)
+1. Poulie_demi-coque_inferieure.stl   Ø 162 x 4 mm   -> imprimer TELLE QUELLE
+   (face du bas sur le plateau).
+2. Poulie_demi-coque_superieure.stl   Ø 162 x 4 mm   -> RETOURNER dans le
+   trancheur (face du haut sur le plateau), sinon la gorge est en porte-à-faux.
+3. Moyeu.stl                          26 x 26 x 18 mm -> debout, collerette
+   sur le plateau.
+4. Chariot_de_tension.stl             70 x 62 x 11 mm -> platine à plat sur
+   le plateau (fourreaux vers le haut).
+5. Bride_avant.stl / Bride_arriere.stl  62 x 52 x 6 mm -> à plat (grande
+   face sur le plateau).
+6. Demi-nervure_gare.stl     159 x 50 x 3 mm -> à plat. À imprimer 42 fois
+   (21 nervures ; la pièce est symétrique : retourner une sur deux).
+7. Demi-nervure_garage.stl   ~175 x 50 x 3 mm -> à plat. À imprimer 26 fois.
+8. Pied_de_poteau.stl        Ø 36 x 18 mm -> collerette sur le plateau. x 3.
+9. Tete_de_poteau.stl        24 x 22 x 26 mm -> douille sur le plateau
+   (berceau en U vers le haut). x 3.
+Aucun support nécessaire. Conseil : PETG ou PLA+, 0,2 mm, 4 parois pour
+le moyeu, le chariot, les brides, les pieds et les têtes.
+
+ASSEMBLAGE
+- Les 2 demi-coques forment la gorge du câble et le logement du joint.
+  Poser le joint torique dans le logement, assembler avec 4 vis M3 x 10 +
+  écrous (trous sur 4 bras, à 40 mm du centre).
+- Le moyeu passe par le dessous (hexagone de 16 mm sur plats), sa
+  collerette porte la poulie. Arbre moteur D6 à méplat dans l'alésage en D,
+  vis de pression M3 face au méplat (avant-trou 2,5 mm à tarauder).
+- Le moteur se visse SOUS la platine du chariot (6 vis M3 sur Ø 31), son
+  bossage de centrage dans le trou de Ø 12,5. La poulie pend sous le moteur.
+- Le chariot coulisse sur 2 tiges acier Ø 4 (fourreaux Ø 4,3) tenues par
+  les 2 brides (trous Ø 4,1, à enfoncer), elles-mêmes vissées sous la
+  poutre centrale (1 vis M3 chacune, à 56 mm de part et d'autre de l'axe).
+  Un ressort de traction entre le trou Ø 3,2 du chariot et celui de la
+  bride arrière tire la poulie vers l'arrière -> tension du câble.
+- La poutre centrale (à 181 mm du quai) repose sur 3 poteaux : 2 au milieu
+  de la gare (à 250 et 520 mm de l'axe de la poulie), 1 côté garage.
+  Chaque poteau = tube alu Ø 16 de 175 mm entre un PIED (vissé dans le
+  socle, 3 vis à bois Ø 3,5) et une TÊTE (berceau en U où se pose la poutre,
+  1 vis M3 à travers les joues et la poutre : percer la poutre Ø 3,2).
+- Toit R1 : coller les demi-nervures par paires (encoche centrale posée sur
+  la poutre), pas de 40 mm, puis cintrer la feuille PET dessus et la coller
+  sur les nervures (colle transparente / scotch double face fin).
+
+À ACHETER (à vérifier avant commande)
+- 1 moto-réducteur JGB37-520 12 V ~20-22 tr/min, arbre Ø 6 à méplat,
+  sortie excentrée 7 mm, 6 trous M3 sur Ø 31 (cotes à vérifier à réception :
+  le modèle Fusion a des paramètres Mot_* modifiables).
+- 1 alimentation 12 V + 1 variateur PWM 12 V (pour régler ~15 cm/s).
+- 1 joint torique NBR corde 3 mm, Ø intérieur ~145-147 mm (ex. 145 x 3).
+- 2 tiges acier Ø 4 mm, longueur 130 mm.
+- 1 ressort de traction léger (~20-30 mm, faible raideur), à ajuster.
+- 1 tube alu carré 15 x 15 (épaisseur 1 à 1,5 mm), ~840 mm (poutre).
+- 1 tube alu rond Ø 16, ~550 mm (3 poteaux de 175 mm).
+- Feuille PET (ou PETG) transparente 0,5 mm : 380 x 812 mm (toit de la
+  gare) + 411 x 500 mm (toit du garage).
+- 9 vis à bois Ø 3,5 (pieds), 3 x M3x25 + écrous (têtes de poteaux).
+- Visserie M3 : 4 x M3x10 + 4 écrous (poulie), 6 x M3x6 (moteur),
+  1 vis de pression M3x4, 2 x M3x20 + écrous (brides sous la poutre).

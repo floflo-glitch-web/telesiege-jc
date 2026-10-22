@@ -1,0 +1,40 @@
+{
+  "Socle": {
+    "quantite": 1,
+    "volume_mm3": 146939.96164115306,
+    "dimensions_mm": [
+      180.0,
+      140.0,
+      6.0
+    ],
+    "ferme": true,
+    "corps_connexes": 1
+  },
+  "Montant": {
+    "quantite": 4,
+    "volume_mm3": 20192.357391784382,
+    "dimensions_mm": [
+      20.0,
+      32.0,
+      160.0
+    ],
+    "ferme": true,
+    "corps_connexes": 1
+  },
+  "Porte_lamelle": {
+    "quantite": 4,
+    "volume_mm3": 3141.3776472315817,
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "ferme": true,
+    "corps_connexes": 1
+  },
+  "montage": {
+    "interferences": [],
+    "nb_pieces": 9,
+    "portee": "Banc sans vis, lamelles ni pince : ne valide pas le contact avec une pince JC"
+  }
+}

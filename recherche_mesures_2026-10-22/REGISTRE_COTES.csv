@@ -1,0 +1,111 @@
+id;objet;cote;valeur;unite;origine;source;localisation;usage;limite
+L01;Ligne JC;Entraxe nominal des brins;155;mm;FABRICANT_COMPATIBLE;S05;pages imprimees 125 et 203;Implantation nominale;Verifier sur la ligne de l utilisateur
+L02;Cable JC;Diametre nominal rapporte;2;mm;TEMOIGNAGE_REPRIS;Ancien dossier section 1;Retours PHB Petz non reverifies dans cette passe;Hypothese seulement;Pas de cote constructeur verifiee
+L03;Set JC83393;Longueur de cable fournie;8000;mm;CONSTRUCTEUR_JC;S01;Fiche produit;Inventaire;Pas un entraxe de gares
+L04;Set JC83393;Longueur de ligne commerciale;4000;mm;CONSTRUCTEUR_JC;S01;Fiche produit;Ordre de grandeur;La boucle consomme aussi du cable
+L05;Grande poulie theorique JC;Diametre du trajet du centre du cable;155;mm;CALCUL;L01;Demi tour entre brins paralleles;Etude cinematique;Ce n est PAS le diametre exterieur mesure
+G01;Galet rolna4;Diametre exterieur analytique;16;mm;FICHIER_STEP_COMPATIBLE;S12;rolna4.stp;Piece virtuelle de reference;Pas une mesure du galet JC original
+G02;Galet rolna4;Epaisseur axiale;7,3;mm;FICHIER_STEP_COMPATIBLE;S12;rolna4.stp;Piece virtuelle de reference;Verifier adaptation
+G03;Galet rolna4;Diametre alesage;3,2;mm;FICHIER_STEP_COMPATIBLE;S12;Surface cylindrique rayon 1.6;Piece virtuelle de reference;Pas un diametre de vis impose
+G04;Galet rolna4;Diametre entree chanfrein;4,5;mm;FICHIER_STEP_COMPATIBLE;S12;Cercle rayon 2.25;Piece virtuelle de reference;Verifier face et orientation
+G05;Galet rolna4;Rayon majeur tore gorge;5,9;mm;FICHIER_STEP_COMPATIBLE;S12;Surface torique;Reference gorge;Dimension du modele tiers
+G06;Galet rolna4;Rayon mineur tore gorge;1,4;mm;FICHIER_STEP_COMPATIBLE;S12;Surface torique;Reference gorge;Dimension du modele tiers
+G07;Galet rolna4;Diametre fond de gorge;9;mm;CALCUL;S12;2 x (5.9 - 1.4);Reference gorge;Gorge ideale non chargee
+G08;Galet rolna4;Rayon centre cable diametre 2;5,5;mm;CALCUL;S12;4.5 plus 1;Etude cinematique;Pas un rayon minimal admissible du cable
+G09;Galet rolna4 STL;Enveloppe X;15,995;mm;MAILLE_REMESUREE_22_OCT;S12;rolna4.stl;Controle du fichier;Facettes approximant le cercle de 16
+G10;Galet rolna4 STL;Enveloppe Y;15,990;mm;MAILLE_REMESUREE_22_OCT;S12;rolna4.stl;Controle du fichier;Facettes approximant le cercle de 16
+P01;Galet de pylone imprime;Diametre;16,312;mm;MAILLE_REMESUREE_22_OCT;S13;Roll.stl axes Y Z;Reference compatible;Ne pas attribuer cette precision au galet usine
+P02;Galet de pylone imprime;Largeur axiale;7,123;mm;MAILLE_REMESUREE_22_OCT;S13;Roll.stl axe X;Reference compatible;Enveloppe de maillage
+P03;Pylone imprime;Pas des galets;13,5;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S13;Dossier Claude;Comparaison;Non remesure dans cette passe
+P04;Pylone imprime;Longueur balancier 4 galets;41,5;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S13;Dossier Claude;Comparaison;Non remesure dans cette passe
+P05;Pylone imprime;Largeur traverse;164,8;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S13;Dossier Claude;Comparaison;Pas le pylone JC50100
+P06;Pylone imprime;Largeur base;124;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S13;Dossier Claude;Comparaison;Modele communautaire
+P07;Pylone imprime;Profondeur base;124;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S13;Dossier Claude;Comparaison;Modele communautaire
+P08;Pylone JC50100;Hauteur publiee;450;mm;CONSTRUCTEUR_JC;S04;Catalogue page PDF 18;Gabarit commercial;Trois positions mais hauteurs intermediaires inconnues
+S01;Suspente imprimee Spittal;Enveloppe X;115;mm;MAILLE_REMESUREE_22_OCT;S11;Gehaenge_k;Reference de siege compatible;Pas le siege JC86541 mesure
+S02;Suspente imprimee Spittal;Enveloppe Y;23,022;mm;MAILLE_REMESUREE_22_OCT;S11;Gehaenge_k;Reference de siege compatible;Repere du fichier
+S03;Suspente imprimee Spittal;Enveloppe Z;109,866;mm;MAILLE_REMESUREE_22_OCT;S11;Gehaenge_k;Reference de siege compatible;Ne comprend pas la pince JC
+S04;Suspente imprimee Spittal;Diametre exterieur logement;6;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S11;Sommet Gehaenge_k;Interface indicative;Logement imprime et non pince mesuree
+S05;Suspente imprimee Spittal;Longueur logement;12,2;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S11;Sommet Gehaenge_k;Interface indicative;Releve precedent
+S06;Suspente imprimee Spittal;Diametre trous extremites;4,2;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S11;Sommet Gehaenge_k;Interface indicative;Ne prouve pas un teton JC de 4.2
+S07;Suspente imprimee Spittal;Diametre trou central;2,4;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S11;Sommet Gehaenge_k;Interface indicative;Releve precedent
+S08;Suspente imprimee Spittal;Longueur zone centrale;4,2;mm;RELEVE_ANTERIEUR_COMMUNAUTAIRE;S11;Sommet Gehaenge_k;Interface indicative;Releve precedent
+S09;Suspente imprimee Spittal;Vis preconisee;M2 x 12 a 14;designation;AUTEUR_MODELE_COMPATIBLE;S11;Instructions auteur;Information montage de cette piece;Pas une modification prevue du siege original
+S10;Assise imprimee Spittal;Enveloppe X;97;mm;MAILLE_REMESUREE_22_OCT;S11;Sitze.stl;Comparaison encombrement;Piece separee
+S11;Assise imprimee Spittal;Enveloppe Y;30;mm;MAILLE_REMESUREE_22_OCT;S11;Sitze.stl;Comparaison encombrement;Piece separee
+S12;Assise imprimee Spittal;Enveloppe Z;17;mm;MAILLE_REMESUREE_22_OCT;S11;Sitze.stl;Comparaison encombrement;Piece separee
+S13;Garde corps imprime Spittal;Enveloppe X;107;mm;MAILLE_REMESUREE_22_OCT;S11;Buegel.stl;Comparaison encombrement;Piece separee
+S14;Garde corps imprime Spittal;Enveloppe Y;23,5;mm;MAILLE_REMESUREE_22_OCT;S11;Buegel.stl;Comparaison encombrement;Piece separee
+S15;Garde corps imprime Spittal;Enveloppe Z;37,806;mm;MAILLE_REMESUREE_22_OCT;S11;Buegel.stl;Comparaison encombrement;Piece separee
+D01;Garage compatible Doppelwihr 5010;Longueur hors tout produit;280;mm;FABRICANT_COMPATIBLE;S05;page imprimee 258;Reference garage droit;Enveloppe vehicules non comprise ici
+D02;Garage compatible Doppelwihr 5010;Largeur hors tout produit;90;mm;FABRICANT_COMPATIBLE;S05;page imprimee 258;Reference garage droit;Pas un entraxe de voies
+D03;Garage compatible Doppelwihr 5010;Hauteur totale;147;mm;FABRICANT_COMPATIBLE;S05;page imprimee 258;Reference garage droit;Pas une hauteur de roulement
+D04;Garage compatible Doppelwihr 5009;Longueur hors tout produit;408;mm;FABRICANT_COMPATIBLE;S05;page imprimee 259;Reference boucle;Pas le balayage du siege
+D05;Garage compatible Doppelwihr 5009;Largeur hors tout produit;128;mm;FABRICANT_COMPATIBLE;S05;page imprimee 259;Reference boucle;Pas un entraxe de voies
+D06;Garage compatible Doppelwihr 5009;Hauteur totale;149;mm;FABRICANT_COMPATIBLE;S05;page imprimee 259;Reference boucle;Pas une hauteur de roulement
+D07;Garage compatible Doppelwihr 5016 et 5017;Longueur hors tout produit;408;mm;FABRICANT_COMPATIBLE;S05;pages imprimees 261 et 262;Reference boucle avec sortie;Pas le balayage du siege
+D08;Garage compatible Doppelwihr 5016 et 5017;Largeur hors tout produit;244;mm;FABRICANT_COMPATIBLE;S05;pages imprimees 261 et 262;Reference boucle avec sortie;Pas un entraxe de voies
+D09;Garage compatible Doppelwihr 5016 et 5017;Hauteur totale;183;mm;FABRICANT_COMPATIBLE;S05;pages imprimees 261 et 262;Reference boucle avec sortie;Pas une hauteur de roulement
+D10;Garage compatible Doppelwihr 5018;Longueur hors tout produit;501;mm;FABRICANT_COMPATIBLE;S05;page imprimee 260;Reference plusieurs boucles;Pas le balayage du siege
+D11;Garage compatible Doppelwihr 5018;Largeur hors tout produit;367;mm;FABRICANT_COMPATIBLE;S05;page imprimee 260;Reference plusieurs boucles;Pas un entraxe de voies
+D12;Garage compatible Doppelwihr 5018;Hauteur totale;149;mm;FABRICANT_COMPATIBLE;S05;page imprimee 260;Reference plusieurs boucles;Pas une hauteur de roulement
+D13;Garage compatible Doppelwihr 5015;Longueur hors tout produit;340;mm;FABRICANT_COMPATIBLE;S05;page imprimee 263;Reference deux voies avec aiguillages;Pas le balayage du siege
+D14;Garage compatible Doppelwihr 5015;Largeur hors tout produit;260;mm;FABRICANT_COMPATIBLE;S05;page imprimee 263;Reference deux voies avec aiguillages;Pas un entraxe de voies
+D15;Garage compatible Doppelwihr 5015;Hauteur totale;185;mm;FABRICANT_COMPATIBLE;S05;page imprimee 263;Reference deux voies avec aiguillages;Pas une hauteur de roulement
+D16;Garages compatibles Doppelwihr;Diametre trous fixation socle;4,5;mm;FABRICANT_COMPATIBLE;S05;pages garages;Reference fixation;Pas une cote de rail
+D17;Garage Doppelwihr 5016;Visserie;4 M2x16 + 14 M2x10 + 6 M2x6;designation;NOTICE_FABRICANT_COMPATIBLE;S06;pages PDF 1 a 5;Reference assemblage;Pas une nomenclature de notre future gare
+D18;Garage Doppelwihr 5017;Visserie;4 M2x16 + 14 M2x10 + 6 M2x8;designation;NOTICE_FABRICANT_COMPATIBLE;S07;cartouche visible et etapes;Reference assemblage;Ignorer mention parasite extraite 9 M2x12
+R01;Piste Steinachkogel;Profondeur de rail annoncee;0,6;mm;TEMOIGNAGE;S08;message 21 mars 2025;Piste a verifier;Sens du mot profondeur ambigu et ressorts modifies
+R02;Piste Steinachkogel;Pas de pneus annonce;3;plots LEGO;TEMOIGNAGE;S08;message 21 mars 2025;Comparaison;Pas la longueur du patin JC
+R03;Piste Steinachkogel;Pas de pneus converti;24;mm;CALCUL;S08;3 fois pas nominal LEGO 8;Comparaison;Ne garantit pas deux contacts permanents
+J01;Gares JC gamme Platin;Longueur;390;mm;CONSTRUCTEUR_JC;S04;pages PDF 18 a 21;Gabarit gamme Platin;Pas automatiquement le set JC83393
+J02;Gares JC gamme Platin;Largeur;240;mm;CONSTRUCTEUR_JC;S04;pages PDF 18 a 21;Gabarit gamme Platin;Pas automatiquement le set JC83393
+J03;Gares JC gamme Platin;Hauteur;210;mm;CONSTRUCTEUR_JC;S04;pages PDF 18 a 21;Gabarit gamme Platin;Pas une hauteur de cable
+J04;Gare JC D Line;Hauteur entretoise poulie approximative;40;mm;NOTICE_CONSTRUCTEUR_JC;S03;page PDF 1;Reemploi potentiel;Valeur approximative pas hauteur du cable
+J05;Gare JC D Line;Vis de montage indiquees;3 x 12 et 3 x 25;mm;NOTICE_CONSTRUCTEUR_JC;S03;illustrations pages PDF 2 et 4;Reference montage;Diametre 3 ne prouve pas un filetage metrique M3
+E01;Vraie D Line 6 CLD;Voie constructeur;6400;mm reels;CONSTRUCTEUR_REEL;S15;page PDF 53;Reference echelle;Autre chose que la voie miniature JC
+E02;Vraie D Line 6 CLD;Voie ramenee au 1 sur 32;200;mm modele;CALCUL_ECHELLE;S15;6400 divise par 32;Reference echelle;Entree JC conservee a 155
+E03;Vrai siege DCD;Largeur une assise;520;mm reels;CONSTRUCTEUR_REEL;S15;page PDF 53;Reference echelle;Pas largeur hors tout du siege
+E04;Vrai siege DCD;Largeur une assise au 1 sur 32;16,25;mm modele;CALCUL_ECHELLE;S15;520 divise par 32;Reference echelle;Pas largeur hors tout
+E05;Six assises DCD;Largeur nominale cumulee au 1 sur 32;97,5;mm modele;CALCUL_ECHELLE;S15;6 fois 520 divise par 32;Comparaison;Sans cadre separateurs accoudoirs bulle
+E06;Voie JC versus voie 6 CLD au 1 sur 32;Rapport largeur;0,775;sans unite;CALCUL;L01 et E02;155 divise par 200;Arbitrage de geometrie;Voie JC 22.5 pour cent plus etroite
+A01;Modele amateur gare Stendys;Diametre pneus ramene au 1 sur 32;12,8;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas plan usine ni ajustement JC
+A02;Modele amateur gare Stendys;Pas pneus ramene au 1 sur 32;14,1;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;A adapter au patin JC
+A03;Modele amateur gare Stendys;Rayon contour ramene au 1 sur 32;95;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas rayon garage impose
+A04;Modele amateur gare Stendys;Voie entree ramenee au 1 sur 32;174;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Differente de 155 et de 200
+A05;Modele amateur gare Stendys;Hauteur cable sur quai;105;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Ne donne pas la hauteur du siege JC
+A06;Modele amateur gare Stendys;Longueur batiment;612;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas dimension de Waidoffen
+A07;Modele amateur gare Stendys;Largeur batiment;251;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas dimension de Waidoffen
+A08;Modele amateur gare Stendys;Decalage rail a l exterieur du cable;13 a 17;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas position du rail JC
+A09;Modele amateur gare Stendys;Deviation cable vers interieur;15;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas course a imposer a la pince JC
+A10;Modele amateur gare Stendys;Abaissement cable;8;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas course a imposer a la pince JC
+A11;Modele amateur gare Stendys;Longueur droite garage;530;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Pas notre garage valide
+A12;Modele amateur gare Stendys;Entraxe voies garage;137;mm;RELEVE_ANTERIEUR_MODELE_AMATEUR;S14;LISEZMOI existant;Proportions;Balayage du siege JC inconnu
+I01;Pince JC d origine;Diametre du cable reel;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au debrayage;Nominal 2 non substituable a une mesure
+I02;Pince JC d origine;Diametre galets de roulement;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au rail;Aucune cote publique verifiee
+I03;Pince JC d origine;Largeur galets de roulement;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au rail;Aucune cote publique verifiee
+I04;Pince JC d origine;Positions XYZ galets par rapport au cable;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au rail;Reperer chacun des galets
+I05;Pince JC d origine;Profondeur rainure ou passage de rail;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au rail;0.6 du forum non valide comme epaisseur
+I06;Pince JC d origine;Largeur rainure ou passage de rail;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au rail;Identifier la surface reellement porteuse
+I07;Pince JC d origine;Longueur utile patin de friction;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au pas des pneus;Ne pas compter une zone sans contact
+I08;Pince JC d origine;Largeur patin de friction;;mm;INCONNU;Piece utilisateur;A relever;Necessaire aux pneus;Aucune cote publique verifiee
+I09;Pince JC d origine;Hauteur patin depuis axe cable;;mm;INCONNU;Piece utilisateur;A relever;Necessaire aux pneus;Mesurer pince fermee
+I10;Pince JC d origine;Diametre galet du levier;;mm;INCONNU;Piece utilisateur;A relever;Necessaire a la came;Aucune cote publique verifiee
+I11;Pince JC d origine;Largeur galet du levier;;mm;INCONNU;Piece utilisateur;A relever;Necessaire a la came;Aucune cote publique verifiee
+I12;Pince JC d origine;XYZ galet levier ferme;;mm;INCONNU;Piece utilisateur;A relever;Necessaire a la came;Repere axe cable
+I13;Pince JC d origine;XYZ galet levier au largage;;mm;INCONNU;Piece utilisateur;A relever;Necessaire a la came;Cable juste libre
+I14;Pince JC d origine;XYZ galet levier en butee;;mm;INCONNU;Piece utilisateur;A relever;Necessaire a la came;Ne pas forcer au dela de la butee
+I15;Pince JC d origine;Ouverture machoires au largage;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au retrait du cable;Deux ressorts conserves
+I16;Pince JC d origine;Direction libre de sortie du cable;;direction;INCONNU;Piece utilisateur;A observer;Necessaire a la deviation du cable;Ne pas imposer une sortie avant observation
+I17;Pince JC d origine;Effort au galet de commande au largage;;N ou grammes force;INCONNU;Piece utilisateur;A relever;Necessaire a la rigidite et traction;Preciser point et direction de mesure
+I18;Pince JC d origine;Reste ouverte apres relachement hors cable;;oui ou non;INCONNU;Piece utilisateur;A observer;Necessaire a la sequence;Vraie D5000 non transposable
+I19;Pince JC d origine;XYZ axe attache siege depuis cable;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au gabarit;Logement Spittal ne suffit pas
+I20;Siege JC86541;Largeur totale maximale;;mm;INCONNU;Piece utilisateur;A relever;Necessaire aux contours;Tester positions de bulle et garde corps
+I21;Siege JC86541;Profondeur totale maximale;;mm;INCONNU;Piece utilisateur;A relever;Necessaire aux contours;Tester positions de bulle et garde corps
+I22;Siege JC86541;Cable vers point le plus bas;;mm;INCONNU;Piece utilisateur;A relever;Necessaire au quai;Inclure repose pieds
+I23;Siege JC86541;Masse;;g;INCONNU;Piece utilisateur;A peser;Necessaire au guidage;Siege complet intact
+I24;Grande poulie JC50093;Diametre exterieur reel;;mm;INCONNU;S01 et fiche JC50093;A relever;Reemploi eventuel;155 nominal n est pas ce diametre
+I25;Grande poulie JC50093;Diametre fond de gorge et largeur gorge;;mm;INCONNU;Piece utilisateur;A relever;Reemploi eventuel;Inclure garniture montee
+I26;Gare UNI G JC83393;Hauteur centre cable sur socle;;mm;INCONNU;Piece utilisateur;A relever;Raccordement gare;Platin et D Line non substituables
+I27;Gare UNI G JC83393;Dimensions socle et trous fixation;;mm;INCONNU;Piece utilisateur;A relever;Reemploi eventuel;Plan public exact non identifie
+I28;Rail Cults 4430015;Section de contact et rayon courbe;;mm;INCONNU;S09;Fiche publique sans cotes;Piste garage;Pas achete ni fichier mesure

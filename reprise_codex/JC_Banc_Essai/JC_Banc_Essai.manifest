@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Projet JC",
+  "description": {"": "Banc manuel reglable : tester une pince JC intacte avant les rails definitifs"},
+  "supportedOS": "windows",
+  "editEnabled": true
+}

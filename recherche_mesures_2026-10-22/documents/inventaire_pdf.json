@@ -1,0 +1,44 @@
+[
+  {
+    "fichier": "Doppelmayr_D_Line_EN.pdf",
+    "octets": 3687933,
+    "pages": 54,
+    "sha256": "43663a5d3a1d96c133b4a898e4e4b2c166aac0fad655663fabc1038ec4f0a76a"
+  },
+  {
+    "fichier": "Doppelwihr_MA_5016.pdf",
+    "octets": 724882,
+    "pages": 5,
+    "sha256": "87b272f052662c47bb13268d4f6d895ccc19c7d99797e6376a5a74458b57621d"
+  },
+  {
+    "fichier": "Doppelwihr_MA_5017.pdf",
+    "octets": 682334,
+    "pages": 5,
+    "sha256": "c32378c731a872adf8a89634735721513ee19e86b0d74d17d027e926eb3b9b1f"
+  },
+  {
+    "fichier": "JC_notice_D_Line.pdf",
+    "octets": 830429,
+    "pages": 4,
+    "sha256": "5dc2a79637e8b6356b6e7dcdcd0d6e1fe65ef647b2feca7de5c69e4e6dff8d6c"
+  },
+  {
+    "fichier": "Perisher_gare_amont_2019.pdf",
+    "octets": 2509941,
+    "pages": 6,
+    "sha256": "d3758de1870568d3f2d2cde80a49303a51165680393caffd9159b6a3d43dd557"
+  },
+  {
+    "fichier": "Perisher_gare_aval_2019.pdf",
+    "octets": 1810867,
+    "pages": 7,
+    "sha256": "c26a9ec40b33c8e563ae1d8b40ec4aa2d3fe2a7717d83c9e41756343f765fb96"
+  },
+  {
+    "fichier": "Perisher_plans_techniques_39_49.pdf",
+    "octets": 9510116,
+    "pages": 11,
+    "sha256": "7cf74d2ead833f6b00156310ff04133152aff85bdb8939e293e8914a4c01e33b"
+  }
+]

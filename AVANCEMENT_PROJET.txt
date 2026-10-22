@@ -1,0 +1,72 @@
+GARE DEBRAYABLE JC - SUIVI REPRIS PAR CODEX
+Mise a jour : 22/10/2026
+
+REGROUPEMENT POUR SAUVEGARDE ET GITHUB
+Le projet est regroupe dans ce dossier. L ancien script JC_Gabarit_Gare,
+le script pince_jc_galets.py et une copie du suivi du Bureau ont ete ajoutes.
+README.md explique l organisation et la mise sur GitHub.
+Deux archives sont preparees a cote du dossier : COMPLET avec tous les
+telechargements, GITHUB avec le travail du projet et les liens de reference.
+Un inventaire par fichier et un rapport de verification accompagnent les ZIP.
+Aucune publication sur GitHub effectuee.
+
+PRIORITE ACTUELLE DEMANDEE PAR L UTILISATEUR
+Recherche de mesures et de documents pour creer le modele 3D PLUS TARD.
+Le banc et les scripts ci-dessous restent des prototypes existants.
+Aucune nouvelle CAO de gare realisee pendant la recherche du 22 octobre.
+
+NOUVEAU DOSSIER DE RECHERCHE
+recherche_mesures_2026-10-22/RECHERCHE MESURES - LIRE EN PREMIER.txt
+Registre de cotes avec sources, mesures inconnues et limites explicites.
+Sept PDF publics ajoutes : notices JC/Doppelwihr, brochure Doppelmayr,
+plans de deux gares reelles de Perisher et un lot de plans de genie civil.
+Nouvelles cotes de garages compatibles JC : 5016/5017 408x244x183 mm,
+5015 deux voies avec aiguillages 340x260x185 mm.
+Nouveau modele de rail de garage JC trouve chez gabrielturba sur Cults.
+Fiche et images examinees, pas de cote de section, aucun achat.
+Sa cabine debrayable utilise sa propre pince imprimee a elastique :
+elle ne valide pas une gare pour les pinces JC d origine.
+Six STL de reference deja telecharges ont ete remesures.
+
+DECISIONS CONSERVEES
+Gare aval debrayable, garage 8 places souhaite, ligne standard JC 155 mm,
+sieges et pinces JC d'origine conserves. Dimensions du bati inspirees du
+1:32 ; compromis de voie a 155 mm au lieu de 200 mm pour le vrai 6,4 m.
+
+REALISE DANS CETTE REPRISE
+- Lecture du dossier, de la fiche de mesures et des scripts Fusion reels.
+- Copie des scripts Claude dans reprise_codex/sources_claude/.
+- Audit des 10 STL : tous fermes, chacun en un seul solide ; empreintes
+  archivees. Aucune validation physique de montage ou de fonctionnement.
+- Calcul du balayage d'un gabarit de siege 120 x 60 mm :
+  marge arriere gare 11,77 mm, marge laterale 13,77 mm,
+  marge arriere garage 7,03 mm. Les 15 mm annonces ne sont pas conserves
+  pendant tout le virage. Cotes du vrai siege et oscillations encore inconnues.
+- Banc MANUEL reglable dessine et genere : 3 STL, 9 pieces assemblees,
+  hauteur des porte-lamelles reglable environ 116-161 mm, base 180 x 140.
+  Solides fermes ; aucune interference entre les pieces du banc seules.
+  Aucun essai avec pince, lame metallique, vis ou siege reel effectue.
+- Deux scripts Fusion autonomes prepares : JC_Banc_Essai et JC_Reconstruire.
+  Syntaxe verifiee ; execution et validation dans Fusion PAS effectuees.
+- Reconstruction prevue en document neuf avec archive F3D LOCALE et rapport.
+  Les sorties seront creees au lancement du script, pas deja presentes.
+
+A LIRE
+reprise_codex/LIRE EN PREMIER.txt
+reprise_codex/rapports/audit_projet.txt
+reprise_codex/banc_essai/NOTICE.txt
+
+SUITE APRES LA RECHERCHE
+Relever les mesures manquantes : galets et bord du rail, patin de friction,
+course et effort du levier, sens de sortie du cable, hauteur cable -> siege.
+La fiche detaillee existe a la racine. mesures_pince.json reste vide :
+aucune cote physique de la pince de l utilisateur n a ete recue.
+Un essai manuel sur un seul siege intact permettra ensuite de valider
+l interface avant de figer la CAO. Les ressorts d origine sont conserves.
+
+PAS ENCORE VALIDE
+Rails definitifs, came, effort d'ouverture, pneus/transmission, entrainement
+du contour, aiguillages, chaine et capacite du garage, comportement sous
+tension et charge radiale admissible de l'arbre du moteur.
+Les STL historiques restent des prototypes. Pas d'achat moteur a figer
+avant choix de la version exacte et verification de ses cotes/charges.

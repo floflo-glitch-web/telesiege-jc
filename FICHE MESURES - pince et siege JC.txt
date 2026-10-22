@@ -1,0 +1,117 @@
+=====================================================================
+  FICHE DE MESURES - siège D-Line JC86541 (ou pince seule JC51001)
+  À remplir au pied à coulisse (mm) + balance de cuisine (g)
+=====================================================================
+
+PRÉPARATION (2 minutes)
+- Tends un bout de câble JC entre deux objets lourds (livres) à ~15 cm
+  de la table, et accroche le siège dessus normalement. Toutes les
+  hauteurs se mesurent PAR RAPPORT À L'AXE DU CÂBLE (le centre du câble).
+- Vocabulaire (voir les photos du produit) :
+  · « levier » = la pièce qu'on appuie pour ouvrir, avec un GALET BLANC
+    au bout ;
+  · « galets de roulement » = les galets blancs au bout de l'axe en
+    travers, au sommet de la suspente ;
+  · « plaque striée » = la plaque en peigne sur le dessus de la pince ;
+  · « mâchoire » = la partie qui serre le câble.
+- Sens : « longueur » = le long du câble ; « travers » = perpendiculaire
+  au câble ; « hauteur » = vertical.
+- Si tu peux : 3 PHOTOS de la pince (de face, de côté, de dessus) posée
+  sur du papier millimétré ou à côté d'une règle. Ça vaut 10 mesures.
+
+---------------------------------------------------------------------
+A. CÂBLE ET MÂCHOIRE  (indispensable)
+---------------------------------------------------------------------
+A1  Ø du câble JC (sans l'écraser) ......................... ____ mm
+A2  Ouverture de la mâchoire, levier appuyé à fond ......... ____ mm
+A3  Par où sort le câble quand la pince s'ouvre ?
+    (par le bas / sur le côté intérieur / sur le côté extérieur) ____
+A4  Côté de la mâchoire qui bouge (intérieur / extérieur) ..... ____
+
+---------------------------------------------------------------------
+B. LEVIER  (indispensable : forme la came d'ouverture)
+---------------------------------------------------------------------
+B1  Ø du galet blanc du levier .............................. ____ mm
+B2  Largeur de ce galet ..................................... ____ mm
+B3  Hauteur du DESSUS du galet au-dessus de l'axe du câble,
+    levier relâché .......................................... ____ mm
+B4  Même hauteur, levier appuyé juste assez pour lâcher le câble
+    .......................................................... ____ mm
+B5  Même hauteur, levier appuyé à fond ...................... ____ mm
+B6  Décalage du galet en travers par rapport au câble
+    (et de quel côté : intérieur/extérieur) ................. ____ mm
+B7  Décalage du galet le long du câble par rapport au milieu de
+    la pince (devant / derrière) ............................ ____ mm
+B8  Force pour ouvrir : appuie le levier sur la balance
+    - au moment où le câble se libère ....................... ____ g
+    - à fond ................................................ ____ g
+B9  Sens d'appui exact (vers le bas tout droit ? en biais ?) . ____
+
+---------------------------------------------------------------------
+C. GALETS DE ROULEMENT  (indispensable : forme le rail)
+---------------------------------------------------------------------
+C1  Nombre de galets ........................................ ____
+C2  Ø ........................................................ ____ mm
+C3  Largeur .................................................. ____ mm
+C4  Écart entre les 2 galets (centre à centre, en travers) ... ____ mm
+C5  Hauteur du BAS des galets par rapport à l'axe du câble
+    (+ si au-dessus, - si en dessous) ....................... ____ mm
+C6  Position le long du câble (au milieu ? devant ? derrière ?) ____
+C7  Tournent-ils librement ? (oui / non / dur) ............... ____
+C8  NOUVEAU : y a-t-il une rainure ou un épaulement où un rail
+    peut s'engager (un modéliste parle d'un rail de 0,6 mm de
+    profondeur seulement pour la pince D-Line) ? Où, et quelle
+    profondeur / largeur ? ................................... ____ mm
+
+---------------------------------------------------------------------
+D. PLAQUE STRIÉE  (indispensable : forme les pneus)
+---------------------------------------------------------------------
+D1  Longueur de la plaque (le long du câble) ................ ____ mm
+D2  Largeur .................................................. ____ mm
+D3  Hauteur du DESSUS de la plaque au-dessus de l'axe du câble ____ mm
+D4  Décalage en travers par rapport au câble ................ ____ mm
+D5  Pas des stries (distance entre 2 stries) ................ ____ mm
+
+---------------------------------------------------------------------
+E. ENCOMBREMENT DE LA PINCE  (indispensable : dégagements)
+---------------------------------------------------------------------
+E1  Longueur hors tout (avec les « langues » avant/arrière) . ____ mm
+E2  Largeur hors tout en travers ............................ ____ mm
+E3  Point le plus HAUT au-dessus de l'axe du câble .......... ____ mm
+E4  Point le plus BAS sous l'axe du câble (mâchoire) ........ ____ mm
+E5  Débord vers l'INTÉRIEUR (côté centre de la gare) depuis
+    l'axe du câble .......................................... ____ mm
+
+---------------------------------------------------------------------
+F. SUSPENTE ET SIÈGE  (utile)
+---------------------------------------------------------------------
+F1  De quel côté la suspente descend (intérieur / extérieur) . ____
+F2  Décalage de la suspente en travers, 20 mm sous le câble . ____ mm
+F3  Largeur de la suspente à cet endroit .................... ____ mm
+F4  Le siège pivote-t-il librement dans le sens de la marche ? ____
+F5  Hauteur axe du câble -> bas du siège (repose-pieds) ...... ____ mm
+F6  Hauteur axe du câble -> haut de la bulle ................ ____ mm
+F7  Largeur hors tout du siège (travers) .................... ____ mm
+F8  Profondeur hors tout du siège (sens de marche, bulle
+    fermée) ................................................. ____ mm
+F9  Masse du siège complet .................................. ____ g
+F10 Le siège est accroché à la pince par un TÉTON rond (Ø 4 mm environ)
+    qui entre dans le tube en haut de la suspente, tenu par une vis M2.
+    Hauteur de l'axe de ce téton par rapport à l'axe du câble
+    (- si en dessous) ........................................ ____ mm
+F11 Décalage de ce téton en travers par rapport au câble
+    (et de quel côté : intérieur/extérieur) ................. ____ mm
+    (Avec F10-F11 + le fichier du siège Spittal, on a toute la hauteur
+    câble -> siège sans démonter le siège.)
+
+---------------------------------------------------------------------
+G. LIGNE ET GARE JC EXISTANTES  (utile)
+---------------------------------------------------------------------
+G1  Ø extérieur de la poulie de ta gare JC (UNI-G) .......... ____ mm
+G2  Hauteur du câble au-dessus de la plaque de base de la gare
+    JC, à l'entrée .......................................... ____ mm
+G3  Entraxe réel des 2 brins sur un pylône JC ................ ____ mm
+G4  Hauteur du câble sur le pylône JC (sol -> câble) ......... ____ mm
+
+Les mesures A à E débloquent les rails, la came d'ouverture, les pneus
+et les aiguillages du garage. F et G servent à recaler les hauteurs.
