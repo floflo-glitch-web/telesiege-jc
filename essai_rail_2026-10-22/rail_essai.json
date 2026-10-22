@@ -1,0 +1,39 @@
+{
+  "cotes": {
+    "longueur": 50.0,
+    "epaisseur_plaque": 3.0,
+    "hauteur_rail": 3.0,
+    "largeur_rail": 3.5,
+    "galet_machoire_y": 6.3,
+    "entraxe_galets": 24.6,
+    "cable_au_dessus_rail": 7.75,
+    "fente_suspente_y": 18.0,
+    "fente_suspente_largeur": 10.0,
+    "fente_suspente_longueur": 38.0,
+    "plaque_y_min": -4.0,
+    "plaque_y_marge": 4.0,
+    "chanfrein_entree": 1.0,
+    "rainure": {
+      "largeur": 0.6,
+      "profondeur": 0.4
+    }
+  },
+  "positions": {
+    "rail_machoire_y": 6.3,
+    "rail_oppose_y": 30.9,
+    "dessus_rail_z": 6.0,
+    "cable_z": 13.75,
+    "encombrement": [
+      50.0,
+      40.65,
+      6.0
+    ]
+  },
+  "volume_mm3": 5968.4,
+  "dimensions_mm": [
+    50.0,
+    40.65,
+    6.0
+  ],
+  "statut": "Piece d essai ; cotes issues de photos, a valider avec la vraie pince"
+}

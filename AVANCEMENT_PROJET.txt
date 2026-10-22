@@ -2,6 +2,9 @@ GARE DEBRAYABLE JC - SUIVI REPRIS PAR CODEX
 Mise a jour : 22/10/2026
 
 ACCORD : PAS DE MODELE 3D (STL, Fusion) sans demande de l utilisateur.
+Demande du 22/10 : un petit troncon de rail d essai pour verifier les
+mesures photo -> essai_rail_2026-10-22/ (STL, notice, script). En attente
+du retour de l utilisateur apres impression.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,

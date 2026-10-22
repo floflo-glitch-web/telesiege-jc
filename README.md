@@ -30,6 +30,7 @@ anciennes mentions de validation ou de recherche terminée.
 | --- | --- |
 | `recherche_mesures_2026-10-22/` | Recherche, cotes, sources, relevés de fichiers 3D |
 | `mesures_photo_2026-10-22/` | Photo de la pince, mesure de 28 mm et cotes estimées à l'échelle |
+| `essai_rail_2026-10-22/` | Petit tronçon de rail imprimable pour vérifier ces cotes sur la vraie pince |
 | `STL/` | Dix prototypes historiques de la gare et leurs documents |
 | `apercus/` | Vues des prototypes |
 | `reprise_codex/rapports/` | Audit des STL et du balayage des sièges |
