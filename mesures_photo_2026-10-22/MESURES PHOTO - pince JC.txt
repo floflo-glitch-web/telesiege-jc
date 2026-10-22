@@ -46,6 +46,39 @@ Encombrement vu de face (rubrique E)
       Haut du crochet de la mâchoire : 6,1 au-dessus de l'axe des galets.
       Haut du bloc strié : 8,9 au-dessus de l'axe des galets.
 
+POSITION DU CÂBLE (2e photo, câble serré dans la mâchoire)
+Fichiers : pince_cable_originale.webp, pince_cable_cotes_estimees.jpg,
+coupe_2D_pince_repere_cable.png, cotes_cable.json.
+Même vue dans l'axe du câble, pince retournée. La tache floue à gauche est
+l'ombre du câble ; le câble réel est la tresse nette qui entre dans la
+mâchoire. Échelle : entraxe des galets 24,6 mm (19,3 px/mm). Contrôle
+indépendant : le galet du levier mesure 6,0 mm ici contre 5,9 sur la photo 1.
+
+Repère : origine au centre du câble ; « le long » = suivant l'axe des
+galets, vers le galet opposé ; « en travers » = + côté levier, - côté siège.
+Valeurs = moyenne des deux photos, écart entre photos ≤ 0,7 mm sauf mention.
+  A1  Diamètre du câble ......................... 2,5   (± 0,2 ; 2 mm supposés jusqu'ici)
+  Galet côté mâchoire : centre à 6,3 le long, 4,2 en travers côté siège
+  Galet opposé : centre à 30,9 le long, environ 3,8 en travers côté siège (± 1)
+  Bouts d'axe : 4,8 et 32,8 le long
+  C5  Bas des galets ............................ environ 7,7 côté siège depuis l'axe du câble
+      Haut des galets ........................... environ 0,6 côté siège : les galets
+                                                  restent juste sous le niveau du câble
+  Axe de la suspente à la sortie de l'axe ...... 17,2 le long (± 0,5)
+  B6/B7 Galet du levier (pince fermée) ......... 19,8 le long, 12,2 en travers côté levier (± 1,2)
+  D3  Bloc strié : entre 4,4 et 8,4 le long, dessus à 5,1 côté levier
+  Crochet de la mâchoire : dépasse de 2,4 au-delà du câble
+
+POINTS À VÉRIFIER RELEVÉS SUR LES DEUX PHOTOS
+- Le galet côté mâchoire paraît environ 7 % plus petit que le galet opposé
+  (environ 6,6 contre 7,1 mm) sur les deux photos. Perspective ou galets
+  réellement différents : à vérifier, car cela changerait la hauteur des
+  appuis sous chaque galet.
+- La suspente s'écarte du câble en descendant (d'environ 1 mm tous les 10 mm
+  près de l'axe). Pince suspendue, l'ensemble tourne autour du câble jusqu'à
+  mettre le siège à l'aplomb : l'axe des galets n'est donc probablement pas
+  horizontal en ligne. Il faut une photo du siège suspendu pour le savoir.
+
 CE QUI CHANGE PAR RAPPORT AUX ANCIENNES HYPOTHÈSES
 - L'ancien script pince_jc_galets.py supposait des galets de 3,2 mm de
   diamètre avec un entraxe de 12 mm (estimations du script). La photo donne
@@ -70,8 +103,11 @@ LIMITES
   cotes d'environ 2 %.
 
 POUR COMPLÉTER SANS DÉMONTER
-1. Même photo de face avec le câble serré dans la mâchoire : donne la
-   position du câble par rapport aux galets et au galet du levier.
+1. Fait : photo avec le câble dans la mâchoire (section ci-dessus).
+   Reste : siège suspendu sur le câble tendu, vu dans l'axe du câble,
+   siège entier visible. Donne l'orientation réelle de la pince et les
+   hauteurs câble -> siège. Dire aussi si le crochet de la mâchoire est
+   tourné vers l'intérieur ou l'extérieur de la ligne.
 2. Photo de dessus : l'axe de 28 mm sert de nouveau d'échelle et donne la
    longueur du bloc strié, le pas des stries et la position du galet du
    levier le long du câble.

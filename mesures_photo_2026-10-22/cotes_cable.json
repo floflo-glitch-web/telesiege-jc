@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "photo": "pince_cable_originale.webp (1500 x 1125 px)",
+  "echelle_px_par_mm": 19.27,
+  "echelle_source": "entraxe des galets 24,6 mm (photo 1, echelle 28 mm) ; controle : Ø galet du levier 6,0 ici contre 5,9 en photo 1",
+  "repere": "origine au centre du cable ; u le long de l'axe des galets vers le galet oppose ; v en travers, + cote levier, - cote siege",
+  "statut": "ESTIMATIONS PHOTO ; pince posee sur table, orientation suspendue inconnue",
+  "cotes_mm": {
+    "cable_diametre": 2.5,
+    "galet_machoire_centre": [
+      6.3,
+      -4.2
+    ],
+    "galet_oppose_centre": [
+      30.9,
+      -3.8
+    ],
+    "galet_diametre": 7.1,
+    "galet_levier_centre": [
+      19.8,
+      12.2
+    ],
+    "galet_levier_diametre": 5.9,
+    "axe_suspente_u": 17.2,
+    "embouts_u": [
+      4.8,
+      32.8
+    ],
+    "bloc_strie_u": [
+      4.4,
+      8.4
+    ],
+    "bloc_strie_haut_v": 5.1,
+    "crochet_u_min": -2.4,
+    "crochet_haut_v": 2.2
+  },
+  "incertitudes_mm": {
+    "galet_machoire_centre": 0.4,
+    "galet_oppose_centre_v": 1.0,
+    "galet_levier_centre": 1.2,
+    "axe_suspente_u": 0.5,
+    "cable_diametre": 0.2
+  },
+  "reperes_pixels": {
+    "cable": [
+      555.0,
+      795.0
+    ],
+    "galet_machoire": [
+      476.3,
+      670.3
+    ],
+    "galet_oppose": [
+      512.5,
+      197.5
+    ],
+    "galet_levier": [
+      797.5,
+      421.7
+    ]
+  }
+}

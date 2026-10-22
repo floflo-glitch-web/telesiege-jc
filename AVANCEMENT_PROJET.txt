@@ -11,6 +11,12 @@ diametre 5,9, centre 17,2 au-dessus de l axe des galets ; suspente 4,0.
 Estimations photo, a confirmer : mesures_photo_2026-10-22/.
 Les anciennes estimations de pince_jc_galets.py (diametre 3,2, entraxe 12)
 sont contredites.
+2e photo avec cable : cable diametre 2,5 environ (pas 2). Depuis l axe du
+cable : galet cote machoire a 6,3 le long de l axe et 4,2 cote siege ;
+galet du levier a 19,8 et 12,2 cote levier ; suspente a 17,2.
+Coupe 2D de la pince seule : mesures_photo_2026-10-22/.
+Reste : photo du siege suspendu (orientation reelle), course du levier,
+crochet de machoire vers l interieur ou l exterieur de la ligne.
 
 REGROUPEMENT POUR SAUVEGARDE ET GITHUB
 Le projet est regroupe dans ce dossier. L ancien script JC_Gabarit_Gare,

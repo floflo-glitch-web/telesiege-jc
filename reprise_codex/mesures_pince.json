@@ -19,6 +19,18 @@
     "suspente_largeur_vue_de_face": 4.0,
     "largeur_hors_tout_vue_de_face": 35.1
   },
+  "estimations_photo_cable_2026_10_22": {
+    "source": "mesures_photo_2026-10-22/cotes_cable.json",
+    "repere": "origine centre du cable ; [le long de l'axe des galets, en travers + cote levier / - cote siege]",
+    "statut": "ESTIMATIONS PHOTO, pince posee sur table : orientation suspendue inconnue",
+    "cable_diametre": 2.5,
+    "galet_cote_machoire_centre": [6.3, -4.2],
+    "galet_oppose_centre": [30.9, -3.8],
+    "axe_suspente_le_long": 17.2,
+    "galet_levier_centre_ferme": [19.8, 12.2],
+    "bloc_strie_le_long": [4.4, 8.4],
+    "bloc_strie_dessus_en_travers": 5.1
+  },
   "cable_diametre": null,
   "galets_roulement_diametre": null,
   "galets_roulement_largeur": null,
