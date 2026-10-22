@@ -7,41 +7,47 @@ Vérifier sur la vraie pince les cotes relevées sur les deux photos
 Ce n'est pas un rail de gare : pas de came, pas de pneus, pas d'aiguillage.
 Seule pièce 3D demandée par l'utilisateur à ce stade.
 
-LA PIÈCE : Rail_essai_JC.stl (50 x 40,7 x 6 mm)
-- Deux rails de 3,5 mm de large, 24,6 mm d'entraxe : un sous chaque galet.
-- Un trait fin sur le dessus de chaque rail = centre théorique du galet.
-- Un trait fin sur la plaque, côté extérieur du rail côté mâchoire, à 6,3 mm
-  du centre de ce rail = aplomb théorique du câble.
+RÉSULTAT DE LA v1 (essayée par l'utilisateur)
+Écart entre les rails parfait (24,6 mm d'entraxe), la pince se place bien.
+Les traits des rails (0,6 mm) étaient beaucoup trop petits, surtout pour le
+galet le plus large : la v2 les remplace par des gorges.
+
+LA PIÈCE v2 : Rail_essai_JC_v2.stl (50 x 41,9 x 7 mm)
+- Deux rails à 24,6 mm d'entraxe, un sous chaque galet, avec une gorge où
+  roule le galet :
+    côté mâchoire .............. gorge de 2,8 mm (galet d'environ 1,5 mm)
+    côté opposé, galet le plus large : gorge de 3,6 mm (galet d'environ 2,1 mm)
+- Fond des gorges à la même hauteur que le dessus des rails de la v1 :
+  le câble reste à la même hauteur.
+- Bords des gorges : 1,0 mm côté extérieur, 0,5 mm côté intérieur. Le bord
+  intérieur est bas parce que le corps de la pince passe à environ 1 mm
+  au-dessus du rail côté mâchoire. Les deux bords extérieurs suffisent à
+  guider la pince dans les deux sens.
+- Un trait fin sur la plaque, du côté du crochet de la mâchoire, à 6,3 mm du
+  centre de la gorge = aplomb théorique du câble.
 - Une fente de 10 mm, ouverte d'un côté, pour laisser passer la suspente.
-- Entrée des rails chanfreinée du côté ouvert de la fente.
-Dessus des rails à 6 mm du dessous de la pièce.
+- Rampe d'entrée des gorges du côté ouvert de la fente.
 
 IMPRESSION
 À plat, rails vers le haut, sans support. PLA ou PETG, couches de 0,2 mm,
-buse de 0,4 mm. Environ 6 cm³ de matière.
+buse de 0,4 mm. Environ 7 cm³ de matière.
 
 ESSAI
-1. Poser la pince sur les deux rails, le crochet de la mâchoire du côté du
-   trait du câble, la suspente dans la fente. Avec le siège accroché, tenir
-   la pièce en l'air ou la poser entre deux livres pour que le siège pende.
-2. Faire rouler la pince à la main depuis l'entrée chanfreinée.
+1. Poser la pince, le galet le plus large dans la gorge la plus large,
+   le crochet de la mâchoire du côté du trait du câble, la suspente dans la
+   fente. Avec le siège accroché, tenir la pièce en l'air.
+2. Faire rouler la pince à la main depuis l'entrée.
 
 À REGARDER ET À ME DIRE
-A. Les deux galets portent-ils sur les rails ? Sont-ils centrés sur les
-   traits ? Sinon, de combien et dans quel sens chaque galet est décalé
-   (vers l'intérieur ou l'extérieur), même approximativement.
-B. La pince est-elle à plat, ou un galet reste-t-il en l'air ?
-   Un galet en l'air signifierait des galets de diamètres différents
-   (la photo suggérait environ 6,6 côté mâchoire contre 7,1).
-C. Quelque chose frotte-t-il ? Surtout le corps de la pince près du galet
-   côté mâchoire, sur le bord intérieur de ce rail ; les embouts d'axe ;
-   la suspente dans la fente.
-D. Câble dans la mâchoire : vu de dessus, est-il à l'aplomb du trait sur
-   la plaque ? Sinon, décalage vers l'intérieur ou l'extérieur.
-E. Hauteur : le dessous du câble devrait être à environ 9,5 mm au-dessus
-   de la plaque (7,75 mm entre le dessus des rails et le centre du câble).
-   Une mesure à la règle suffit.
-F. La pince roule-t-elle librement sur toute la longueur ?
+A. Les galets entrent-ils dans les gorges et roulent-ils sans forcer ?
+   Trop de jeu, ou pas assez ?
+B. Quelque chose frotte-t-il sur les bords des gorges, surtout le corps de
+   la pince sur le bord intérieur côté mâchoire, et les embouts d'axe sur
+   les bords extérieurs ?
+C. La pince est-elle à plat ? (La photo suggérait aussi un galet un peu plus
+   petit en diamètre côté mâchoire.)
+D. Le câble est-il à l'aplomb du trait de la plaque ? Le dessous du câble
+   devrait être à environ 9,5 mm au-dessus de la plaque.
 
 Les cotes sont regroupées en tête de generer_rail_essai.py. Une nouvelle
 version se génère en quelques secondes après correction (numpy, trimesh,

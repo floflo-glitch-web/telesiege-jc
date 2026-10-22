@@ -3,8 +3,10 @@ Mise a jour : 22/10/2026
 
 ACCORD : PAS DE MODELE 3D (STL, Fusion) sans demande de l utilisateur.
 Demande du 22/10 : un petit troncon de rail d essai pour verifier les
-mesures photo -> essai_rail_2026-10-22/ (STL, notice, script). En attente
-du retour de l utilisateur apres impression.
+mesures photo -> essai_rail_2026-10-22/ (STL, notice, script).
+Essai v1 par l utilisateur : ecart 24,6 parfait, la pince se place bien ;
+traits des rails trop petits. v2 : gorges de 2,8 (cote machoire) et 3,6
+(galet le plus large, cote oppose). En attente de l essai de la v2.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,
