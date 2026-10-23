@@ -5,6 +5,7 @@ Modifier COTES puis relancer : python essai_rail_2026-10-22/generer_rail_essai.p
 Repere du STL : X le long du cable, Y en travers (cable a Y = 0), Z vers le haut.
 v1 : ecart des galets et position du cable valides par l'essai (22/10).
 v2 : les traits des rails deviennent des gorges ou roulent les galets.
+v3 : gorges trop larges a l'essai v2 : gros galet -1/3, petit galet -1/2.
 """
 from pathlib import Path
 import json
@@ -12,14 +13,14 @@ import manifold3d as mf
 import trimesh
 
 BASE = Path(__file__).resolve().parent
-VERSION = 'v2'
+VERSION = 'v3'
 
 COTES = dict(
     longueur=50.0,              # le long du cable
     epaisseur_plaque=3.0,
     hauteur_rail=3.0,           # dessus de plaque -> fond de gorge (surface de roulement)
-    gorge=dict(largeur_machoire=2.8,  # galet cote machoire, environ 1,5 mm sur photo
-               largeur_oppose=3.6,    # galet oppose, le plus large : environ 2,1 mm sur photo
+    gorge=dict(largeur_machoire=1.4,  # petit galet cote machoire : 2,8 en v2, divise par 2
+               largeur_oppose=2.4,    # gros galet oppose : 3,6 en v2, moins un tiers
                bord=1.2,        # epaisseur de chaque bord
                bord_exterieur=1.0,
                bord_interieur=0.5),  # bas : le corps de la pince passe a moins d'1 mm cote machoire
@@ -117,7 +118,8 @@ def apercu(m, info, c, chemin):
     bx.text(3.1, -6.1, f"{c['galet_machoire_y']:.1f}".replace('.', ','), ha='center', color='#db2777', fontsize=9)
     bx.text(21, -4.5, 'suspente dans la fente', ha='left', fontsize=8)
     bx.set(xlim=(-14, 42), ylim=(-12, 32), aspect='equal', xlabel='Y en travers (mm)', ylabel='Z (mm)')
-    bx.set_title(f'Coupe {VERSION} : gorges de 2,8 (côté mâchoire) et 3,6 (galet le plus large)')
+    bx.set_title(f"Coupe {VERSION} : gorges de {c['gorge']['largeur_machoire']:.1f} (petit galet) et "
+                 f"{c['gorge']['largeur_oppose']:.1f} (gros galet)".replace('.', ','))
     bx.grid(alpha=0.2)
     fig.savefig(chemin, dpi=130)
     plt.close(fig)
@@ -135,7 +137,7 @@ def main():
                                 for k, v in info.items()},
         volume_mm3=round(float(mesh.volume), 1),
         dimensions_mm=[round(float(v), 2) for v in mesh.extents],
-        statut='Piece d essai ; ecart des galets valide par l essai v1, gorges a essayer'),
+        statut='Piece d essai ; ecart valide en v1, gorges reduites apres essai v2'),
         ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Rail_essai_JC_{VERSION}.stl :', [round(float(v), 2) for v in mesh.extents], 'mm,', round(float(mesh.volume)), 'mm3')
 

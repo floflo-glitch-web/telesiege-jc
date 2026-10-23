@@ -1,12 +1,12 @@
 {
-  "version": "v2",
+  "version": "v3",
   "cotes": {
     "longueur": 50.0,
     "epaisseur_plaque": 3.0,
     "hauteur_rail": 3.0,
     "gorge": {
-      "largeur_machoire": 2.8,
-      "largeur_oppose": 3.6,
+      "largeur_machoire": 1.4,
+      "largeur_oppose": 2.4,
       "bord": 1.2,
       "bord_exterieur": 1.0,
       "bord_interieur": 0.5
@@ -35,15 +35,15 @@
     "cable_z": 13.75,
     "encombrement": [
       50.0,
-      41.9,
+      41.3,
       6.0
     ]
   },
-  "volume_mm3": 6977.1,
+  "volume_mm3": 6499.0,
   "dimensions_mm": [
     50.0,
-    41.9,
+    41.3,
     7.0
   ],
-  "statut": "Piece d essai ; ecart des galets valide par l essai v1, gorges a essayer"
+  "statut": "Piece d essai ; ecart valide en v1, gorges reduites apres essai v2"
 }

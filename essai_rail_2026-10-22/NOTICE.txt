@@ -12,11 +12,17 @@ RÉSULTAT DE LA v1 (essayée par l'utilisateur)
 Les traits des rails (0,6 mm) étaient beaucoup trop petits, surtout pour le
 galet le plus large : la v2 les remplace par des gorges.
 
-LA PIÈCE v2 : Rail_essai_JC_v2.stl (50 x 41,9 x 7 mm)
+RÉSULTAT DE LA v2
+Gorges trop larges : l'utilisateur demande la gorge du gros galet réduite
+d'un tiers (3,6 -> 2,4 mm) et celle du petit galet de moitié (2,8 -> 1,4 mm).
+
+LA PIÈCE v3 : Rail_essai_JC_v3.stl (50 x 41,3 x 7 mm)
 - Deux rails à 24,6 mm d'entraxe, un sous chaque galet, avec une gorge où
   roule le galet :
-    côté mâchoire .............. gorge de 2,8 mm (galet d'environ 1,5 mm)
-    côté opposé, galet le plus large : gorge de 3,6 mm (galet d'environ 2,1 mm)
+    petit galet, côté mâchoire ......... gorge de 1,4 mm
+    gros galet, côté opposé ............ gorge de 2,4 mm
+  Une gorge imprimée sort souvent un peu plus étroite que prévu (0,1 à
+  0,2 mm). Si un galet force, le dire : on rouvre de 0,2 mm.
 - Fond des gorges à la même hauteur que le dessus des rails de la v1 :
   le câble reste à la même hauteur.
 - Bords des gorges : 1,0 mm côté extérieur, 0,5 mm côté intérieur. Le bord
@@ -30,10 +36,10 @@ LA PIÈCE v2 : Rail_essai_JC_v2.stl (50 x 41,9 x 7 mm)
 
 IMPRESSION
 À plat, rails vers le haut, sans support. PLA ou PETG, couches de 0,2 mm,
-buse de 0,4 mm. Environ 7 cm³ de matière.
+buse de 0,4 mm. Environ 6,5 cm³ de matière.
 
 ESSAI
-1. Poser la pince, le galet le plus large dans la gorge la plus large,
+1. Poser la pince, le gros galet dans la gorge la plus large,
    le crochet de la mâchoire du côté du trait du câble, la suspente dans la
    fente. Avec le siège accroché, tenir la pièce en l'air.
 2. Faire rouler la pince à la main depuis l'entrée.
