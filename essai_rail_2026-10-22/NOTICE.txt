@@ -28,7 +28,12 @@ côté mâchoire (un seul visible de face sur les photos).
 
 RÉSULTAT DE LA v5 (23/10) : tout rentre parfaitement. Géométrie validée.
 
-LA PIÈCE v5 : Rail_essai_JC_v5.stl (50 x 42,7 x 15,3 mm)
+DEMANDE APRÈS LA v5 : enlever le chanfrein en haut du rail en C.
+
+LA PIÈCE v6 : Rail_essai_JC_v6.stl (50 x 42,7 x 15,3 mm)
+Identique à la v5 validée, sans le renfort en biais sous le contre-rail :
+l'intérieur du C est droit (paroi verticale, dessous du contre-rail plat).
+
 - Rail des deux petits galets : gorge de 1,4 mm (inchangée depuis la v3).
 - Gros galet : fond plat de 4,7 mm de large, sans gorge ni rebord, entre
   2,4 mm à l'intérieur de son centre et la paroi.
@@ -37,8 +42,6 @@ LA PIÈCE v5 : Rail_essai_JC_v5.stl (50 x 42,7 x 15,3 mm)
   du galet (Ø 7,1 estimé), 1,6 mm d'épaisseur, de l'aplomb du bord intérieur
   de la gorge jusqu'à la paroi ;
 - paroi extérieure de 1,5 mm, à 0,4 mm du bout d'axe métallique ;
-- renfort en biais sous le contre-rail, contre la paroi, pour imprimer sans
-  support ; il reste au-dessus du bout d'axe ;
 - entrée du contre-rail évasée de 1 mm sur 3 mm.
 Le gros galet est maintenant prisonnier du profil : la pince s'engage
 uniquement par l'entrée, du côté ouvert de la fente.
@@ -60,9 +63,9 @@ Rappel :
 
 IMPRESSION
 À plat, rails vers le haut. PLA ou PETG, couches de 0,2 mm, buse de 0,4 mm.
-Environ 8 cm³ de matière. Le contre-rail déborde de 2 mm à plat au-dessus
-de son renfort : ça passe en général sans support. Si le dessous pend,
-activer les supports « depuis le plateau uniquement ».
+Environ 8 cm³ de matière. Sans renfort, le contre-rail déborde de 3,5 mm
+à plat depuis la paroi. Si le dessous pend à l'impression, activer les
+supports « depuis le plateau uniquement ».
 
 ESSAI
 1. Poser la pince, les petits galets dans la gorge, le gros galet dans le C,

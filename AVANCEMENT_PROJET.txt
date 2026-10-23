@@ -16,6 +16,7 @@ gros galet roule a plat dans le C, sans gorge ; les deux petits galets,
 en tandem cote machoire, gardent leur gorge de 1,4.
 Essai v5 (23/10) : TOUT RENTRE PARFAITEMENT. Geometrie galets / rails
 validee. Mesures encore manquantes : MESURES RESTANTES.txt a la racine.
+v6 (demande) : renfort en biais retire sous le contre-rail du C.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,

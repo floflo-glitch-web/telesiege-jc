@@ -9,6 +9,7 @@ v3 : gorges trop larges a l'essai v2 : gros galet -1/3, petit galet -1/2.
 v4 : profil en C pour le gros galet : contre-rail au-dessus et paroi exterieure.
 v5 : comme sur les vraies pinces (photos Doppelmayr), le gros galet roule a plat
      dans le C, sans gorge ; la gorge reste pour les deux petits galets en tandem.
+v6 : v5 validee a l'essai ; renfort en biais retire sous le contre-rail (interieur du C droit).
 """
 from pathlib import Path
 import json
@@ -16,7 +17,7 @@ import manifold3d as mf
 import trimesh
 
 BASE = Path(__file__).resolve().parent
-VERSION = 'v5'
+VERSION = 'v6'
 
 COTES = dict(
     longueur=50.0,              # le long du cable
@@ -37,7 +38,6 @@ COTES = dict(
                      epaisseur=1.6,
                      jeu_bout_axe=0.4,     # bout d'axe -> face interieure de la paroi
                      epaisseur_paroi=1.5,
-                     chanfrein=1.5,        # renfort sous le contre-rail, imprimable sans support
                      evasement=dict(hauteur=1.0, longueur=3.0)),  # entree du contre-rail
     fente_suspente_y=18.0,      # axe de la suspente a hauteur de plaque
     fente_suspente_largeur=10.0,
@@ -84,14 +84,11 @@ def rail_essai(c):
     y_int = y2 - c['gros_galet_largeur'] / 2 - 0.15                  # le contre-rail couvre tout le galet
     paroi = boite(0, y_paroi, e - 0.01, L, y_paroi + k['epaisseur_paroi'], z_haut)
     contre = boite(0, y_int, z_bas, L, y_paroi + 0.01, z_haut)
-    ch = k['chanfrein']
-    renfort = mf.Manifold.extrude(mf.CrossSection([[(y_paroi + 0.01, z_bas - ch), (y_paroi + 0.01, z_bas + 0.01),
-                                                    (y_paroi - ch, z_bas + 0.01)]]), L).rotate([90, 0, 90])
     ev = k['evasement']
     entree = mf.Manifold.extrude(mf.CrossSection([[(-0.01, z_bas - 0.01), (ev['longueur'], z_bas - 0.01),
                                                    (-0.01, z_bas + ev['hauteur'])]]), y_paroi - y_int + 1)
     entree = entree.rotate([90, 0, 0]).translate([0, y_paroi, 0])
-    piece = piece + paroi + contre + renfort - entree
+    piece = piece + paroi + contre - entree
     # fente de la suspente, ouverte cote X = 0
     ys, ws = c['fente_suspente_y'], c['fente_suspente_largeur']
     piece = piece - boite(-1, ys - ws / 2, -1, c['fente_suspente_longueur'], ys + ws / 2, e + 1)
@@ -133,7 +130,7 @@ def apercu(m, info, c, chemin):
     zb = info['contre_rail_dessous_z']; yp = info['paroi_y']; y_int = info['contre_rail_y_int']
     bx.add_patch(Rectangle((info['sol_c_y'], e), yp - info['sol_c_y'], h, fc='#93c5fd', ec='#1e3a8a'))
     bx.add_patch(Polygon([(yp, e), (yp + k['epaisseur_paroi'], e), (yp + k['epaisseur_paroi'], zb + k['epaisseur']),
-                          (y_int, zb + k['epaisseur']), (y_int, zb), (yp - k['chanfrein'], zb), (yp, zb - k['chanfrein'])],
+                          (y_int, zb + k['epaisseur']), (y_int, zb), (yp, zb)],
                          fc='#93c5fd', ec='#1e3a8a'))
     bx.text(yp + k['epaisseur_paroi'] + 0.8, zb + 0.8, 'contre-rail\n+ paroi', fontsize=8, va='center')
     zc = info['cable_z']; za = zc - 4.2
@@ -172,7 +169,7 @@ def main():
                                 for k, v in info.items()},
         volume_mm3=round(float(mesh.volume), 1),
         dimensions_mm=[round(float(v), 2) for v in mesh.extents],
-        statut='Piece d essai ; ecart valide en v1 ; gros galet a plat dans le C (v5) a essayer'),
+        statut='Piece d essai ; geometrie validee en v5 ; v6 sans renfort sous le contre-rail'),
         ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Rail_essai_JC_{VERSION}.stl :', [round(float(v), 2) for v in mesh.extents], 'mm,', round(float(mesh.volume)), 'mm3')
 

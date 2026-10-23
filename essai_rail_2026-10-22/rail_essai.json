@@ -1,5 +1,5 @@
 {
-  "version": "v5",
+  "version": "v6",
   "cotes": {
     "longueur": 50.0,
     "epaisseur_plaque": 3.0,
@@ -22,7 +22,6 @@
       "epaisseur": 1.6,
       "jeu_bout_axe": 0.4,
       "epaisseur_paroi": 1.5,
-      "chanfrein": 1.5,
       "evasement": {
         "hauteur": 1.0,
         "longueur": 3.0
@@ -57,11 +56,11 @@
       15.3
     ]
   },
-  "volume_mm3": 7857.2,
+  "volume_mm3": 7801.8,
   "dimensions_mm": [
     50.0,
     42.7,
     15.3
   ],
-  "statut": "Piece d essai ; ecart valide en v1 ; gros galet a plat dans le C (v5) a essayer"
+  "statut": "Piece d essai ; geometrie validee en v5 ; v6 sans renfort sous le contre-rail"
 }
