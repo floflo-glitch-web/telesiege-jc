@@ -20,8 +20,17 @@ DEMANDE APRÈS LA v3
 Pour le gros galet, un rail au-dessus et une paroi sur le côté, comme dans
 les vraies gares débrayables.
 
-LA PIÈCE v4 : Rail_essai_JC_v4.stl (50 x 42,7 x 15,3 mm)
-Mêmes gorges que la v3, plus un profil en C pour le gros galet :
+OBSERVATION APRÈS LA v4 (photos d'une vraie pince Doppelmayr, 4-CLD)
+Le gros galet, au bout du tube, roule à plat dans le profil en C : pas de
+gorge. Les deux galets plus fins, en tandem côté mâchoire, roulent sur un
+autre rail. La pince JC a donc deux petits galets l'un derrière l'autre
+côté mâchoire (un seul visible de face sur les photos).
+
+LA PIÈCE v5 : Rail_essai_JC_v5.stl (50 x 42,7 x 15,3 mm)
+- Rail des deux petits galets : gorge de 1,4 mm (inchangée depuis la v3).
+- Gros galet : fond plat de 4,7 mm de large, sans gorge ni rebord, entre
+  2,4 mm à l'intérieur de son centre et la paroi.
+- Profil en C du gros galet conservé :
 - contre-rail au-dessus du gros galet : dessous à 0,6 mm au-dessus du haut
   du galet (Ø 7,1 estimé), 1,6 mm d'épaisseur, de l'aplomb du bord intérieur
   de la gorge jusqu'à la paroi ;
@@ -32,19 +41,16 @@ Mêmes gorges que la v3, plus un profil en C pour le gros galet :
 Le gros galet est maintenant prisonnier du profil : la pince s'engage
 uniquement par l'entrée, du côté ouvert de la fente.
 
-Rappel des gorges (v3) :
-- Deux rails à 24,6 mm d'entraxe, un sous chaque galet, avec une gorge où
-  roule le galet :
-    petit galet, côté mâchoire ......... gorge de 1,4 mm
-    gros galet, côté opposé ............ gorge de 2,4 mm
-  Une gorge imprimée sort souvent un peu plus étroite que prévu (0,1 à
-  0,2 mm). Si un galet force, le dire : on rouvre de 0,2 mm.
-- Fond des gorges à la même hauteur que le dessus des rails de la v1 :
-  le câble reste à la même hauteur.
-- Bords des gorges : 1,0 mm côté extérieur, 0,5 mm côté intérieur. Le bord
-  intérieur est bas parce que le corps de la pince passe à environ 1 mm
-  au-dessus du rail côté mâchoire. Les deux bords extérieurs suffisent à
-  guider la pince dans les deux sens.
+Rappel :
+- Entraxe 24,6 mm entre le rail des petits galets et le centre du gros galet.
+- Gorge des petits galets : une gorge imprimée sort souvent un peu plus
+  étroite que prévu (0,1 à 0,2 mm). Si un galet force, le dire.
+- Fond de gorge et fond du C à la même hauteur que le dessus des rails de
+  la v1 : le câble reste à la même hauteur.
+- Bords de la gorge des petits galets : 1,0 mm côté câble, 0,5 mm côté
+  intérieur (le corps de la pince passe à environ 1 mm au-dessus).
+- Guidage en travers : la gorge des petits galets dans les deux sens, et la
+  paroi du C, à 0,4 mm du bout d'axe du gros galet.
 - Un trait fin sur la plaque, du côté du crochet de la mâchoire, à 6,3 mm du
   centre de la gorge = aplomb théorique du câble.
 - Une fente de 10 mm, ouverte d'un côté, pour laisser passer la suspente.
@@ -57,18 +63,17 @@ de son renfort : ça passe en général sans support. Si le dessous pend,
 activer les supports « depuis le plateau uniquement ».
 
 ESSAI
-1. Poser la pince, le gros galet dans la gorge la plus large,
+1. Poser la pince, les petits galets dans la gorge, le gros galet dans le C,
    le crochet de la mâchoire du côté du trait du câble, la suspente dans la
    fente. Avec le siège accroché, tenir la pièce en l'air.
 2. Engager le gros galet dans le profil en C par l'entrée, puis faire
    rouler la pince à la main.
 
 À REGARDER ET À ME DIRE
-A. Les galets entrent-ils dans les gorges et roulent-ils sans forcer ?
+A. Les deux petits galets entrent-ils dans la gorge et roulent-ils sans forcer ?
    Trop de jeu, ou pas assez ?
-B. Quelque chose frotte-t-il sur les bords des gorges, surtout le corps de
-   la pince sur le bord intérieur côté mâchoire, et les embouts d'axe sur
-   les bords extérieurs ?
+B. Quelque chose frotte-t-il, surtout le corps de la pince sur le bord
+   intérieur de la gorge côté mâchoire ?
 C. Gros galet dans le profil en C : jeu sous le contre-rail (trop, pas
    assez), le bout d'axe touche-t-il la paroi ? La pince peut-elle encore
    se soulever ?

@@ -11,6 +11,9 @@ v3 : gorge du gros galet 2,4 (-1/3), du petit galet 1,4 (-1/2).
 v4 (demande) : profil en C pour le gros galet, contre-rail au-dessus a
 0,6 mm du galet et paroi exterieure, comme en gare reelle. En attente de
 l essai de la v4.
+v5 : photos d une vraie pince Doppelmayr fournies par l utilisateur : le
+gros galet roule a plat dans le C, sans gorge ; les deux petits galets,
+en tandem cote machoire, gardent leur gorge de 1,4. En attente d essai.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,

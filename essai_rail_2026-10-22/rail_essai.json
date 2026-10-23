@@ -1,12 +1,11 @@
 {
-  "version": "v4",
+  "version": "v5",
   "cotes": {
     "longueur": 50.0,
     "epaisseur_plaque": 3.0,
     "hauteur_rail": 3.0,
     "gorge": {
       "largeur_machoire": 1.4,
-      "largeur_oppose": 2.4,
       "bord": 1.2,
       "bord_exterieur": 1.0,
       "bord_interieur": 0.5
@@ -15,6 +14,8 @@
     "entraxe_galets": 24.6,
     "cable_au_dessus_rail": 7.75,
     "gros_galet_diametre": 7.1,
+    "gros_galet_largeur": 2.1,
+    "plancher_c_interieur": 2.4,
     "bout_axe_oppose_y": 32.8,
     "contre_rail": {
       "jeu_dessus": 0.6,
@@ -48,17 +49,19 @@
     "cable_z": 13.75,
     "contre_rail_dessous_z": 13.7,
     "paroi_y": 33.2,
+    "sol_c_y": 28.5,
+    "contre_rail_y_int": 29.7,
     "encombrement": [
       50.0,
       42.7,
       15.3
     ]
   },
-  "volume_mm3": 7942.1,
+  "volume_mm3": 7857.2,
   "dimensions_mm": [
     50.0,
     42.7,
     15.3
   ],
-  "statut": "Piece d essai ; ecart valide en v1, gorges v3, profil en C du gros galet a essayer"
+  "statut": "Piece d essai ; ecart valide en v1 ; gros galet a plat dans le C (v5) a essayer"
 }
