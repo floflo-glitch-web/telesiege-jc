@@ -1,0 +1,54 @@
+TRONÇON DE RAIL D'ESSAI EN VIRAGE - pince JC D-Line
+23 octobre 2026
+
+BUT
+Vérifier que la pince roule bien en courbe avec le profil validé en ligne
+droite (rail v5/v6). Ce n'est toujours pas un rail de gare : pas de came,
+pas de pneus, pas d'aiguillage.
+
+LA PIÈCE : Rail_virage_JC_v1.stl (79 x 116 x 15,3 mm, environ 18 cm³)
+- Même profil que le rail droit validé : gorge des deux petits galets, fond
+  plat du gros galet dans le profil en C, contre-rail, paroi, fente de la
+  suspente, trait du câble, entraxe 24,6 mm.
+- 15 mm de ligne droite à l'entrée, puis un virage de 60°.
+- Rayon le plus serré prévu en gare : le câble autour de la poulie JC,
+  R 77,5 mm (poulie de 155 mm). Rayons obtenus :
+    trait du câble ............... R 77,5
+    gorge des petits galets ...... R 83,8
+    centre du gros galet ......... R 108,4
+    paroi du C ................... R 110,7
+- Gorge des petits galets : 1,4 mm dans la ligne droite, 2,0 mm dans le
+  virage. En courbe, les deux petits galets en tandem forment une corde et
+  se mettent légèrement en biais dans la gorge : elle doit être plus large.
+  2,0 mm couvre un écart d'environ 25 mm entre ces deux galets (écart pas
+  encore mesuré).
+- La fente de la suspente est fermée sur les derniers millimètres du virage
+  pour que la pièce reste d'un seul bloc : la suspente s'y arrête.
+
+HYPOTHÈSE À CONFIRMER
+Mâchoire vers l'INTÉRIEUR du virage, galets et suspente vers l'extérieur,
+comme autour de la poulie JC où la pince passe à l'extérieur de la jante.
+Si la pince est dans l'autre sens sur ta ligne, le dire : la version miroir
+se génère en quelques secondes.
+
+IMPRESSION
+À plat, rails vers le haut, PLA ou PETG, couches de 0,2 mm. Vérifier que la
+pièce tient sur le plateau (79 x 116 mm). Supports « depuis le plateau
+uniquement » si le dessous du contre-rail pend.
+
+ESSAI
+1. Engager la pince par l'entrée droite comme sur le rail droit : petits
+   galets dans la gorge, gros galet dans le C, suspente dans la fente.
+2. La faire rouler lentement à la main dans tout le virage.
+
+À REGARDER ET À ME DIRE
+A. La pince passe-t-elle tout le virage sans coincer ? Si elle coince, où :
+   petits galets dans la gorge, gros galet dans le C, suspente dans la fente ?
+B. Trop de jeu des petits galets dans la gorge du virage ?
+C. Le bout d'axe du gros galet frotte-t-il la paroi du C dans le virage ?
+D. Le siège touche-t-il quelque chose, ou part-il trop en biais ?
+E. Si possible : écart entre les deux petits galets, d'un centre à l'autre,
+   le long du câble.
+
+Réglages en tête de generer_rail_virage.py (rayon, angle, largeur de la
+gorge en virage). Le profil vient de generer_rail_essai.py.

@@ -1,0 +1,32 @@
+{
+  "version": "v1",
+  "virage": {
+    "rayon_cable": 77.5,
+    "angle": 60.0,
+    "entree_droite": 15.0,
+    "gorge_virage": 2.0,
+    "pont_fin": 8.0,
+    "segments": 720
+  },
+  "positions": {
+    "top": 6.0,
+    "y1": 6.3,
+    "y2": 30.9,
+    "w": 4.4,
+    "y_paroi": 33.2,
+    "z_bas": 13.7,
+    "z_haut": 15.3,
+    "y_int": 29.7,
+    "rayon_gorge_petits_galets": 83.8,
+    "rayon_centre_gros_galet": 108.4,
+    "rayon_paroi": 110.7,
+    "angle_fente": 55.2
+  },
+  "volume_mm3": 17870.9,
+  "dimensions_mm": [
+    79.45,
+    115.63,
+    15.3
+  ],
+  "statut": "Piece d essai en virage ; profil valide en ligne droite, gorge elargie en courbe a essayer"
+}
