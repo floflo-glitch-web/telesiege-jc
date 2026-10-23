@@ -20,7 +20,9 @@ v6 (demande) : renfort en biais retire sous le contre-rail du C.
 Virage v1 (demande) : meme profil sur 15 mm droits + 60 degres au rayon du
 cable autour de la poulie (R 77,5) ; gorge des petits galets elargie a 2,0
 en courbe ; machoire supposee vers l interieur du virage. En attente d essai.
-Fichiers : essai_rail_2026-10-22/Rail_virage_JC_v1.stl et NOTICE_VIRAGE.txt.
+Fichiers : essai_rail_2026-10-22/Rail_virage_JC_v2.stl et NOTICE_VIRAGE.txt.
+Essai virage v1 : le bout d axe du gros galet frotte la paroi du C.
+Virage v2 : paroi reculee en courbe (jeu 1,0 au lieu de 0,4). En attente.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,

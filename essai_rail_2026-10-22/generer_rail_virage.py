@@ -6,6 +6,8 @@ Hypothese : machoire vers l'interieur du virage, galets et suspente vers l'exter
 comme sur la poulie JC ou la pince passe a l'exterieur de la jante.
 Relancer : python essai_rail_2026-10-22/generer_rail_virage.py
 Repere : centre du virage a l'origine, entree droite le long de Y < 0, Z vers le haut.
+v1 : bout d'axe du gros galet qui frotte la paroi du C dans le virage (essai 23/10).
+v2 : paroi du C reculee dans le virage seulement (jeu 1,0 mm au lieu de 0,4).
 """
 from pathlib import Path
 import json
@@ -15,7 +17,7 @@ import trimesh
 from generer_rail_essai import COTES
 
 BASE = Path(__file__).resolve().parent
-VERSION = 'v1'
+VERSION = 'v2'
 
 VIRAGE = dict(
     rayon_cable=77.5,           # rayon du cable autour de la poulie JC (155 / 2)
@@ -23,6 +25,7 @@ VIRAGE = dict(
     entree_droite=15.0,         # ligne droite avant le virage, cote entree
     gorge_virage=2.0,           # 1,4 en ligne droite : les deux petits galets en tandem
                                 # forment une corde et se mettent en biais dans la courbe
+    jeu_bout_axe_virage=1.0,    # 0,4 en ligne droite (valide) : frottait en virage en v1
     pont_fin=8.0,               # plaque pleine a la fin de la fente de suspente (mm a son rayon)
     segments=720,               # facettes pour 360 degres
 )
@@ -32,13 +35,13 @@ def rect(u0, z0, u1, z1, R):
     return mf.CrossSection.square([u1 - u0, z1 - z0]).translate([R + u0, z0])
 
 
-def profil(c, R, lg):
-    """Coupe (rayon, Z) du troncon pour une largeur de gorge des petits galets lg."""
+def profil(c, R, lg, jeu):
+    """Coupe (rayon, Z) : gorge des petits galets lg, jeu entre bout d'axe et paroi du C."""
     e, h, g, k = c['epaisseur_plaque'], c['hauteur_rail'], c['gorge'], c['contre_rail']
     top = e + h
     y1 = c['galet_machoire_y']
     y2 = y1 + c['entraxe_galets']
-    y_paroi = c['bout_axe_oppose_y'] + k['jeu_bout_axe']
+    y_paroi = c['bout_axe_oppose_y'] + jeu
     z_bas = top + c['gros_galet_diametre'] + k['jeu_dessus']
     z_haut = z_bas + k['epaisseur']
     y_int = y2 - c['gros_galet_largeur'] / 2 - 0.15
@@ -72,23 +75,23 @@ def coin_entree(y_entree, x0, x1, z_pied, z_sommet, longueur):
 def rail_virage(c, v):
     R, L0 = v['rayon_cable'], v['entree_droite']
     seg = v['segments']
-    cs_arc, d = profil(c, R, v['gorge_virage'])
-    cs_droit, _ = profil(c, R, c['gorge']['largeur_machoire'])
-    piece = mf.Manifold.revolve(cs_arc, seg, v['angle']) + droite(cs_droit, L0)
     e, g, k = c['epaisseur_plaque'], c['gorge'], c['contre_rail']
+    cs_arc, d = profil(c, R, v['gorge_virage'], v['jeu_bout_axe_virage'])
+    cs_droit, d0 = profil(c, R, g['largeur_machoire'], k['jeu_bout_axe'])   # entree droite = rail valide
+    piece = mf.Manifold.revolve(cs_arc, seg, v['angle']) + droite(cs_droit, L0)
     y0 = -L0
     # rampes d'entree : gorge des petits galets et fond du C ; evasement du contre-rail
     r = c['rampe_entree']
     w0 = c['gorge']['largeur_machoire'] + 2 * g['bord']
-    piece = piece - coin_entree(y0, R + d['y1'] - w0 / 2 - 1, R + d['y1'] + w0 / 2 + 1,
-                                d['top'] - r['profondeur'], d['top'] + g['bord_exterieur'] + 0.01, r['longueur'])
+    piece = piece - coin_entree(y0, R + d0['y1'] - w0 / 2 - 1, R + d0['y1'] + w0 / 2 + 1,
+                                d0['top'] - r['profondeur'], d0['top'] + g['bord_exterieur'] + 0.01, r['longueur'])
     # coupes arretees a 0,02 mm de la paroi : pas de face confondue avec elle
-    piece = piece - coin_entree(y0, R + d['y2'] - c['plancher_c_interieur'] - 0.01, R + d['y_paroi'] - 0.02,
-                                d['top'] - r['profondeur'], d['top'] + 0.01, r['longueur'])
+    piece = piece - coin_entree(y0, R + d0['y2'] - c['plancher_c_interieur'] - 0.01, R + d0['y_paroi'] - 0.02,
+                                d0['top'] - r['profondeur'], d0['top'] + 0.01, r['longueur'])
     ev = k['evasement']
-    evas = mf.CrossSection([[(y0 - 0.01, d['z_bas'] - 0.01), (y0 + ev['longueur'], d['z_bas'] - 0.01),
-                             (y0 - 0.01, d['z_bas'] + ev['hauteur'])]])
-    piece = piece - mf.Manifold.extrude(evas, d['y_paroi'] - d['y_int'] + 0.98).rotate([90, 0, 90]).translate([R + d['y_int'] - 1, 0, 0])
+    evas = mf.CrossSection([[(y0 - 0.01, d0['z_bas'] - 0.01), (y0 + ev['longueur'], d0['z_bas'] - 0.01),
+                             (y0 - 0.01, d0['z_bas'] + ev['hauteur'])]])
+    piece = piece - mf.Manifold.extrude(evas, d0['y_paroi'] - d0['y_int'] + 0.98).rotate([90, 0, 90]).translate([R + d0['y_int'] - 1, 0, 0])
     # fente de la suspente : ouverte a l'entree, fermee sur les derniers millimetres du virage
     ys, ws = c['fente_suspente_y'], c['fente_suspente_largeur']
     fente = rect(ys - ws / 2, -1, ys + ws / 2, e + 1, R)
@@ -148,7 +151,7 @@ def main():
     (BASE / 'rail_virage.json').write_text(json.dumps(dict(
         version=VERSION, virage=VIRAGE, positions={k: round(x, 2) for k, x in d.items()},
         volume_mm3=round(float(mesh.volume), 1), dimensions_mm=[round(float(x), 2) for x in mesh.extents],
-        statut='Piece d essai en virage ; profil valide en ligne droite, gorge elargie en courbe a essayer'),
+        statut='Piece d essai en virage ; v2 : paroi du C reculee en courbe apres frottement du bout d axe'),
         ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(nom, ':', [round(float(x), 1) for x in mesh.extents], 'mm,', round(float(mesh.volume)), 'mm3')
 

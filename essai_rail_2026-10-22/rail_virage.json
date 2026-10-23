@@ -1,10 +1,11 @@
 {
-  "version": "v1",
+  "version": "v2",
   "virage": {
     "rayon_cable": 77.5,
     "angle": 60.0,
     "entree_droite": 15.0,
     "gorge_virage": 2.0,
+    "jeu_bout_axe_virage": 1.0,
     "pont_fin": 8.0,
     "segments": 720
   },
@@ -13,20 +14,20 @@
     "y1": 6.3,
     "y2": 30.9,
     "w": 4.4,
-    "y_paroi": 33.2,
+    "y_paroi": 33.8,
     "z_bas": 13.7,
     "z_haut": 15.3,
     "y_int": 29.7,
     "rayon_gorge_petits_galets": 83.8,
     "rayon_centre_gros_galet": 108.4,
-    "rayon_paroi": 110.7,
+    "rayon_paroi": 111.3,
     "angle_fente": 55.2
   },
-  "volume_mm3": 17870.9,
+  "volume_mm3": 18422.9,
   "dimensions_mm": [
-    79.45,
-    115.63,
+    80.05,
+    116.15,
     15.3
   ],
-  "statut": "Piece d essai en virage ; profil valide en ligne droite, gorge elargie en courbe a essayer"
+  "statut": "Piece d essai en virage ; v2 : paroi du C reculee en courbe apres frottement du bout d axe"
 }
