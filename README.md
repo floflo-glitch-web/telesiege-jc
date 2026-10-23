@@ -15,7 +15,8 @@ n'est actuellement disponible dans le projet.
 2. [Registre des cotes](recherche_mesures_2026-10-22/REGISTRE_COTES.csv) :
    110 entrées, dont 28 mesures ou observations inconnues explicitement signalées.
 3. [Sources et pistes](recherche_mesures_2026-10-22/SOURCES_ET_PISTES.txt).
-4. [Fiche des mesures à prendre](FICHE%20MESURES%20-%20pince%20et%20siege%20JC.txt).
+4. [Mesures qui manquent encore](MESURES%20RESTANTES.txt) (à jour) et la
+   [fiche détaillée d'origine](FICHE%20MESURES%20-%20pince%20et%20siege%20JC.txt).
 5. [Cotes de la pince estimées sur photo](mesures_photo_2026-10-22/MESURES%20PHOTO%20-%20pince%20JC.txt) :
    échelle donnée par l'axe des galets mesuré à 28 mm.
 6. [Avancement courant](AVANCEMENT_PROJET.txt).

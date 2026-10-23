@@ -26,6 +26,8 @@ gorge. Les deux galets plus fins, en tandem côté mâchoire, roulent sur un
 autre rail. La pince JC a donc deux petits galets l'un derrière l'autre
 côté mâchoire (un seul visible de face sur les photos).
 
+RÉSULTAT DE LA v5 (23/10) : tout rentre parfaitement. Géométrie validée.
+
 LA PIÈCE v5 : Rail_essai_JC_v5.stl (50 x 42,7 x 15,3 mm)
 - Rail des deux petits galets : gorge de 1,4 mm (inchangée depuis la v3).
 - Gros galet : fond plat de 4,7 mm de large, sans gorge ni rebord, entre

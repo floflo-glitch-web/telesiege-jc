@@ -31,6 +31,16 @@
     "bloc_strie_le_long": [4.4, 8.4],
     "bloc_strie_dessus_en_travers": 5.1
   },
+  "valide_essai_rail_v5_2026_10_23": {
+    "source": "essai_rail_2026-10-22/Rail_essai_JC_v5.stl, essaye par l'utilisateur : tout rentre parfaitement",
+    "galets": "2 petits galets en tandem cote machoire + 1 gros galet au bout du tube",
+    "entraxe_petits_galets_gros_galet": 24.6,
+    "gorge_petits_galets_largeur": 1.4,
+    "gros_galet": "roule a plat dans un profil en C, contre-rail 0,6 mm au-dessus d'un galet de 7,1",
+    "bout_axe_gros_galet_y": 32.8,
+    "hauteur_fond_de_roulement_sous_cable": 7.75,
+    "non_verifie_par_cet_essai": "position du cable sur le trait de la plaque"
+  },
   "cable_diametre": null,
   "galets_roulement_diametre": null,
   "galets_roulement_largeur": null,

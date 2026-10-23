@@ -1,0 +1,47 @@
+GARE DÉBRAYABLE JC - MESURES QUI MANQUENT ENCORE
+Mise à jour : 23/10/2026
+
+DÉJÀ ACQUIS
+- Axe des galets : 28 mm bout à bout (mesuré).
+- Galets : 2 petits en tandem côté mâchoire (gorge de 1,4 mm), 1 gros au bout
+  du tube (Ø 7,1 environ, roule à plat dans un profil en C), entraxe 24,6 mm.
+  Validé par l'essai du rail v5.
+- Câble Ø 2,5 environ ; position du câble par rapport aux galets, galet du
+  levier pince fermée (Ø 5,9), suspente : estimations photo.
+Détails : mesures_photo_2026-10-22/ et reprise_codex/mesures_pince.json.
+
+MÉTHODE QUI MARCHE
+Photo bien de face ou bien de dessus, axe de 28 mm visible : il sert d'échelle.
+Une règle posée contre la pièce fait aussi l'affaire.
+
+PRIORITÉ 1 - CAME D'OUVERTURE (ouvrir et refermer la pince en gare)
+ 1. Photo de face (comme la photo avec le câble), levier appuyé juste assez
+    pour que le câble se libère.
+ 2. Même photo, levier appuyé à fond (sans forcer au-delà de la butée).
+ 3. Par où sort le câble quand la pince s'ouvre (vers le bas, vers le côté) ?
+ 4. Pince ouverte puis levier relâché, sans câble : reste-t-elle ouverte ou
+    se referme-t-elle ?
+ 5. Effort pour ouvrir : appuyer le galet du levier sur une balance de cuisine
+    dans le sens où il bouge, noter les grammes au moment où le câble se libère.
+
+PRIORITÉ 2 - LONGUEURS LE LONG DU CÂBLE (pneus, aiguillages, courbes)
+ 6. Photo de dessus de la pince sur son câble (vue du ciel), axe visible.
+    Donne l'écart entre les deux petits galets, la position du gros galet et
+    du galet du levier le long du câble, la longueur de la pince.
+ 7. Photo de côté (perpendiculaire au câble) avec une règle contre la pince.
+    Donne la longueur du bloc strié, le pas des stries, sa hauteur.
+ 8. Quelle surface les pneus de la gare doivent-ils entraîner ? Le bloc strié
+    sur le dessus de la pince, ou autre chose ?
+
+PRIORITÉ 3 - SIÈGE ET RACCORDEMENT À LA LIGNE
+ 9. Photo du siège suspendu sur un câble tendu, vue dans l'axe du câble,
+    siège entier visible : orientation réelle de la pince, hauteur câble ->
+    bas du siège, largeur du siège.
+10. Même chose vue de côté : profondeur du siège, bulle fermée.
+11. Masse d'un siège complet (balance de cuisine).
+12. Sur ta ligne : le crochet de la mâchoire est-il tourné vers l'intérieur
+    (entre les deux câbles) ou vers l'extérieur ?
+13. Gare JC existante : diamètre extérieur de la grande poulie, hauteur du
+    câble au-dessus du socle à l'entrée.
+14. Entraxe réel des deux câbles sur un pylône (155 mm attendus) et hauteur du
+    câble sur le pylône.
