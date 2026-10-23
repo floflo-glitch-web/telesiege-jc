@@ -8,7 +8,9 @@ Essai v1 par l utilisateur : ecart 24,6 parfait, la pince se place bien ;
 traits des rails trop petits. v2 : gorges de 2,8 (cote machoire) et 3,6
 (galet le plus large, cote oppose). Essai v2 : gorges trop larges.
 v3 : gorge du gros galet 2,4 (-1/3), du petit galet 1,4 (-1/2).
-En attente de l essai de la v3.
+v4 (demande) : profil en C pour le gros galet, contre-rail au-dessus a
+0,6 mm du galet et paroi exterieure, comme en gare reelle. En attente de
+l essai de la v4.
 
 PREMIERE MESURE PHYSIQUE ET COTES SUR PHOTO (22/10, reprise Claude)
 Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,

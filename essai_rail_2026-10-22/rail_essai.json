@@ -1,5 +1,5 @@
 {
-  "version": "v3",
+  "version": "v4",
   "cotes": {
     "longueur": 50.0,
     "epaisseur_plaque": 3.0,
@@ -14,6 +14,19 @@
     "galet_machoire_y": 6.3,
     "entraxe_galets": 24.6,
     "cable_au_dessus_rail": 7.75,
+    "gros_galet_diametre": 7.1,
+    "bout_axe_oppose_y": 32.8,
+    "contre_rail": {
+      "jeu_dessus": 0.6,
+      "epaisseur": 1.6,
+      "jeu_bout_axe": 0.4,
+      "epaisseur_paroi": 1.5,
+      "chanfrein": 1.5,
+      "evasement": {
+        "hauteur": 1.0,
+        "longueur": 3.0
+      }
+    },
     "fente_suspente_y": 18.0,
     "fente_suspente_largeur": 10.0,
     "fente_suspente_longueur": 38.0,
@@ -33,17 +46,19 @@
     "rail_oppose_y": 30.9,
     "dessus_rail_z": 6.0,
     "cable_z": 13.75,
+    "contre_rail_dessous_z": 13.7,
+    "paroi_y": 33.2,
     "encombrement": [
       50.0,
-      41.3,
-      6.0
+      42.7,
+      15.3
     ]
   },
-  "volume_mm3": 6499.0,
+  "volume_mm3": 7942.1,
   "dimensions_mm": [
     50.0,
-    41.3,
-    7.0
+    42.7,
+    15.3
   ],
-  "statut": "Piece d essai ; ecart valide en v1, gorges reduites apres essai v2"
+  "statut": "Piece d essai ; ecart valide en v1, gorges v3, profil en C du gros galet a essayer"
 }

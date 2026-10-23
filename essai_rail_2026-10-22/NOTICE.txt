@@ -16,7 +16,23 @@ RÉSULTAT DE LA v2
 Gorges trop larges : l'utilisateur demande la gorge du gros galet réduite
 d'un tiers (3,6 -> 2,4 mm) et celle du petit galet de moitié (2,8 -> 1,4 mm).
 
-LA PIÈCE v3 : Rail_essai_JC_v3.stl (50 x 41,3 x 7 mm)
+DEMANDE APRÈS LA v3
+Pour le gros galet, un rail au-dessus et une paroi sur le côté, comme dans
+les vraies gares débrayables.
+
+LA PIÈCE v4 : Rail_essai_JC_v4.stl (50 x 42,7 x 15,3 mm)
+Mêmes gorges que la v3, plus un profil en C pour le gros galet :
+- contre-rail au-dessus du gros galet : dessous à 0,6 mm au-dessus du haut
+  du galet (Ø 7,1 estimé), 1,6 mm d'épaisseur, de l'aplomb du bord intérieur
+  de la gorge jusqu'à la paroi ;
+- paroi extérieure de 1,5 mm, à 0,4 mm du bout d'axe métallique ;
+- renfort en biais sous le contre-rail, contre la paroi, pour imprimer sans
+  support ; il reste au-dessus du bout d'axe ;
+- entrée du contre-rail évasée de 1 mm sur 3 mm.
+Le gros galet est maintenant prisonnier du profil : la pince s'engage
+uniquement par l'entrée, du côté ouvert de la fente.
+
+Rappel des gorges (v3) :
 - Deux rails à 24,6 mm d'entraxe, un sous chaque galet, avec une gorge où
   roule le galet :
     petit galet, côté mâchoire ......... gorge de 1,4 mm
@@ -35,14 +51,17 @@ LA PIÈCE v3 : Rail_essai_JC_v3.stl (50 x 41,3 x 7 mm)
 - Rampe d'entrée des gorges du côté ouvert de la fente.
 
 IMPRESSION
-À plat, rails vers le haut, sans support. PLA ou PETG, couches de 0,2 mm,
-buse de 0,4 mm. Environ 6,5 cm³ de matière.
+À plat, rails vers le haut. PLA ou PETG, couches de 0,2 mm, buse de 0,4 mm.
+Environ 8 cm³ de matière. Le contre-rail déborde de 2 mm à plat au-dessus
+de son renfort : ça passe en général sans support. Si le dessous pend,
+activer les supports « depuis le plateau uniquement ».
 
 ESSAI
 1. Poser la pince, le gros galet dans la gorge la plus large,
    le crochet de la mâchoire du côté du trait du câble, la suspente dans la
    fente. Avec le siège accroché, tenir la pièce en l'air.
-2. Faire rouler la pince à la main depuis l'entrée.
+2. Engager le gros galet dans le profil en C par l'entrée, puis faire
+   rouler la pince à la main.
 
 À REGARDER ET À ME DIRE
 A. Les galets entrent-ils dans les gorges et roulent-ils sans forcer ?
@@ -50,9 +69,12 @@ A. Les galets entrent-ils dans les gorges et roulent-ils sans forcer ?
 B. Quelque chose frotte-t-il sur les bords des gorges, surtout le corps de
    la pince sur le bord intérieur côté mâchoire, et les embouts d'axe sur
    les bords extérieurs ?
-C. La pince est-elle à plat ? (La photo suggérait aussi un galet un peu plus
+C. Gros galet dans le profil en C : jeu sous le contre-rail (trop, pas
+   assez), le bout d'axe touche-t-il la paroi ? La pince peut-elle encore
+   se soulever ?
+D. La pince est-elle à plat ? (La photo suggérait aussi un galet un peu plus
    petit en diamètre côté mâchoire.)
-D. Le câble est-il à l'aplomb du trait de la plaque ? Le dessous du câble
+E. Le câble est-il à l'aplomb du trait de la plaque ? Le dessous du câble
    devrait être à environ 9,5 mm au-dessus de la plaque.
 
 Les cotes sont regroupées en tête de generer_rail_essai.py. Une nouvelle

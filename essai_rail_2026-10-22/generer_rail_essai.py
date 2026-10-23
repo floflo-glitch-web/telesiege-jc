@@ -6,6 +6,7 @@ Repere du STL : X le long du cable, Y en travers (cable a Y = 0), Z vers le haut
 v1 : ecart des galets et position du cable valides par l'essai (22/10).
 v2 : les traits des rails deviennent des gorges ou roulent les galets.
 v3 : gorges trop larges a l'essai v2 : gros galet -1/3, petit galet -1/2.
+v4 : profil en C pour le gros galet : contre-rail au-dessus et paroi exterieure.
 """
 from pathlib import Path
 import json
@@ -13,7 +14,7 @@ import manifold3d as mf
 import trimesh
 
 BASE = Path(__file__).resolve().parent
-VERSION = 'v3'
+VERSION = 'v4'
 
 COTES = dict(
     longueur=50.0,              # le long du cable
@@ -27,6 +28,14 @@ COTES = dict(
     galet_machoire_y=6.3,       # centre du galet cote machoire depuis l'axe du cable
     entraxe_galets=24.6,
     cable_au_dessus_rail=7.75,  # fond de gorge -> cable : 4,2 + 3,55 (rayon galet 7,1)
+    gros_galet_diametre=7.1,
+    bout_axe_oppose_y=32.8,     # bout d'axe metallique cote gros galet (28 mm bout a bout)
+    contre_rail=dict(jeu_dessus=0.6,       # haut du gros galet -> dessous du contre-rail
+                     epaisseur=1.6,
+                     jeu_bout_axe=0.4,     # bout d'axe -> face interieure de la paroi
+                     epaisseur_paroi=1.5,
+                     chanfrein=1.5,        # renfort sous le contre-rail, imprimable sans support
+                     evasement=dict(hauteur=1.0, longueur=3.0)),  # entree du contre-rail
     fente_suspente_y=18.0,      # axe de la suspente a hauteur de plaque
     fente_suspente_largeur=10.0,
     fente_suspente_longueur=38.0,
@@ -50,7 +59,9 @@ def rails(c):
 def rail_essai(c):
     L, e, h, g = c['longueur'], c['epaisseur_plaque'], c['hauteur_rail'], c['gorge']
     (y1, _, _), (y2, lg2, _) = rails(c)
-    ymax = y2 + lg2 / 2 + g['bord'] + c['plaque_y_marge']
+    k = c['contre_rail']
+    y_paroi = c['bout_axe_oppose_y'] + k['jeu_bout_axe']          # face interieure de la paroi
+    ymax = max(y2 + lg2 / 2 + g['bord'], y_paroi + k['epaisseur_paroi']) + c['plaque_y_marge']
     piece = boite(0, c['plaque_y_min'], 0, L, ymax, e)
     top = e + h
     for yr, lg, cote_ext in rails(c):
@@ -65,6 +76,20 @@ def rail_essai(c):
         tri = mf.CrossSection([[(-0.01, top - r['profondeur']), (r['longueur'], z_haut + 0.01), (-0.01, z_haut + 0.01)]])
         coin = mf.Manifold.extrude(tri, w + 2).rotate([90, 0, 0]).translate([0, yr + w / 2 + 1, 0])
         piece = piece + rail - coin
+    # profil en C du gros galet : paroi exterieure + contre-rail au-dessus du galet
+    z_bas = top + c['gros_galet_diametre'] + k['jeu_dessus']
+    z_haut = z_bas + k['epaisseur']
+    y_int = y2 - lg2 / 2                                             # aplomb du bord interieur de la gorge
+    paroi = boite(0, y_paroi, e - 0.01, L, y_paroi + k['epaisseur_paroi'], z_haut)
+    contre = boite(0, y_int, z_bas, L, y_paroi + 0.01, z_haut)
+    ch = k['chanfrein']
+    renfort = mf.Manifold.extrude(mf.CrossSection([[(y_paroi + 0.01, z_bas - ch), (y_paroi + 0.01, z_bas + 0.01),
+                                                    (y_paroi - ch, z_bas + 0.01)]]), L).rotate([90, 0, 90])
+    ev = k['evasement']
+    entree = mf.Manifold.extrude(mf.CrossSection([[(-0.01, z_bas - 0.01), (ev['longueur'], z_bas - 0.01),
+                                                   (-0.01, z_bas + ev['hauteur'])]]), y_paroi - y_int + 1)
+    entree = entree.rotate([90, 0, 0]).translate([0, y_paroi, 0])
+    piece = piece + paroi + contre + renfort - entree
     # fente de la suspente, ouverte cote X = 0
     ys, ws = c['fente_suspente_y'], c['fente_suspente_largeur']
     piece = piece - boite(-1, ys - ws / 2, -1, c['fente_suspente_longueur'], ys + ws / 2, e + 1)
@@ -74,7 +99,8 @@ def rail_essai(c):
     if piece.status() != mf.Error.NoError:
         raise RuntimeError(piece.status())
     return piece, dict(rail_machoire_y=y1, rail_oppose_y=y2, dessus_rail_z=e + h,
-                       cable_z=e + h + c['cable_au_dessus_rail'], encombrement=[L, ymax - c['plaque_y_min'], e + h])
+                       cable_z=e + h + c['cable_au_dessus_rail'], contre_rail_dessous_z=z_bas,
+                       paroi_y=y_paroi, encombrement=[L, ymax - c['plaque_y_min'], z_haut])
 
 
 def apercu(m, info, c, chemin):
@@ -87,7 +113,7 @@ def apercu(m, info, c, chemin):
     ax = fig.add_subplot(1, 2, 1, projection='3d')
     ax.add_collection3d(Poly3DCollection(m.triangles, facecolors='#60a5fa', edgecolors='#1e3a8a', linewidths=0.05))
     ax.set(xlim=(0, 50), ylim=(-5, 45), zlim=(0, 20), xlabel='X le long du câble', ylabel='Y en travers', zlabel='Z')
-    ax.set_box_aspect([50, 50, 20]); ax.view_init(elev=32, azim=-60)
+    ax.set_box_aspect([50, 50, 20]); ax.view_init(elev=28, azim=-125)
     ax.set_title('Tronçon d’essai (STL)')
     bx = fig.add_subplot(1, 2, 2)
     e, h, g = c['epaisseur_plaque'], c['hauteur_rail'], c['gorge']
@@ -101,6 +127,13 @@ def apercu(m, info, c, chemin):
         for cote, haut in ((cote_ext, g['bord_exterieur']), (-cote_ext, g['bord_interieur'])):
             y0 = min(yr + cote * lg / 2, yr + cote * w / 2)
             bx.add_patch(Rectangle((y0, e + h), g['bord'], haut, fc='#93c5fd', ec='#1e3a8a'))
+    k = c['contre_rail']
+    zb = info['contre_rail_dessous_z']; yp = info['paroi_y']
+    y_int = info['rail_oppose_y'] - g['largeur_oppose'] / 2
+    bx.add_patch(Polygon([(yp, e), (yp + k['epaisseur_paroi'], e), (yp + k['epaisseur_paroi'], zb + k['epaisseur']),
+                          (y_int, zb + k['epaisseur']), (y_int, zb), (yp - k['chanfrein'], zb), (yp, zb - k['chanfrein'])],
+                         fc='#93c5fd', ec='#1e3a8a'))
+    bx.text(yp + k['epaisseur_paroi'] + 0.8, zb + 0.8, 'contre-rail\n+ paroi', fontsize=8, va='center')
     zc = info['cable_z']; za = zc - 4.2
     for yr, lw in ((info['rail_machoire_y'], 1.5), (info['rail_oppose_y'], 2.1)):
         bx.add_patch(Rectangle((yr - lw / 2, za - 3.55), lw, 7.1, fc='#e5e7eb', ec='#4b5563'))
@@ -118,8 +151,8 @@ def apercu(m, info, c, chemin):
     bx.text(3.1, -6.1, f"{c['galet_machoire_y']:.1f}".replace('.', ','), ha='center', color='#db2777', fontsize=9)
     bx.text(21, -4.5, 'suspente dans la fente', ha='left', fontsize=8)
     bx.set(xlim=(-14, 42), ylim=(-12, 32), aspect='equal', xlabel='Y en travers (mm)', ylabel='Z (mm)')
-    bx.set_title(f"Coupe {VERSION} : gorges de {c['gorge']['largeur_machoire']:.1f} (petit galet) et "
-                 f"{c['gorge']['largeur_oppose']:.1f} (gros galet)".replace('.', ','))
+    bx.set_title(f"Coupe {VERSION} : gros galet dans un profil en C (gorges {c['gorge']['largeur_machoire']:.1f} et "
+                 f"{c['gorge']['largeur_oppose']:.1f})".replace('.', ','))
     bx.grid(alpha=0.2)
     fig.savefig(chemin, dpi=130)
     plt.close(fig)
@@ -137,7 +170,7 @@ def main():
                                 for k, v in info.items()},
         volume_mm3=round(float(mesh.volume), 1),
         dimensions_mm=[round(float(v), 2) for v in mesh.extents],
-        statut='Piece d essai ; ecart valide en v1, gorges reduites apres essai v2'),
+        statut='Piece d essai ; ecart valide en v1, gorges v3, profil en C du gros galet a essayer'),
         ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Rail_essai_JC_{VERSION}.stl :', [round(float(v), 2) for v in mesh.extents], 'mm,', round(float(mesh.volume)), 'mm3')
 
