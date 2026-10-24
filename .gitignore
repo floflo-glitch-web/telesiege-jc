@@ -1,20 +1,21 @@
 # References telechargees : conserver les liens dans references/README.md.
 /references/**
 !/references/README.md
-/recherche_mesures_2026-10-22/documents/**
-!/recherche_mesures_2026-10-22/documents/inventaire_pdf.json
-/reprise_codex/documents/**
-!/reprise_codex/documents/README.md
+# PDF etudies, gardes en local : la liste et les liens sont suivis.
+/recherche/documents/**
+!/recherche/documents/README.md
+!/recherche/documents/inventaire_pdf.json
 
 # Copies locales du Bureau et sauvegardes historiques du suivi.
 /archives_locales/
-/reprise_codex/sources_claude/Avancement_bureau_avant_reprise.txt
 
-# Inventaire de sauvegarde complete : la version GitHub a son propre inventaire.
+# Inventaire de sauvegarde complete (outils/preparer_archives.py).
 /INVENTAIRE_COMPLET.json
 
 # Sorties de nouvelles executions et fichiers locaux.
-/reprise_codex/constructions/
+/cao/constructions/
+/essais/banc/Banc_JC_*.f3d
+/essais/banc/rapport_execution_Fusion.json
 __pycache__/
 *.py[cod]
 .venv/

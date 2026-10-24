@@ -149,8 +149,7 @@ remplacement par des dimensions inventées :
   ouverte/fermée et garde-corps relevé/abaissé ;
 - position réelle de la poulie et des galets dans la gare de l'utilisateur.
 
-La fiche détaillée « FICHE MESURES - pince et siege JC.txt » existe à la
-racine. Les six groupes prioritaires sont :
+La fiche détaillée est dans mesures/FICHE_MESURES.txt. Les six groupes prioritaires sont :
 1) câble + mâchoires ; 2) galets + passage du rail ; 3) patin de friction ;
 4) galet de commande fermé/ouvert ; 5) gabarit du siège ; 6) gare et poulie.
 Mesurer sur la pièce montée, sans limer, ouvrir le boîtier ou changer les

@@ -42,7 +42,7 @@ def primitive(comp, op):
 
 def run(context):
     app=adsk.core.Application.get()
-    out=BASE/'banc_essai';out.mkdir(exist_ok=True)
+    out=BASE
     rapport={'statut':'INCOMPLET','date':datetime.now().isoformat()}
     try:
         data=json.loads((out/'banc_recette.json').read_text('utf-8'))

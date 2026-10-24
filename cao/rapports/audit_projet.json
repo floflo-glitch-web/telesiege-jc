@@ -151,48 +151,56 @@
   ],
   "sources_archivees": [
     {
-      "chemin": "sources_claude\\Avancement_bureau_avant_reprise.txt",
-      "sha256": "b8e2ccacf118da0368772773a983fbce0b36307bff33a225ed3c5266a2e1fe16"
+      "chemin": "scripts_gare/JC_Gabarit_Gare/JC_Gabarit_Gare.manifest",
+      "sha256": "c7e95b34909231a250a343bc155185c93edf05730a5215b56427116524ba3844"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Construire\\JC_Gare_Construire.manifest",
+      "chemin": "scripts_gare/JC_Gabarit_Gare/JC_Gabarit_Gare.py",
+      "sha256": "81de2d0f832b0500f00f45f0596e1261781f4f78495285711307a47d298c51dc"
+    },
+    {
+      "chemin": "scripts_gare/JC_Gare_Construire/JC_Gare_Construire.manifest",
       "sha256": "303b8a19a6fc7d73351b732398d719446a38cabfe56fe351901a5840fee3a216"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Construire\\JC_Gare_Construire.py",
+      "chemin": "scripts_gare/JC_Gare_Construire/JC_Gare_Construire.py",
       "sha256": "c2814c760baf321a2b39b9d1fb35484759adbce8ad59918f32379a18dff740ab"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Debrayable\\JC_Gare_Debrayable.manifest",
+      "chemin": "scripts_gare/JC_Gare_Debrayable/JC_Gare_Debrayable.manifest",
       "sha256": "fba0f4d1c2913c0a6687664d0f7e64860c9a8a60c5167ea33a0add9873c7977a"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Debrayable\\JC_Gare_Debrayable.py",
+      "chemin": "scripts_gare/JC_Gare_Debrayable/JC_Gare_Debrayable.py",
       "sha256": "8badf79a70b80168c8a683e3388f35bcc08a60fb2f5eea42449cda8c251b7680"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Habillage\\JC_Gare_Habillage.manifest",
+      "chemin": "scripts_gare/JC_Gare_Habillage/JC_Gare_Habillage.manifest",
       "sha256": "aa0cf95e4e8c247b9d4ed9db5a0e85317a0018eb8532bb0484a3395c9975f351"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Habillage\\JC_Gare_Habillage.py",
+      "chemin": "scripts_gare/JC_Gare_Habillage/JC_Gare_Habillage.py",
       "sha256": "ad45425338d75445939d241b28fa07c3ba1d0ffb730f961b352b6a453a6e8beb"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Mecanique\\JC_Gare_Mecanique.manifest",
+      "chemin": "scripts_gare/JC_Gare_Mecanique/JC_Gare_Mecanique.manifest",
       "sha256": "e9edc39d3787932f8c6ae7182b58d2dfa3df548aba179bb5b73f128bc3ab33b0"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Mecanique\\JC_Gare_Mecanique.py",
+      "chemin": "scripts_gare/JC_Gare_Mecanique/JC_Gare_Mecanique.py",
       "sha256": "d6d372429d0cf4c7348eb8293ad53a19ba1150bde5160bcdeb89ffcb5f90ff33"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Structure\\JC_Gare_Structure.manifest",
+      "chemin": "scripts_gare/JC_Gare_Structure/JC_Gare_Structure.manifest",
       "sha256": "c9e8b39c19eea307fd9b4983ec3a2d932404ae94528b892c34069cb2eb2ad942"
     },
     {
-      "chemin": "sources_claude\\JC_Gare_Structure\\JC_Gare_Structure.py",
+      "chemin": "scripts_gare/JC_Gare_Structure/JC_Gare_Structure.py",
       "sha256": "86346e79a8f821fc76629c6f4d23472f9a36c35136144d84c3bfac432835e5c4"
+    },
+    {
+      "chemin": "scripts_gare/pince_jc_galets.py",
+      "sha256": "a5a2064bb6c86cc1c2319380b671989f575895dd564414fd1ae380b0a6eb13c3"
     }
   ]
 }

@@ -39,7 +39,7 @@ Montage :
    par son levier. Noter les surfaces qui portent, les accroches et le jeu.
    Ne pas maintenir le levier en butee et ne pas utiliser de lest.
 
-Mesures prioritaires a reporter dans mesures_pince.json ou la fiche TXT :
+Mesures prioritaires a reporter dans mesures/mesures_pince.json ou mesures/FICHE_MESURES.txt :
 - position et taille des galets qui portent sur le rail ;
 - profondeur disponible pour le bord du rail ;
 - hauteur et longueur utile de la plaque de friction ;

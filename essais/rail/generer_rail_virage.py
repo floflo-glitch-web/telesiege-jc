@@ -4,7 +4,7 @@ Reprend les cotes de generer_rail_essai.py. Le virage suit le rayon du cable aut
 de la poulie (155 mm de diametre), le cas le plus serre prevu en gare.
 Hypothese : machoire vers l'interieur du virage, galets et suspente vers l'exterieur,
 comme sur la poulie JC ou la pince passe a l'exterieur de la jante.
-Relancer : python essai_rail_2026-10-22/generer_rail_virage.py
+Relancer : python essais/rail/generer_rail_virage.py
 Repere : centre du virage a l'origine, entree droite le long de Y < 0, Z vers le haut.
 v1 : bout d'axe du gros galet qui frotte la paroi du C dans le virage (essai 23/10).
 v2 : paroi du C reculee dans le virage seulement (jeu 1,0 mm au lieu de 0,4).

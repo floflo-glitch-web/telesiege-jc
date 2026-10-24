@@ -11,7 +11,7 @@ import manifold3d as mf
 import trimesh
 
 BASE = Path(__file__).resolve().parent
-SORTIE = BASE/'banc_essai'
+SORTIE = BASE
 
 
 def box(x,y,z,dx,dy,dz,op='add'):

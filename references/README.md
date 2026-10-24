@@ -1,10 +1,11 @@
 # Références externes
 
-L'archive **COMPLET** conserve les téléchargements déjà présents. L'archive
-**GITHUB** conserve ce fichier et les liens, sans recopier les modèles,
-catalogues et illustrations de tiers dans le dépôt.
+Les téléchargements restent dans le dossier local, à ces emplacements sous
+`references/`, ignorés par Git. Le dépôt garde seulement ce fichier et les
+liens, sans recopier les modèles, catalogues et illustrations de tiers.
+`outils/preparer_archives.py` les inclut dans la sauvegarde ZIP complète.
 
-| Référence | Auteur ou origine | Lien | Emplacement dans l'archive complète |
+| Référence | Auteur ou origine | Lien | Dossier local |
 | --- | --- | --- | --- |
 | Galet compatible JC `rolna4` | markosaurus, Thingiverse | [7292017](https://www.thingiverse.com/thing:7292017) | `thingiverse_7292017_poulie_JC/` |
 | Pylône compatible JC | sgeiger22, Thingiverse | [5229610](https://www.thingiverse.com/thing:5229610) | `thingiverse_5229610_pylone_JC/` |
@@ -14,14 +15,14 @@ catalogues et illustrations de tiers dans le dépôt.
 | Catalogue JC hiver 2026 | Jägerndorfer | [PDF](https://www.jaegerndorfer.at/katalog/e726e5dd9c~Winterkatalog%20_2026.pdf) | `catalogue_Jaegerndorfer_hiver_2026/` |
 
 Les fichiers `LICENSE.txt` fournis avec les modèles Thingiverse sont conservés
-dans l'archive complète. Le projet ne remplace pas les conditions des auteurs.
+avec eux dans le dossier local. Le projet ne remplace pas les conditions des auteurs.
 
 Les autres PDF étudiés, dont les plans de gares réelles et les notices, sont
 répertoriés avec leurs liens et leurs pages dans
-[SOURCES_ET_PISTES.txt](../recherche_mesures_2026-10-22/SOURCES_ET_PISTES.txt).
+[SOURCES_ET_PISTES.txt](../recherche/SOURCES_ET_PISTES.txt).
 
-Pour utiliser la sauvegarde complète avec le dépôt, recopier les références
-aux mêmes emplacements. Le `.gitignore` permet de les conserver localement.
+Pour une nouvelle copie du dépôt, recopier les références aux mêmes
+emplacements depuis la sauvegarde complète.
 Le petit STEP du galet est une référence facultative pour le constructeur
 Fusion ; il est importé seulement si le fichier existe. Il ne contient pas
 la pince JC et ne remplace pas ses mesures.

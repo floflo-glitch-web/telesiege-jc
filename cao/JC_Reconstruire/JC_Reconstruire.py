@@ -42,7 +42,7 @@ def run(context):
         'Rails et came selon vraie pince','Fixation portante du toit du garage','Trajet des aiguillages']}
     try:
         for nom in ETAPES:
-            chemin=BASE/'sources_claude'/nom/(nom+'.py')
+            chemin=BASE/'scripts_gare'/nom/(nom+'.py')
             ns={'__name__':nom,'__file__':str(chemin)}
             exec(compile(chemin.read_text('utf-8-sig'),str(chemin),'exec'),ns)
             if 'PARAMS' in ns:

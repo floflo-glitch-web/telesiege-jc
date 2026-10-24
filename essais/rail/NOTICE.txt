@@ -3,7 +3,7 @@ TRONÇON DE RAIL D'ESSAI - pince JC D-Line
 
 BUT
 Vérifier sur la vraie pince les cotes relevées sur les deux photos
-(mesures_photo_2026-10-22/) avant de dessiner quoi que ce soit d'autre.
+(mesures/photos/) avant de dessiner quoi que ce soit d'autre.
 Ce n'est pas un rail de gare : pas de came, pas de pneus, pas d'aiguillage.
 Seule pièce 3D demandée par l'utilisateur à ce stade.
 

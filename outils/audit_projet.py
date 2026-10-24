@@ -16,6 +16,7 @@ from shapely.ops import unary_union
 
 BASE = Path(__file__).resolve().parent
 PROJET = BASE.parent
+CAO = PROJET/'cao'
 
 
 def empreinte(angle, rayon, largeur, profondeur, xc=0):
@@ -28,7 +29,7 @@ def empreinte(angle, rayon, largeur, profondeur, xc=0):
 
 
 def main():
-    p = json.loads((BASE/'parametres_projet.json').read_text('utf-8'))['cotes']
+    p = json.loads((CAO/'parametres_projet.json').read_text('utf-8'))['cotes']
     W, D = p['largeur_siege_mm'], p['profondeur_siege_mm']
     r = p['voie_gare_mm']/2
     jeu = p['jeu_mur_souhaite_mm']
@@ -72,17 +73,17 @@ def main():
       ],
       'stl_claude': [], 'sources_archivees': []
     }
-    for f in sorted((PROJET/'STL').glob('*.stl')):
+    for f in sorted((CAO/'STL_gare').glob('*.stl')):
         m=trimesh.load_mesh(f)
         rapports['stl_claude'].append(dict(nom=f.name,sha256=hashlib.sha256(f.read_bytes()).hexdigest(),
           ferme=bool(m.is_watertight),volume_mm3=round(float(m.volume),3),
           dimensions_mm=np.round(m.extents,3).tolist(),corps_connexes=len(m.split())))
-    for f in sorted((BASE/'sources_claude').rglob('*')):
+    for f in sorted((CAO/'scripts_gare').rglob('*')):
         if f.is_file():
             if f.suffix=='.py': ast.parse(f.read_text('utf-8-sig'),filename=str(f))
-            rapports['sources_archivees'].append(dict(chemin=str(f.relative_to(BASE)),
+            rapports['sources_archivees'].append(dict(chemin=f.relative_to(CAO).as_posix(),
                        sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
-    out=BASE/'rapports'
+    out=CAO/'rapports'
     out.mkdir(exist_ok=True)
     (out/'audit_projet.json').write_text(json.dumps(rapports,ensure_ascii=False,indent=2),'utf-8')
     lignes=['AUDIT DE REPRISE - 21/10/2026',

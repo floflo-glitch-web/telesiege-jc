@@ -7,7 +7,7 @@
     "date": "2026-10-22"
   },
   "estimations_photo_2026_10_22": {
-    "source": "mesures_photo_2026-10-22/ (vue de face, echelle 28 mm = 940 px)",
+    "source": "mesures/photos/ (vue de face, echelle 28 mm = 940 px)",
     "statut": "ESTIMATIONS PHOTO, hauteurs depuis l'axe des galets et non depuis l'axe du cable",
     "galets_roulement_diametre": 7.1,
     "galets_roulement_largeur_plage": [1.5, 2.1],
@@ -20,7 +20,7 @@
     "largeur_hors_tout_vue_de_face": 35.1
   },
   "estimations_photo_cable_2026_10_22": {
-    "source": "mesures_photo_2026-10-22/cotes_cable.json",
+    "source": "mesures/photos/cotes_cable.json",
     "repere": "origine centre du cable ; [le long de l'axe des galets, en travers + cote levier / - cote siege]",
     "statut": "ESTIMATIONS PHOTO, pince posee sur table : orientation suspendue inconnue",
     "cable_diametre": 2.5,
@@ -32,7 +32,7 @@
     "bloc_strie_dessus_en_travers": 5.1
   },
   "valide_essai_rail_v5_2026_10_23": {
-    "source": "essai_rail_2026-10-22/Rail_essai_JC_v5.stl, essaye par l'utilisateur : tout rentre parfaitement",
+    "source": "essais/rail/Rail_essai_JC_v5.stl (remplace depuis par la v6), essaye par l'utilisateur : tout rentre parfaitement",
     "galets": "2 petits galets en tandem cote machoire + 1 gros galet au bout du tube",
     "entraxe_petits_galets_gros_galet": 24.6,
     "gorge_petits_galets_largeur": 1.4,

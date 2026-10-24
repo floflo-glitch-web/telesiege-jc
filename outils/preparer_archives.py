@@ -1,7 +1,12 @@
-"""Archive complete et paquet GitHub, sans executer les scripts du projet."""
+"""Archive complete et paquet GitHub, sans executer les scripts du projet.
+
+Le depot Git suffit pour le travail courant ; l'archive COMPLET reste utile pour
+sauvegarder aussi les references telechargees, ignorees par Git.
+"""
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
@@ -9,7 +14,7 @@ import re
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-DATE = '2026-10-22'
+DATE = date.today().isoformat()
 TEMP_PARTS = {'.git', '__pycache__', '.venv', 'venv', '.idea', '.vscode'}
 
 
@@ -24,13 +29,9 @@ def for_github(relative: str) -> bool:
         return False
     if relative.startswith('references/'):
         return relative == 'references/README.md'
-    if relative.startswith('recherche_mesures_2026-10-22/documents/'):
-        return relative.endswith('/inventaire_pdf.json')
-    if relative.startswith('reprise_codex/documents/'):
-        return relative == 'reprise_codex/documents/README.md'
-    if relative.startswith(('archives_locales/', 'reprise_codex/constructions/')):
-        return False
-    if relative == 'reprise_codex/sources_claude/Avancement_bureau_avant_reprise.txt':
+    if relative.startswith('recherche/documents/'):
+        return relative in {'recherche/documents/README.md', 'recherche/documents/inventaire_pdf.json'}
+    if relative.startswith(('archives_locales/', 'cao/constructions/')):
         return False
     if relative in {'INVENTAIRE_COMPLET.json', 'INVENTAIRE_GITHUB.json'}:
         return False

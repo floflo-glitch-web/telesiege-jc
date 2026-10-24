@@ -1,122 +1,108 @@
 # Gare débrayable Jägerndorfer 1:32 avec garage
 
-Projet de recherche et de conception d'une gare débrayable pour une maquette
-Jägerndorfer, avec conservation des sièges et de leurs pinces fonctionnelles
-d'origine. Siège de référence : D-Line « Waidoffen » JC86541.
+Projet de conception d'une gare **débrayable** pour une maquette de télésiège
+Jägerndorfer (JC) au 1:32, en gardant les sièges et leurs pinces d'origine.
+Siège de référence : D-Line « Waidoffen » JC86541.
 
-**État au 22 octobre 2026 : recherche des mesures avant la CAO définitive.**
-Les rails, la came, les pneus et le garage ne sont pas validés en fonctionnement.
-Les STL existants sont des prototypes. Aucun fichier Fusion `.f3d` final validé
-n'est actuellement disponible dans le projet.
+## Où en est le projet (24 octobre 2026)
 
-## Commencer ici
+- **Rail de la pince : validé en ligne droite.** Le tronçon d'essai v5 est
+  rentré parfaitement sur la vraie pince : deux petits galets en tandem dans
+  une gorge, gros galet à plat dans un profil en C. La v6, sans renfort sous
+  le contre-rail, est la version courante.
+- **Rail en virage : v2 à essayer.** La v1 frottait au bout d'axe du gros
+  galet ; la paroi du C est reculée de 0,6 mm dans la courbe.
+- **Cotes de la pince :** une mesure réelle (axe des galets, 28 mm bout à
+  bout) et des cotes estimées sur deux photos à cette échelle.
+- **Encore inconnu :** la came d'ouverture (course et effort du levier,
+  sortie du câble), les longueurs le long du câble (bloc strié, écart des
+  galets) et le siège suspendu. Liste à jour :
+  [mesures/MESURES_RESTANTES.txt](mesures/MESURES_RESTANTES.txt).
+- **Pas encore validé :** came, pneus, entraînement, aiguillages et garage.
+  Les STL de la gare dans `cao/STL_gare/` sont des prototypes. Aucun fichier
+  Fusion `.f3d` final n'existe encore.
 
-1. [Rapport de recherche dimensionnelle](recherche_mesures_2026-10-22/RECHERCHE%20MESURES%20-%20LIRE%20EN%20PREMIER.txt).
-2. [Registre des cotes](recherche_mesures_2026-10-22/REGISTRE_COTES.csv) :
-   110 entrées, dont 28 mesures ou observations inconnues explicitement signalées.
-3. [Sources et pistes](recherche_mesures_2026-10-22/SOURCES_ET_PISTES.txt).
-4. [Mesures qui manquent encore](MESURES%20RESTANTES.txt) (à jour) et la
-   [fiche détaillée d'origine](FICHE%20MESURES%20-%20pince%20et%20siege%20JC.txt).
-5. [Cotes de la pince estimées sur photo](mesures_photo_2026-10-22/MESURES%20PHOTO%20-%20pince%20JC.txt) :
-   échelle donnée par l'axe des galets mesuré à 28 mm.
-6. [Avancement courant](AVANCEMENT_PROJET.txt).
+Le détail, essai par essai, est dans [AVANCEMENT.txt](AVANCEMENT.txt).
 
-Le [dossier historique](DOSSIER_GARE_DEBRAYABLE_JC.md) conserve les recherches et
-choix antérieurs. Les précisions du rapport du 22 octobre priment sur les
-anciennes mentions de validation ou de recherche terminée.
-
-## Contenu du projet
+## Organisation du dépôt
 
 | Dossier | Contenu |
 | --- | --- |
-| `recherche_mesures_2026-10-22/` | Recherche, cotes, sources, relevés de fichiers 3D |
-| `mesures_photo_2026-10-22/` | Photo de la pince, mesure de 28 mm et cotes estimées à l'échelle |
-| `essai_rail_2026-10-22/` | Tronçons de rail imprimables (droit validé, virage à essayer) pour vérifier ces cotes sur la vraie pince |
-| `STL/` | Dix prototypes historiques de la gare et leurs documents |
-| `apercus/` | Vues des prototypes |
-| `reprise_codex/rapports/` | Audit des STL et du balayage des sièges |
-| `reprise_codex/banc_essai/` | Banc manuel réglable, trois STL et notice |
-| `reprise_codex/JC_Banc_Essai/` | Script Fusion préparé pour le banc |
-| `reprise_codex/JC_Reconstruire/` | Script Fusion préparé pour reconstruire l'implantation |
-| `reprise_codex/sources_claude/` | Sources historiques, gabarit et ancien script de pince |
-| `references/` | Liens et, dans l'archive complète, téléchargements externes |
-| `archives_locales/` | Copie du suivi du Bureau, dans l'archive complète |
-| `outils/` | Préparation reproductible des deux archives |
+| [`mesures/`](mesures) | Ce qu'on sait de la pince et du siège, et ce qu'il reste à mesurer |
+| [`mesures/photos/`](mesures/photos) | Photos de la pince, cotes estimées à l'échelle, coupe 2D |
+| [`essais/rail/`](essais/rail) | **Travail en cours** : rails d'essai imprimables (droit v6, virage v2), générateurs et notices |
+| [`essais/banc/`](essais/banc) | Banc manuel réglable (prototype non essayé), son générateur et son script Fusion |
+| [`cao/`](cao) | CAO de la gare : notice, paramètres, script de reconstruction Fusion |
+| [`cao/scripts_gare/`](cao/scripts_gare) | Scripts Fusion d'origine de la gare (historique) |
+| [`cao/STL_gare/`](cao/STL_gare) | Dix STL prototypes de la gare, notice d'impression et achats |
+| [`cao/rapports/`](cao/rapports) | Audit des STL et du balayage des sièges |
+| [`cao/apercus/`](cao/apercus) | Vues des prototypes |
+| [`recherche/`](recherche) | Dossier technique, registre des cotes, sources, documents étudiés |
+| [`references/`](references) | Liens vers les modèles et catalogues de tiers |
+| [`outils/`](outils) | Audit hors Fusion et sauvegarde complète en ZIP |
 
-Les sources historiques ont été copiées depuis Fusion et Téléchargements.
-Le dossier du projet peut ainsi être conservé sans dépendre d'une autre copie
-des scripts située dans AppData. Certains scripts historiques contiennent
-encore des chemins locaux : utiliser les scripts de reprise comme points
-d'entrée, et non le constructeur historique lancé isolément.
+## Par où commencer
 
-## Deux archives, deux usages
+1. [mesures/MESURES_RESTANTES.txt](mesures/MESURES_RESTANTES.txt) : les
+   prochaines mesures, par priorité, et la méthode photo qui marche.
+2. [essais/rail/NOTICE_VIRAGE.txt](essais/rail/NOTICE_VIRAGE.txt) : le
+   prochain essai à imprimer, avec les questions à vérifier.
+3. [mesures/photos/COTES_SUR_PHOTO.txt](mesures/photos/COTES_SUR_PHOTO.txt) :
+   toutes les cotes de la pince connues à ce jour.
+4. [recherche/LIRE_EN_PREMIER.txt](recherche/LIRE_EN_PREMIER.txt) et
+   [recherche/REGISTRE_COTES.csv](recherche/REGISTRE_COTES.csv) : la recherche
+   dimensionnelle du 22/10 (110 entrées, inconnues signalées).
+5. [recherche/DOSSIER_TECHNIQUE.md](recherche/DOSSIER_TECHNIQUE.md) : le
+   dossier historique (recherches et choix depuis le 20/10). Les précisions
+   plus récentes priment sur ses anciennes mentions de validation.
 
-- **`Gare-JC-COMPLET-2026-10-22.zip`** : sauvegarde de tous les fichiers du dossier,
-  y compris PDF, modèles téléchargés, images de référence et historique local.
-- **`Gare-JC-GITHUB-2026-10-22.zip`** : sources, documentation de recherche,
-  relevés, prototypes propres au projet et liens vers les références.
-  Les modèles, PDF et images externes sont laissés dans la sauvegarde complète.
+## Décisions de conception
 
-Les deux ZIP sont créés à côté du dossier du projet, dans Téléchargements.
-Chaque archive contient un inventaire avec les empreintes SHA-256 des fichiers.
-Un rapport extérieur aux archives permet également de vérifier leur intégrité.
+Gare aval débrayable avec garage de 8 places, ligne au standard JC (voie de
+155 mm), sièges et pinces JC d'origine conservés, ressorts compris. La voie
+réelle d'un 6-CLD D-Line (6,4 m) ferait 200 mm au 1:32 : 155 mm est un
+compromis de compatibilité avec les pylônes et la gare retour JC.
 
-La version GitHub conserve la liste des références nécessaires : voir
-[`references/README.md`](references/README.md). Un téléchargement externe
-manquant n'est pas remplacé par une mesure inventée.
+## Imprimer et régénérer les essais
 
-## Mettre le projet sur GitHub
+Les STL sont prêts dans `essais/rail/` ; les notices donnent l'impression et
+les points à vérifier. Les cotes sont en tête des générateurs. Après une
+modification, depuis la racine du dépôt :
 
-Décompresser **la version GITHUB**, puis ajouter son contenu dans le dépôt.
-Le `README.md`, les scripts et les sous-dossiers doivent apparaître dans le
-dépôt : envoyer seulement le ZIP n'affiche pas les sources à parcourir.
+```text
+python essais/rail/generer_rail_essai.py
+python essais/rail/generer_rail_virage.py
+python essais/banc/generer_banc.py
+python outils/audit_projet.py
+```
 
-Le dépôt contient un `.gitignore` pour conserver les références externes,
-les archives et les fichiers temporaires hors du suivi Git. Ces exclusions
-s'appliquent lors d'un ajout avec Git ou GitHub Desktop. Elles ne retirent
-pas des fichiers déjà sélectionnés manuellement pour un envoi sur le site.
-
-Le site GitHub accepte 25 MiB au maximum par fichier et 100 fichiers par envoi.
-La version GITHUB est contrôlée par l'outil de préparation pour rester sous
-ces limites. Référence : [documentation GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
-
-Aucun dépôt distant n'est créé et aucun fichier n'est publié par l'outil
-de préparation.
+Dépendances : `pip install -r requirements.txt` (numpy, shapely, matplotlib,
+trimesh, manifold3d). Ces outils ne lancent pas Fusion.
 
 ## Utilisation dans Fusion
 
-Voir [la notice de reprise](reprise_codex/LIRE%20EN%20PREMIER.txt).
-Les scripts Fusion sont préparés mais n'ont pas été exécutés ni validés dans
-Fusion par cette reprise. Le banc manuel et les contrôles hors Fusion ne
-constituent pas une validation du débrayage avec la vraie pince JC.
+Voir [cao/LIRE_EN_PREMIER.txt](cao/LIRE_EN_PREMIER.txt). `cao/JC_Reconstruire`
+reconstruit l'implantation de la gare dans un document neuf à partir de
+`cao/parametres_projet.json` et des scripts de `cao/scripts_gare/` ; ses
+sorties vont dans `cao/constructions/`, non suivi par Git.
+`essais/banc/JC_Banc_Essai` crée le banc. Ces deux scripts sont préparés mais
+n'ont pas encore été exécutés dans Fusion. Les scripts de `cao/scripts_gare/`
+gardent des chemins de la première installation (AppData, Téléchargements) :
+les lancer via `JC_Reconstruire`, pas un par un.
 
-La voie JC nominale de 155 mm est un compromis de compatibilité. La voie
-D-Line réelle de 6,4 m représente 200 mm au 1:32. Les dimensions fonctionnelles
-de la pince restent à relever avant de figer la géométrie de la gare.
+## Fichiers gardés seulement en local
 
-## Outils locaux facultatifs
-
-Pour les audits hors Fusion, les dépendances sont listées dans
-`requirements.txt`. Les scripts Fusion utilisent l'API `adsk` fournie par
-Fusion ; elle ne s'installe pas avec ces dépendances Python.
-
-Depuis la racine du projet :
-
-```text
-python reprise_codex/audit_projet.py
-python reprise_codex/generer_banc.py
-python outils/preparer_archives.py
-```
-
-L'outil d'archivage utilise seulement la bibliothèque standard de Python.
-Il ne lance aucun des scripts CAO et ne supprime pas les fichiers du projet.
-Il refuse d'écraser une archive existante : utiliser `--suffixe` pour une
-nouvelle sauvegarde.
+Les modèles, catalogues et PDF de tiers ne sont pas recopiés dans le dépôt :
+[`references/README.md`](references/README.md) et
+[`recherche/documents/`](recherche/documents) donnent leurs liens. Dans le
+dossier local, ils restent aux mêmes emplacements, ignorés par Git
+(voir `.gitignore`). `python outils/preparer_archives.py` crée à côté du
+dossier une sauvegarde ZIP complète, références comprises.
 
 ## Attribution
 
-Projet personnel développé avec l'aide de Claude puis de Codex. Jägerndorfer
+Projet personnel développé avec l'aide de Claude et de Codex. Jägerndorfer
 et Doppelmayr désignent les produits étudiés ; ce projet n'est pas un produit
 officiel de ces fabricants. Les références externes restent celles de leurs
 auteurs et conservent leurs conditions d'utilisation propres. Aucune licence
-globale n'a été attribuée automatiquement à ce projet.
+globale n'a été attribuée à ce projet.

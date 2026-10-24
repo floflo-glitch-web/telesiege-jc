@@ -1,6 +1,6 @@
-> **Priorité du 22/10/2026 : recherche dimensionnelle, CAO plus tard.** Voir `recherche_mesures_2026-10-22/RECHERCHE MESURES - LIRE EN PREMIER.txt`, le registre de cotes et les sources. Sept nouveaux PDF archivés, dont les plans architecturaux de gares réelles à Perisher. Rail de garage JC imprimable supplémentaire identifié sur Cults, compatibilité D-Line à vérifier. Les déclarations ci-dessous de recherche « épuisée », de cotes confirmant notre géométrie et de gare fonctionnelle sans modification ne sont pas des conclusions validées. Les pinces et leurs ressorts d'origine restent conservés.
+> **Priorité du 22/10/2026 : recherche dimensionnelle, CAO plus tard.** Voir `recherche/LIRE_EN_PREMIER.txt`, le registre de cotes et les sources. Sept nouveaux PDF archivés, dont les plans architecturaux de gares réelles à Perisher. Rail de garage JC imprimable supplémentaire identifié sur Cults, compatibilité D-Line à vérifier. Les déclarations ci-dessous de recherche « épuisée », de cotes confirmant notre géométrie et de gare fonctionnelle sans modification ne sont pas des conclusions validées. Les pinces et leurs ressorts d'origine restent conservés.
 
-> **Reprise Codex — 21/10/2026 :** état courant dans `AVANCEMENT_PROJET.txt` et `reprise_codex/LIRE EN PREMIER.txt`. Les anciennes mentions de modèle complet ou de zéro collision ne valident pas le débrayage. Les dix STL de Claude sont des prototypes. Un banc manuel réglable et un audit du balayage sont ajoutés ; leurs scripts Fusion n'ont pas encore été exécutés. La géométrie et les efforts de la vraie pince restent à mesurer. Les cotes tirées de modèles d'amateurs sont des références de conception, pas des plans constructeur.
+> **Reprise Codex — 21/10/2026 :** état courant dans `AVANCEMENT.txt` et `cao/LIRE_EN_PREMIER.txt`. Les anciennes mentions de modèle complet ou de zéro collision ne valident pas le débrayage. Les dix STL de Claude sont des prototypes. Un banc manuel réglable et un audit du balayage sont ajoutés ; leurs scripts Fusion n'ont pas encore été exécutés. La géométrie et les efforts de la vraie pince restent à mesurer. Les cotes tirées de modèles d'amateurs sont des références de conception, pas des plans constructeur.
 
 # Gare débrayable pour télésiège Jägerndorfer 1:32 — dossier technique (v2, recherche approfondie)
 
@@ -207,7 +207,7 @@ dessus sur papier millimétré** en plus des cotes.
   à alésage D6, moteur JGB37-520 (gabarit), chariot de tension sur 2 tiges Ø 4, poutre centrale alu 15×15 à 181 mm,
   3 poteaux Ø 16, 2 brides, toit R1. Le câble descend de 10 mm vers la poulie. 0 interférence (32 corps).
   Corrigé : mur arrière à 152,5 mm de l'axe (les sièges balaient 137,5 mm au contour).
-  Script maître `JC_Gare_Construire`. STL + notice/achats dans `STL\`.
+  Script maître `JC_Gare_Construire`. STL + notice/achats dans `cao/STL_gare/`.
 - Règle de conception retenue : **poulie, moteur et chariot de tension suspendus par le haut** (au contour, l'intérieur
   des sièges passe à ~17 mm de l'axe, sous la poulie). Moteur 12 V ~21 tr/min → ≈ 17 cm/s avec une poulie Ø 155.
 

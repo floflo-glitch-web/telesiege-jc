@@ -8,7 +8,7 @@ DÉJÀ ACQUIS
   Validé par l'essai du rail v5.
 - Câble Ø 2,5 environ ; position du câble par rapport aux galets, galet du
   levier pince fermée (Ø 5,9), suspente : estimations photo.
-Détails : mesures_photo_2026-10-22/ et reprise_codex/mesures_pince.json.
+Détails : mesures/photos/ et mesures/mesures_pince.json.
 
 MÉTHODE QUI MARCHE
 Photo bien de face ou bien de dessus, axe de 28 mm visible : il sert d'échelle.

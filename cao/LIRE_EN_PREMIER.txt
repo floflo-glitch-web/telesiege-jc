@@ -1,4 +1,5 @@
-REPRISE DU PROJET CLAUDE PAR CODEX - 21/10/2026
+CAO DE LA GARE - REPRISE PAR CODEX - 21/10/2026
+(dossier cao/ ; chemins mis a jour lors du rangement du depot le 24/10)
 
 Objectif conserve : convertir la gare aval de la maquette JC 1:32 en
 gare debrayable avec garage, en gardant les sieges et leurs vraies pinces.
@@ -17,13 +18,13 @@ OU EN EST-ON REELLEMENT ?
   corps statiques partiels. Ce n'est pas une validation du debrayage.
 
 FICHIERS AJOUTES
-- sources_claude/ : copie intacte des 5 dossiers de scripts Fusion.
+- scripts_gare/ : copie intacte des 5 dossiers de scripts Fusion.
 - rapports/audit_projet.txt et .json : mesures des STL, empreintes SHA256,
   jeux calcules au contour et limites des hypotheses.
 - rapports/controle_contours.png : coin des sieges pendant un virage.
-- banc_essai/ : 3 STL et une notice pour un banc manuel reglable,
+- ../essais/banc/ : 3 STL et une notice pour un banc manuel reglable,
   vues GLB/PNG et recette de solides. 9 pieces imprimees au montage.
-- mesures_pince.json : cotes inconnues laissees a null, jamais inventees.
+- ../mesures/mesures_pince.json : cotes inconnues laissees a null, jamais inventees.
 - parametres_projet.json : hypotheses d'implantation utilisees pour l'audit.
 
 UTILISATION DANS FUSION
@@ -33,10 +34,10 @@ dans Fusion par Codex. Les nouveaux STL du banc viennent d'un calcul
 de solides hors Fusion avec controles de volume et d'intersection.
 
 1. Maj+S > Scripts et complements > ajouter un script depuis l'ordinateur.
-2. Selectionner le dossier JC_Banc_Essai (a cote de ce fichier), puis lancer.
+2. Selectionner le dossier essais/banc/JC_Banc_Essai, puis lancer.
    Il cree un NOUVEAU document avec les pieces natives et les positions de
    montage. Il compare leurs volumes aux STL et exporte une archive F3D
-   locale et un rapport dans banc_essai/. Les lames metalliques de contact
+   locale et un rapport dans essais/banc/. Les lames metalliques de contact
    restent a choisir et ajuster sur la vraie pince.
 3. JC_Reconstruire reconstruit les 4 etapes de la gare dans un document neuf
    depuis les copies locales, sans dependance a AppData. Il met les sorties
@@ -65,13 +66,13 @@ autour de la gare n'est pas une obligation deja demontree.
 VERIFICATION
 Pour relancer les calculs hors Fusion (Python avec numpy, shapely,
 matplotlib, trimesh et manifold3d) :
-  python audit_projet.py
-  python generer_banc.py
+  python outils/audit_projet.py
+  python essais/banc/generer_banc.py
 Les controles des STL et du banc ne comprennent pas la vraie pince JC.
 
 Source moteur utilisee pour VERIFIER, pas pour figer un achat :
 ASLONG / Shenzhen Jinshunlaite Motor, catalogue JGB37.
-PDF dans documents/Aslong_37mm_motor.pdf, page 1 imprimee (index 0).
+PDF dans recherche/documents/Aslong_37mm_motor.pdf (copie locale), page 1 imprimee (index 0).
 Source :
 https://www.aslongdcmotor.com/photo/aslongdcmotor/document/26547/37mm%20Round%20Spur%20Gear%20Motor_PDF00.pdf
 Le bossage est coaxial a l'arbre, malgre le corps excentre : l'ancien

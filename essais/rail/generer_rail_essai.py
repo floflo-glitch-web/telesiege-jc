@@ -1,7 +1,7 @@
 """Petit troncon de rail d'ESSAI pour verifier les cotes de la pince JC relevees sur photo.
 
-Toutes les cotes viennent de mesures_photo_2026-10-22/ (estimations photo).
-Modifier COTES puis relancer : python essai_rail_2026-10-22/generer_rail_essai.py
+Toutes les cotes viennent de mesures/photos/ (estimations photo).
+Modifier COTES puis relancer : python essais/rail/generer_rail_essai.py
 Repere du STL : X le long du cable, Y en travers (cable a Y = 0), Z vers le haut.
 v1 : ecart des galets et position du cable valides par l'essai (22/10).
 v2 : les traits des rails deviennent des gorges ou roulent les galets.

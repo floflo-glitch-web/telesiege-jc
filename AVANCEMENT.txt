@@ -1,9 +1,18 @@
-GARE DEBRAYABLE JC - SUIVI REPRIS PAR CODEX
-Mise a jour : 22/10/2026
+GARE DEBRAYABLE JC - SUIVI DU PROJET
+Mise a jour : 24/10/2026
+
+RANGEMENT DU DEPOT GITHUB (24/10)
+Depot : https://github.com/floflo-glitch-web/telesiege-jc (branche main).
+Dossiers ranges par theme : mesures/, essais/ (rail, banc), cao/,
+recherche/, references/, outils/. Les chemins des scripts et des notices
+sont mis a jour ; les generateurs des essais et l audit ont ete relances
+apres le rangement : memes STL, memes resultats.
+POUR GITHUB.txt et INVENTAIRE_GITHUB.json sont retires : Git suit
+desormais chaque fichier. La suite du journal garde l ordre des essais.
 
 ACCORD : PAS DE MODELE 3D (STL, Fusion) sans demande de l utilisateur.
 Demande du 22/10 : un petit troncon de rail d essai pour verifier les
-mesures photo -> essai_rail_2026-10-22/ (STL, notice, script).
+mesures photo -> essais/rail/ (STL, notice, script).
 Essai v1 par l utilisateur : ecart 24,6 parfait, la pince se place bien ;
 traits des rails trop petits. v2 : gorges de 2,8 (cote machoire) et 3,6
 (galet le plus large, cote oppose). Essai v2 : gorges trop larges.
@@ -15,12 +24,12 @@ v5 : photos d une vraie pince Doppelmayr fournies par l utilisateur : le
 gros galet roule a plat dans le C, sans gorge ; les deux petits galets,
 en tandem cote machoire, gardent leur gorge de 1,4.
 Essai v5 (23/10) : TOUT RENTRE PARFAITEMENT. Geometrie galets / rails
-validee. Mesures encore manquantes : MESURES RESTANTES.txt a la racine.
+validee. Mesures encore manquantes : mesures/MESURES_RESTANTES.txt.
 v6 (demande) : renfort en biais retire sous le contre-rail du C.
 Virage v1 (demande) : meme profil sur 15 mm droits + 60 degres au rayon du
 cable autour de la poulie (R 77,5) ; gorge des petits galets elargie a 2,0
 en courbe ; machoire supposee vers l interieur du virage. En attente d essai.
-Fichiers : essai_rail_2026-10-22/Rail_virage_JC_v2.stl et NOTICE_VIRAGE.txt.
+Fichiers : essais/rail/Rail_virage_JC_v2.stl et NOTICE_VIRAGE.txt.
 Essai virage v1 : le bout d axe du gros galet frotte la paroi du C.
 Virage v2 : paroi reculee en courbe (jeu 1,0 au lieu de 0,4). En attente.
 
@@ -29,13 +38,13 @@ Projet depose sur GitHub. Axe des galets de la pince : 28 mm bout a bout,
 embouts metal compris. Photo de face mise a l echelle :
 galets de roulement diametre 7,1 environ, entraxe 24,6 ; galet du levier
 diametre 5,9, centre 17,2 au-dessus de l axe des galets ; suspente 4,0.
-Estimations photo, a confirmer : mesures_photo_2026-10-22/.
+Estimations photo, a confirmer : mesures/photos/.
 Les anciennes estimations de pince_jc_galets.py (diametre 3,2, entraxe 12)
 sont contredites.
 2e photo avec cable : cable diametre 2,5 environ (pas 2). Depuis l axe du
 cable : galet cote machoire a 6,3 le long de l axe et 4,2 cote siege ;
 galet du levier a 19,8 et 12,2 cote levier ; suspente a 17,2.
-Coupe 2D de la pince seule : mesures_photo_2026-10-22/.
+Coupe 2D de la pince seule : mesures/photos/.
 Reste : photo du siege suspendu (orientation reelle), course du levier,
 crochet de machoire vers l interieur ou l exterieur de la ligne.
 
@@ -46,7 +55,7 @@ README.md explique l organisation et la mise sur GitHub.
 Deux archives sont preparees a cote du dossier : COMPLET avec tous les
 telechargements, GITHUB avec le travail du projet et les liens de reference.
 Un inventaire par fichier et un rapport de verification accompagnent les ZIP.
-Aucune publication sur GitHub effectuee.
+Aucune publication sur GitHub effectuee a cette date (depot cree le 22/10).
 
 PRIORITE ACTUELLE DEMANDEE PAR L UTILISATEUR
 Recherche de mesures et de documents pour creer le modele 3D PLUS TARD.
@@ -54,7 +63,7 @@ Le banc et les scripts ci-dessous restent des prototypes existants.
 Aucune nouvelle CAO de gare realisee pendant la recherche du 22 octobre.
 
 NOUVEAU DOSSIER DE RECHERCHE
-recherche_mesures_2026-10-22/RECHERCHE MESURES - LIRE EN PREMIER.txt
+recherche/LIRE_EN_PREMIER.txt
 Registre de cotes avec sources, mesures inconnues et limites explicites.
 Sept PDF publics ajoutes : notices JC/Doppelwihr, brochure Doppelmayr,
 plans de deux gares reelles de Perisher et un lot de plans de genie civil.
@@ -73,7 +82,7 @@ sieges et pinces JC d'origine conserves. Dimensions du bati inspirees du
 
 REALISE DANS CETTE REPRISE
 - Lecture du dossier, de la fiche de mesures et des scripts Fusion reels.
-- Copie des scripts Claude dans reprise_codex/sources_claude/.
+- Copie des scripts Claude dans cao/scripts_gare/.
 - Audit des 10 STL : tous fermes, chacun en un seul solide ; empreintes
   archivees. Aucune validation physique de montage ou de fonctionnement.
 - Calcul du balayage d'un gabarit de siege 120 x 60 mm :
@@ -90,14 +99,14 @@ REALISE DANS CETTE REPRISE
   Les sorties seront creees au lancement du script, pas deja presentes.
 
 A LIRE
-reprise_codex/LIRE EN PREMIER.txt
-reprise_codex/rapports/audit_projet.txt
-reprise_codex/banc_essai/NOTICE.txt
+cao/LIRE_EN_PREMIER.txt
+cao/rapports/audit_projet.txt
+essais/banc/NOTICE.txt
 
 SUITE APRES LA RECHERCHE
 Relever les mesures manquantes : galets et bord du rail, patin de friction,
 course et effort du levier, sens de sortie du cable, hauteur cable -> siege.
-La fiche detaillee existe a la racine. Depuis le 22/10, mesures_pince.json
+La fiche detaillee est dans mesures/FICHE_MESURES.txt. Depuis le 22/10, mesures_pince.json
 contient la mesure de 28 mm, les estimations photo et l essai valide v5.
 Un essai manuel sur un seul siege intact permettra ensuite de valider
 l interface avant de figer la CAO. Les ressorts d origine sont conserves.
